@@ -1,0 +1,1 @@
+2019/06/10 15:26:39 [error] 6564#1740: *4 CreateFile() "c:/users/admin/documents/github/phpproject/ospanel/domains/mystackOverflow/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: mystackoverflow, request: "GET /favicon.ico HTTP/1.1", host: "mystackoverflow", referrer: "http://mystackoverflow/"

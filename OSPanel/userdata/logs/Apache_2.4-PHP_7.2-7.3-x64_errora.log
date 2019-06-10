@@ -1,0 +1,13 @@
+[Thu Jun 06 14:36:48.612086 2019] [ssl:warn] [pid 1432:tid 552] AH01909: mysite:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Jun 06 14:36:48.619081 2019] [ssl:warn] [pid 1432:tid 552] AH01909: default:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Jun 06 14:36:48.725025 2019] [ssl:warn] [pid 1432:tid 552] AH01909: mysite:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Jun 06 14:36:48.726025 2019] [ssl:warn] [pid 1432:tid 552] AH01909: default:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Jun 06 14:36:49.163755 2019] [mpm_winnt:notice] [pid 1432:tid 552] AH00455: Apache/2.4.38 (Win64) OpenSSL/1.1.1b configured -- resuming normal operations
+[Thu Jun 06 14:36:49.163755 2019] [mpm_winnt:notice] [pid 1432:tid 552] AH00456: Apache Lounge VC15 Server built: Feb 28 2019 11:40:54
+[Thu Jun 06 14:36:49.163755 2019] [core:notice] [pid 1432:tid 552] AH00094: Command line: 'C:\\Users\\Admin\\Documents\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin\\httpd.exe -d C:/Users/Admin/Documents/OSPanel/modules/http/Apache_2.4-PHP_7.2-7.3-x64 -f c:\\users\\admin\\documents\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\conf\\httpd.conf'
+[Thu Jun 06 14:36:49.168753 2019] [mpm_winnt:notice] [pid 1432:tid 552] AH00418: Parent: Created child process 3412
+[Thu Jun 06 14:36:49.775644 2019] [ssl:warn] [pid 3412:tid 624] AH01909: mysite:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Jun 06 14:36:49.777643 2019] [ssl:warn] [pid 3412:tid 624] AH01909: default:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Jun 06 14:36:49.826780 2019] [ssl:warn] [pid 3412:tid 624] AH01909: mysite:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Jun 06 14:36:49.827779 2019] [ssl:warn] [pid 3412:tid 624] AH01909: default:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Jun 06 14:36:50.234530 2019] [mpm_winnt:notice] [pid 3412:tid 624] AH00354: Child: Starting 32 worker threads.
