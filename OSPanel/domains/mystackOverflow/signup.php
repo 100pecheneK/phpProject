@@ -9,21 +9,26 @@ if (isset($data['do_signup'])) {
     $users_q = mysqli_query($connection, "SELECT * FROM `users`");
     $users = array();
     while ($us = mysqli_fetch_assoc($users_q)) {
-        $users[] = $us;
-    }
-
-    foreach ($users as $us) {
         if ($us['email'] == $data['email']) {
             $errors[] = 'Пользователь с таким Email уже существует!';
             break;
         }
     }
+
+    // foreach ($users as $us) {
+    //     if ($us['email'] == $data['email']) {
+    //         $errors[] = 'Пользователь с таким Email уже существует!';
+    //         break;
+    //     }
+    // }
+
     if (empty($errors)) {
         $email = $data['email'];
         $login = $data['login'];
         $password = password_hash($data['password'], PASSWORD_DEFAULT);
         mysqli_query($connection, "INSERT INTO `users` (`login`, `email`, `password`) VALUES ('$login', '$email', '$password')");
         $is_sign = true;
+        header('Location: /login.php');
     }
 }
 
@@ -76,21 +81,20 @@ if (isset($data['do_signup'])) {
                                     </div>
                                 </div>
                                 <button class="btn btn-primary btn-block" type="submit" name="do_signup">Регистрация</button>
-                              
-                                <?php  
+                                <?php
                                 if ($is_sign) {
                                     ?>
                                     <div class="text-success text-center mt-2">
-                                        <h5>
+                                        <h5 style="margin-bottom: 0px;">
                                             <?php echo 'Регистрация прошла успешно!' ?>
                                         </h5>
                                     </div>
-                                    <?php
-                                }                         
+                                <?php
+                            }
                             if (!empty($errors)) {
                                 ?>
                                     <div class="text-danger text-center mt-2">
-                                        <h5>
+                                        <h5 style="margin-bottom: 0px;">
                                             <?php echo array_shift($errors) ?>
                                         </h5>
                                     </div>

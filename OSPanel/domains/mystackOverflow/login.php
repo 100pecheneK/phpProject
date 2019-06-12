@@ -66,11 +66,10 @@ if (isset($data['do_login'])) {
                                 <button class="btn btn-primary btn-block" type="submit" name="do_login">Войти</button>
 
                                 <?php
-
                                 if (!empty($errors)) {
                                     ?>
                                     <div class="text-danger text-center mt-2">
-                                        <h5>
+                                        <h5 style="margin-bottom: 0px;">
                                             <?php echo array_shift($errors) ?>
                                         </h5>
                                     </div>

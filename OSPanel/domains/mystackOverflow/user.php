@@ -13,6 +13,9 @@ require "includes/config.php";
     <link rel="stylesheet" href="style/css/my.css">
     <title>Document</title>
 
+
+
+
 </head>
 
 <body>
@@ -30,15 +33,15 @@ require "includes/config.php";
             <div class="coltainer">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Профиль</a>
+                        <a class="nav-link active" href="pages/user.php?id=<?php echo $user['id'] ?>" aria-selected="true">Профиль</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="activ-tab" data-toggle="tab" href="#activ" role="tab" aria-controls="activ" aria-selected="false">Активность</a>
+                        <a class="nav-link" href="pages/user_activ.php?id=<?php echo $user['id'] ?>" aria-selected="false">Активность</a>
                     </li>
                     <?php
                     if ($_SESSION['logged_user']['id'] == $_GET['id']) {
                         ?><li class="nav-item">
-                            <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Настройки</a>
+                            <a class="nav-link" href="pages/user_settings.php?id=<?php echo $_SESSION['logged_user']['id'] ?>" aria-selected="false">Настройки</a>
                         </li>
                     <?php
                 }
@@ -97,7 +100,7 @@ require "includes/config.php";
                                                 <div class="col">
                                                     <h1 class="display-4 border-bottom border-dark pb-2 mb-0"><?php echo $user['login']; ?></h1>
                                                     <h3 class="display-5">О себе</h3>
-                                                    <p class="lead"><?php echo $user['about']; ?></p>
+                                                    <p id="result" class="lead"><?php echo $user['about']; ?></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -175,7 +178,7 @@ require "includes/config.php";
                     <?php
                     if (isset($_POST['do_save'])) {
                         if (iconv_strlen($_POST['about']) < 255) {
-                            mysqli_query($connection, "UPDATE `users` SET `about`= '" . $_POST['about'] . "' WHERE `id` = " . (int)$user['id']);                            
+                            mysqli_query($connection, "UPDATE `users` SET `about`= '" . $_POST['about'] . "' WHERE `id` = " . (int)$user['id']);
                         }
                     }
                     ?>
@@ -186,10 +189,11 @@ require "includes/config.php";
                             <form action="/user.php?id=<?php echo $user['id'] ?>" method="POST">
                                 <div class="form-group">
                                     <label for="exampleFormControlTextarea1">О себе</label>
-                                    <textarea class="form-control" name="about" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    <input type="text" class="form-control" name="about" id="text" value="<?php echo $user['about']; ?>">
                                 </div>
                                 <button class="btn btn-primary btn-block" type="submit" name="do_save">Сохранить</button>
                             </form>
+
                         </div>
                     <?php
                 }

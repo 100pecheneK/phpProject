@@ -1,5 +1,5 @@
 <?php
-require "includes/config.php";
+require "config.php";
 ?>
 <nav class="navbar navbar-expand-xl navbar-light fixed-top bg-light">
     <a class="navbar-brand" href="/index.php"><?php echo $config['title'] ?></a>
@@ -24,7 +24,19 @@ require "includes/config.php";
         </form>
         <?php
         if (isset($_SESSION['logged_user'])) : ?>
-            <a class="btn btn-outline-primary mr-sm-2" href="../user.php?id=<?php echo $_SESSION['logged_user']['id']; ?>">Мой профиль</a>
+        <!-- Ссылка на профиль -->
+            <a class="btn btn-outline-primary mr-sm-2" href="../pages/user_profile.php?id=<?php echo $_SESSION['logged_user']['id']; ?>">
+                <div class="container">
+                    <div class="row">
+                        <div class="col" style="padding-left: 0px; padding-right: 0px;">
+                            <img src="../img.jpg" alt="" style="height: 20px; width: 20px;">
+                        </div>
+                        <div class="col" style="padding-left: 12px; padding-right: 0px;">
+                            <?php echo $_SESSION['logged_user']['login'] ?>
+                        </div>
+                    </div>
+                </div>
+            </a>
             <a class="btn btn-primary" href="/logout.php">Выйти</a>
         <?php else : ?>
             <a class="btn btn-outline-primary mr-sm-2" href="../login.php">Войти</a>
