@@ -9,17 +9,17 @@ require "config.php";
     <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">О проекте <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="../pages/about.php">О проекте <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Написать мне</a>
+                <a class="nav-link" href="https://vk.com/pechehka" target="_blank">Написать мне</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Поддержка</a>
+                <a class="nav-link" href="https://vk.com/pechehka" target="_blank">Поддержка</a>
             </li>
         </ul>
         <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control my-2 mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <input class="form-control my-2 mr-sm-2" type="text" placeholder="Поиск" aria-label="Search">
             <button class="btn btn-outline-success my-2 mr-sm-2" type="submit">Поиск</button>
         </form>
         <?php
@@ -32,7 +32,7 @@ require "config.php";
                             <img src="../img.jpg" alt="" style="height: 20px; width: 20px;">
                         </div>
                         <div class="col" style="padding-left: 12px; padding-right: 0px;">
-                            <?php echo $_SESSION['logged_user']['login'] ?>
+                            <?php echo mb_substr($_SESSION['logged_user']['login'], 0, 10, 'utf-8') . '...' ?>
                         </div>
                     </div>
                 </div>

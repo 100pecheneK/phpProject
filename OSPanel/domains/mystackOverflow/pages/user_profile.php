@@ -12,10 +12,6 @@ require "../includes/config.php";
     <link rel="stylesheet" href="../style/css/bootstrap.min.css">
     <link rel="stylesheet" href="../style/css/my.css">
     <title>Document</title>
-
-
-
-
 </head>
 
 <body>
@@ -24,7 +20,12 @@ require "../includes/config.php";
     <?php include "../includes/nav.php" ?>
     <!-- Конец навбара -->
     <?php
-    $user = mysqli_query($connection, "SELECT * FROM `users` WHERE `id` = " . (int)$_GET['id']);
+    if ((int)$_GET['id'] == 0) {
+        $user_id = 1;
+    } else {
+        $user_id = (int)$_GET['id'];
+    }
+    $user = mysqli_query($connection, "SELECT * FROM `users` WHERE `id` = " . $user_id);
     $user = mysqli_fetch_assoc($user);
     ?>
     <main role="main" class="container" style="margin-top: 7rem;">
@@ -58,7 +59,7 @@ require "../includes/config.php";
                                         <div class="row">
                                             <div class="col">
                                                 <div class="card text-center mx-auto shadow p-3 bg-while rounded" style="width: 12rem;">
-                                                    <img class="card-img-top mx-auto" src="../img.jpg" alt="Card image cap" style="width: 10rem !important; height: 10rem !important; margin-top: 15px">
+                                                    <img class="card-img-top mx-auto" src="../images/users/<?php echo $user['image'] ?>" alt="Card image cap" style="width: 10rem !important; height: 12rem !important; margin-top: 15px">
                                                     <div class="card-body">
                                                         <div class="row">
                                                             <div class="col-sm-12 mx-auto">
@@ -79,11 +80,31 @@ require "../includes/config.php";
                                                     <div class="card-body">
                                                         <div class="row">
                                                             <div class="col">
-                                                                <small class="card-text font-weight-bold"><?php echo $user['answer'] ?></small>
+                                                                <small class="card-text font-weight-bold">
+                                                                    <?php
+                                                                    $ques = $user['questions'];
+                                                                    if ($user['questions']  >= 1000) {
+                                                                        $ques = strval(floor($user['questions']  / 1000)) . 'k';
+                                                                    }
+                                                                    echo $ques
+                                                                    ?>
+
+                                                                </small>
                                                                 <small class="card-text"> вопросов</small>
                                                             </div>
                                                             <div class="col">
-                                                                <small class="card-text font-weight-bold"><?php echo $user['questions'] ?></small>
+                                                                <small class="card-text font-weight-bold">
+                                                                    <?php
+                                                                    $ans = $user['answer'];
+                                                                    if ($user['answer'] >= 1000) {
+                                                                        $ans = strval(floor($user['answer'] / 1000)) . 'k';
+                                                                        if ($user['answer'] >= 1000000) {
+                                                                            $ans = strval(floor($user['answer'] / 1000000)) . 'm';
+                                                                        }
+                                                                    }
+                                                                    echo $ans
+                                                                    ?>
+                                                                </small>
                                                                 <small class="card-text"> ответов</small>
                                                             </div>
                                                         </div>

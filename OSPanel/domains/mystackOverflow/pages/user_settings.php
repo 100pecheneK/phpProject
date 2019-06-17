@@ -2,19 +2,48 @@
 require "../includes/config.php";
 ?>
 <?php
-$user = mysqli_query($connection, "SELECT * FROM `users` WHERE `id` = " . (int)$_GET['id']);
+$user = mysqli_query($connection, "SELECT * FROM `users` WHERE `id` = " . (int)$_SESSION['logged_user']['id']);
 $user = mysqli_fetch_assoc($user);
 $redirect = $_SESSION['logged_user']['id'];
 $data = $_POST;
 if (isset($data['do_save_login'])) {
-    mysqli_query($connection, "UPDATE `users` SET `login`= '" . $data['login'] . "' WHERE `id` = " . (int)$user['id']);
+    mysqli_query($connection, "UPDATE `users` SET `login`= '" . $data['login'] . "' WHERE `id` = " . (int)$_SESSION['logged_user']['id']);
     header("Location: user_profile.php?id=$redirect");
 }
+if (isset($data['do_upload_img'])) {
+    $img = 'default_1.jpg';
+    switch ($data['image']) {
+        case 1:
+            $img = 'default_1.jpg';
+            break;
+        case 2:
+            $img = 'default_2.jpg';
+            break;
+        case 3:
+            $img = 'default_3.jpg';
+            break;
+        case 4:
+            $img = 'default_4.jpg';
+            break;
+        case 5:
+            $img = 'default_5.jpg';
+            break;
+        case 6:
+            $img = 'default_6.jpg';
+            break;
+        case 7:
+            $img = 'default_7.jpg';
+            break;
+    }
+    mysqli_query($connection, "UPDATE `users` SET `image`= 'default_img/" . $img . "' WHERE `id` = " . (int)$_SESSION['logged_user']['id']);
+    $img_success = 'OK';
+}
+
 if (isset($data['do_save_password'])) {
     $error = "";
     if (password_verify($data['password_old'], $user['password'])) {
         $password = password_hash($data['password_new'], PASSWORD_DEFAULT);
-        mysqli_query($connection, "UPDATE `users` SET `password`= '" . $password . "' WHERE `id` = " . (int)$user['id']);
+        mysqli_query($connection, "UPDATE `users` SET `password`= '" . $password . "' WHERE `id` = " . (int)$_SESSION['logged_user']['id']);
         $error = 'NOT';
     } else {
         $error = 'Старый пароль введён неверно!';
@@ -35,12 +64,12 @@ if (isset($data['do_save_email'])) {
         }
     }
     if ($error_email == '') {
-        mysqli_query($connection, "UPDATE `users` SET `email`= '" . $data['email'] . "' WHERE `id` = " . (int)$user['id']);
+        mysqli_query($connection, "UPDATE `users` SET `email`= '" . $data['email'] . "' WHERE `id` = " . (int)$_SESSION['logged_user']['id']);
         header("Location: user_profile.php?id=$redirect");
     }
 }
 if (isset($data['do_save_about'])) {
-    mysqli_query($connection, "UPDATE `users` SET `about`= '" . $data['about'] . "' WHERE `id` = " . (int)$user['id']);
+    mysqli_query($connection, "UPDATE `users` SET `about`= '" . $data['about'] . "' WHERE `id` = " . (int)$_SESSION['logged_user']['id']);
     header("Location: user_profile.php?id=$redirect");
 }
 ?>
@@ -107,11 +136,32 @@ if (isset($data['do_save_about'])) {
                                         </div>
                                         <div class="card mt-3 shadow p-3 bg-while rounded">
                                             <div class="card-body">
-                                                <label for="exampleFormControlTextarea1">Аватар</label>
-                                                <div class="custom-file">
-                                                    <input type="file" class="custom-file-input" id="customFile" lang="ru">
-                                                    <label class="custom-file-label" for="customFile">Выберите изображение</label>
-                                                </div>
+                                                <form action="user_settings.php?id=<?php echo $user['id'] ?>" method="POST" enctype="multipart/form-data">
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlSelect1">Аватар</label>
+                                                        <select class="form-control" id="exampleFormControlSelect1" name="image">
+                                                            <option value="1">Аватар 1</option>
+                                                            <option value="2">Аватар 2</option>
+                                                            <option value="3">Аватар 3</option>
+                                                            <option value="4">Аватар 4</option>
+                                                            <option value="5">Аватар 5</option>
+                                                            <option value="6">Аватар 6</option>
+                                                            <option value="7">Аватар 7</option>
+                                                        </select>
+                                                    </div>
+                                                    <button class="btn btn-primary btn-block" type="submit" name="do_upload_img">Сохранить</button>
+                                                    <?php
+                                                    if ($img_success == 'OK') {
+                                                        ?>
+                                                        <div class="text-success text-center mt-2">
+                                                            <h5 style="margin-bottom: 0px;">
+                                                                <?php echo 'Аватар ' . $data['image'] . ' установлен' ?>
+                                                            </h5>
+                                                        </div>
+                                                    <?php
+                                                }
+                                                ?>
+                                                </form>
                                             </div>
                                         </div>
                                         <div class="card mt-3 shadow p-3 bg-while rounded">
@@ -135,7 +185,7 @@ if (isset($data['do_save_about'])) {
                                                         ?>
                                                         <div class="text-success text-center mt-2">
                                                             <h5 style="margin-bottom: 0px;">
-                                                                <?php echo 'Паполь успешно изменён!' ?>
+                                                                <?php echo 'Паполь успешно изменён' ?>
                                                             </h5>
                                                         </div>
                                                     <?php
@@ -166,8 +216,8 @@ if (isset($data['do_save_about'])) {
                                                     </div>
                                                     <button class="btn btn-primary btn-block" type="submit" name="do_save_email">Сохранить</button>
                                                     <?php
-                                                if ($error_email != '') {
-                                                    ?>
+                                                    if ($error_email != '') {
+                                                        ?>
                                                         <div class="text-danger text-center mt-2">
                                                             <h5 style="margin-bottom: 0px;">
                                                                 <?php echo $error_email ?>
