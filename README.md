@@ -1,6 +1,7 @@
 # phpProject
 Данный репозиторий хранит в себе все мои прокеты на языке PHP
 <<<<<<< HEAD
+<<<<<<< HEAD
 Это папка с сервером.
 ## Welcome to GitHub Pages
 
@@ -41,3 +42,5 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 =======
 >>>>>>> parent of 855c889c... Update README.md
+=======
+>>>>>>> parent of cf268550... Set theme jekyll-theme-architect
