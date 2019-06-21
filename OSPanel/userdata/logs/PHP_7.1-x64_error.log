@@ -1,4 +1,60 @@
-[17-Jun-2019 19:59:53 Europe/Moscow] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\pages\user_profile.php on line 29
-[17-Jun-2019 20:26:02 Europe/Moscow] PHP Warning:  file_get_contents(../README.txt): failed to open stream: No such file or directory in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\pages\about.php on line 2
-[17-Jun-2019 20:30:50 Europe/Moscow] PHP Warning:  file_get_contents(../README.html): failed to open stream: No such file or directory in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\pages\about.php on line 2
-[17-Jun-2019 20:32:50 Europe/Moscow] PHP Warning:  file_get_contents(../README.txt): failed to open stream: No such file or directory in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\pages\about.php on line 2
+[20-Jun-2019 18:36:08 Europe/Moscow] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php on line 6
+[20-Jun-2019 18:36:34 Europe/Moscow] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php on line 6
+[20-Jun-2019 18:36:57 Europe/Moscow] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php on line 6
+[20-Jun-2019 18:42:44 Europe/Moscow] PHP Warning:  mysqli_connect() expects parameter 1 to be string, object given in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php on line 7
+[20-Jun-2019 18:42:44 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php:7) in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php on line 8
+[20-Jun-2019 18:43:47 Europe/Moscow] PHP Warning:  mysqli_connect() expects parameter 1 to be string, object given in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php on line 8
+[20-Jun-2019 18:43:47 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php:7) in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php on line 9
+[20-Jun-2019 18:44:05 Europe/Moscow] PHP Warning:  mysqli_connect() expects parameter 1 to be string, object given in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php on line 7
+[20-Jun-2019 18:47:23 Europe/Moscow] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\index.php on line 38
+[20-Jun-2019 18:48:06 Europe/Moscow] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\index.php on line 38
+[20-Jun-2019 19:14:50 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_fetch_array() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php on line 9
+[20-Jun-2019 19:17:47 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_fetch_array() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php on line 8
+[20-Jun-2019 19:18:36 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_fetch_assoc() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php on line 8
+[20-Jun-2019 19:19:05 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_fetch_assoc() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php on line 8
+[20-Jun-2019 19:19:56 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_fetch_assoc() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php on line 8
+[20-Jun-2019 19:20:12 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_fetch_assoc() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php on line 8
+[20-Jun-2019 19:20:13 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_fetch_assoc() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php on line 8
+[20-Jun-2019 19:20:13 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_fetch_assoc() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php on line 8
+[20-Jun-2019 19:20:13 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_fetch_assoc() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php on line 8
+[20-Jun-2019 19:20:44 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php:7
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\localhost\test.php on line 7
+[20-Jun-2019 19:48:17 Europe/Moscow] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\test.php on line 2
+[20-Jun-2019 19:48:17 Europe/Moscow] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\test.php on line 2
+[20-Jun-2019 19:48:25 Europe/Moscow] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\test.php on line 2
+[20-Jun-2019 19:48:25 Europe/Moscow] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\test.php on line 2
+[20-Jun-2019 19:48:26 Europe/Moscow] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\test.php on line 2
+[20-Jun-2019 19:48:26 Europe/Moscow] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\test.php on line 2
+[20-Jun-2019 19:48:26 Europe/Moscow] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\test.php on line 2
+[20-Jun-2019 19:48:26 Europe/Moscow] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\test.php on line 2
+[20-Jun-2019 19:48:27 Europe/Moscow] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\test.php on line 2
+[20-Jun-2019 19:48:27 Europe/Moscow] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\test.php on line 2
