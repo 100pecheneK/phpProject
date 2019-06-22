@@ -29,7 +29,7 @@ require "config.php";
                 <div class="container">
                     <div class="row">
                         <div class="col" style="padding-left: 0px; padding-right: 0px;">
-                            <img src="../img.jpg" alt="" style="height: 20px; width: 20px;">
+                            <img src="<?php echo "../images/users/" . $_SESSION['logged_user']['image']; ?>" alt="" style="height: 20px; width: 20px;">
                         </div>
                         <div class="col" style="padding-left: 12px; padding-right: 0px;">
                             <?php echo mb_substr($_SESSION['logged_user']['login'], 0, 10, 'utf-8') . '...' ?>

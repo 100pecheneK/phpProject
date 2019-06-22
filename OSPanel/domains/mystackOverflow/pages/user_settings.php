@@ -85,9 +85,6 @@ if (isset($data['do_save_about'])) {
     <link rel="stylesheet" href="../style/css/my.css">
     <title>Document</title>
 
-
-
-
 </head>
 
 <body>
@@ -97,160 +94,182 @@ if (isset($data['do_save_about'])) {
     <!-- Конец навбара -->
     <main role="main" class="container" style="margin-top: 7rem;">
         <div class="shadow p-3 mb-5 bg-white rounded">
-            <div class="coltainer">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link" href="user_profile.php?id=<?php echo $user['id'] ?>" aria-selected="false">Профиль</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="user_activ.php?id=<?php echo $user['id'] ?>" aria-selected="false">Активность</a>
-                    </li>
-                    <?php
-                    if ($_SESSION['logged_user']['id'] == $_GET['id']) {
-                        ?><li class="nav-item">
-                            <a class="nav-link active" id="settings-tab" data-toggle="tab" href="" role="tab" aria-controls="settings" aria-selected="true">Настройки</a>
-                        </li>
-                    <?php
-                }
-                ?>
-                    <?php
-                    if ($_SESSION['logged_user']['id'] == $_GET['id']) {
-                        ?>
-                    </ul>
-                    <div class="tab-content" id="myTabContent">
-                        <!-- --------------------------Настройки-------------------------- -->
-                        <div class="tab-pane fade show active" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-                            <div class="container-fluid">
-                                <div class="row pb-3">
-                                    <div class="col-md-12 col-lg-6">
-                                        <div class="card mt-3 shadow p-3 bg-while rounded">
-                                            <div class="card-body">
-                                                <form action="user_settings.php?id=<?php echo $user['id'] ?>" method="POST">
-                                                    <div class="form-group">
-                                                        <label for="exampleFormControlTextarea1">Отображаемое имя</label>
-                                                        <input type="text" class="form-control" name="login" id="text" value="<?php echo $user['login']; ?>">
+            <div class="container pl-0 pr-0">
+                <div class="row">
+                    <div class="col">
+                        <nav class="navbar navbar-light p-0">
+                            <div class="navbar-collapse">
+                                <div class="container p-0">
+                                    <div class="row">
+                                        <div class="col">
+                                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                <div class="col-sm-4 col-md p-0">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="user_profile.php?id=<?php echo $user['id'] ?>" aria-selected="false">Профиль</a>
+                                                    </li>
+                                                </div>
+                                                <div class="col-sm-4 col-md p-0">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="user_activ.php?id=<?php echo $user['id'] ?>" aria-selected="false">Активность</a>
+                                                    </li>
+                                                </div>
+                                                <?php
+                                                if ($_SESSION['logged_user']['id'] == $_GET['id']) {
+                                                    ?><div class="col-sm-4 col-md p-0">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" id="settings-tab" data-toggle="tab" href="" role="tab" aria-controls="settings" aria-selected="true">Настройки</a>
+                                                        </li>
                                                     </div>
-                                                    <button class="btn btn-primary btn-block" type="submit" name="do_save_login">Сохранить</button>
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <div class="card mt-3 shadow p-3 bg-while rounded">
-                                            <div class="card-body">
-                                                <form action="user_settings.php?id=<?php echo $user['id'] ?>" method="POST" enctype="multipart/form-data">
-                                                    <div class="form-group">
-                                                        <label for="exampleFormControlSelect1">Аватар</label>
-                                                        <select class="form-control" id="exampleFormControlSelect1" name="image">
-                                                            <option value="1">Аватар 1</option>
-                                                            <option value="2">Аватар 2</option>
-                                                            <option value="3">Аватар 3</option>
-                                                            <option value="4">Аватар 4</option>
-                                                            <option value="5">Аватар 5</option>
-                                                            <option value="6">Аватар 6</option>
-                                                            <option value="7">Аватар 7</option>
-                                                        </select>
-                                                    </div>
-                                                    <button class="btn btn-primary btn-block" type="submit" name="do_upload_img">Сохранить</button>
-                                                    <?php
-                                                    if ($img_success == 'OK') {
-                                                        ?>
-                                                        <div class="text-success text-center mt-2">
-                                                            <h5 style="margin-bottom: 0px;">
-                                                                <?php echo 'Аватар ' . $data['image'] . ' установлен' ?>
-                                                            </h5>
-                                                        </div>
-                                                    <?php
-                                                }
-                                                ?>
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <div class="card mt-3 shadow p-3 bg-while rounded">
-                                            <div class="card-body">
-                                                <form action="user_settings.php?id=<?php echo $user['id'] ?>" method="POST" class="needs-validation" novalidate>
-                                                    <div class="form-group">
-                                                        <label for="exampleFormControlTextarea1">Старый пароль</label>
-                                                        <input type="text" class="form-control" name="password_old" id="text" required>
-                                                        <div class="invalid-feedback">
-                                                            Введите старый пароль.
-                                                        </div>
-                                                        <label for="exampleFormControlTextarea1">Новый пароль</label>
-                                                        <input type="text" class="form-control" name="password_new" id="text" required>
-                                                        <div class="invalid-feedback">
-                                                            Введите новый пароль.
-                                                        </div>
-                                                    </div>
-                                                    <button class="btn btn-primary btn-block" type="submit" name="do_save_password">Сохранить</button>
-                                                    <?php
-                                                    if ($error == 'NOT') {
-                                                        ?>
-                                                        <div class="text-success text-center mt-2">
-                                                            <h5 style="margin-bottom: 0px;">
-                                                                <?php echo 'Паполь успешно изменён' ?>
-                                                            </h5>
-                                                        </div>
-                                                    <?php
-                                                } else {
+                                                <?php
+                                            }
+                                            ?>
+                                                <div class="col-sm-0 col-md-4"></div>
+                                                <?php
+                                                if ($_SESSION['logged_user']['id'] == $_GET['id']) {
                                                     ?>
-                                                        <div class="text-danger text-center mt-2">
-                                                            <h5 style="margin-bottom: 0px;">
-                                                                <?php echo $error ?>
-                                                            </h5>
-                                                        </div>
-                                                    <?php
-                                                }
-                                                ?>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-lg-6">
-                                        <div class="card mt-3 shadow p-3 bg-while rounded">
-                                            <div class="card-body">
-                                                <form action="user_settings.php?id=<?php echo $user['id'] ?>" method="POST" class="needs-validation" novalidate>
-                                                    <div class="form-group">
-                                                        <label for="exampleFormControlTextarea1">Email</label>
-                                                        <input name="email" type="email" value="<?php echo $user['email']; ?>" class="form-control" id="regInputEmail" placeholder="Ваш Email" required>
-                                                    </div>
-                                                    <div class="invalid-feedback">
-                                                        Введите Email
-                                                    </div>
-                                                    <button class="btn btn-primary btn-block" type="submit" name="do_save_email">Сохранить</button>
-                                                    <?php
-                                                    if ($error_email != '') {
-                                                        ?>
-                                                        <div class="text-danger text-center mt-2">
-                                                            <h5 style="margin-bottom: 0px;">
-                                                                <?php echo $error_email ?>
-                                                            </h5>
-                                                        </div>
-                                                    <?php
-                                                }
-                                                ?>
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <div class="card mt-3 shadow p-3 bg-while rounded">
-                                            <div class="card-body">
-                                                <form action="user_settings.php?id=<?php echo $user['id'] ?>" method="POST">
-                                                    <div class="form-group">
-                                                        <label for="exampleFormControlTextarea1">О себе</label>
-                                                        <textarea class="form-control" name="about" id="exampleFormControlTextarea1" rows="3"><?php echo $user['about']; ?></textarea>
-                                                    </div>
-                                                    <button class="btn btn-primary btn-block" type="submit" name="do_save_about">Сохранить</button>
-                                                </form>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
-
+                            </nav>
                         </div>
-                    <?php
-                }
-                ?>
+                    </div>
                 </div>
+                <div class="tab-content" id="myTabContent">
+                    <!-- --------------------------Настройки-------------------------- -->
+                    <div class="tab-pane fade show active" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                        <div class="container-fluid">
+                            <div class="row pb-3">
+                                <div class="col-md-12 col-lg-6 pl-lg-0 pl-0 pr-lg-2 pr-0">
+                                    <div class="card mt-3 shadow p-3 bg-while rounded">
+                                        <div class="card-body">
+                                            <form action="user_settings.php?id=<?php echo $user['id'] ?>" method="POST">
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlTextarea1">Отображаемое имя</label>
+                                                    <input type="text" class="form-control" name="login" id="text" value="<?php echo $user['login']; ?>">
+                                                </div>
+                                                <button class="btn btn-primary btn-block" type="submit" name="do_save_login">Сохранить</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-3 shadow p-3 bg-while rounded">
+                                        <div class="card-body">
+                                            <form action="user_settings.php?id=<?php echo $user['id'] ?>" method="POST" enctype="multipart/form-data">
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlSelect1">Аватар</label>
+                                                    <select class="form-control" id="exampleFormControlSelect1" name="image">
+                                                        <option value="1">Аватар 1</option>
+                                                        <option value="2">Аватар 2</option>
+                                                        <option value="3">Аватар 3</option>
+                                                        <option value="4">Аватар 4</option>
+                                                        <option value="5">Аватар 5</option>
+                                                        <option value="6">Аватар 6</option>
+                                                        <option value="7">Аватар 7</option>
+                                                    </select>
+                                                </div>
+                                                <button class="btn btn-primary btn-block" type="submit" name="do_upload_img">Сохранить</button>
+                                                <?php
+                                                if ($img_success == 'OK') {
+                                                    ?>
+                                                    <div class="text-success text-center mt-2">
+                                                        <h5 style="margin-bottom: 0px;">
+                                                            <?php echo 'Аватар ' . $data['image'] . ' установлен' ?>
+                                                        </h5>
+                                                    </div>
+                                                <?php
+                                            }
+                                            ?>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-3 shadow p-3 bg-while rounded">
+                                        <div class="card-body">
+                                            <form action="user_settings.php?id=<?php echo $user['id'] ?>" method="POST" class="needs-validation" novalidate>
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlTextarea1">Старый пароль</label>
+                                                    <input type="text" class="form-control" name="password_old" id="text" required>
+                                                    <div class="invalid-feedback">
+                                                        Введите старый пароль.
+                                                    </div>
+                                                    <label for="exampleFormControlTextarea1">Новый пароль</label>
+                                                    <input type="text" class="form-control" name="password_new" id="text" required>
+                                                    <div class="invalid-feedback">
+                                                        Введите новый пароль.
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-primary btn-block" type="submit" name="do_save_password">Сохранить</button>
+                                                <?php
+                                                if ($error == 'NOT') {
+                                                    ?>
+                                                    <div class="text-success text-center mt-2">
+                                                        <h5 style="margin-bottom: 0px;">
+                                                            <?php echo 'Паполь успешно изменён' ?>
+                                                        </h5>
+                                                    </div>
+                                                <?php
+                                            } else {
+                                                ?>
+                                                    <div class="text-danger text-center mt-2">
+                                                        <h5 style="margin-bottom: 0px;">
+                                                            <?php echo $error ?>
+                                                        </h5>
+                                                    </div>
+                                                <?php
+                                            }
+                                            ?>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-6 pl-lg-2 pl-0 pr-lg-0 pr-0">
+                                    <div class="card mt-3 shadow p-3 bg-while rounded">
+                                        <div class="card-body">
+                                            <form action="user_settings.php?id=<?php echo $user['id'] ?>" method="POST" class="needs-validation" novalidate>
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlTextarea1">Email</label>
+                                                    <input name="email" type="email" value="<?php echo $user['email']; ?>" class="form-control" id="regInputEmail" placeholder="Ваш Email" required>
+                                                </div>
+                                                <div class="invalid-feedback">
+                                                    Введите Email
+                                                </div>
+                                                <button class="btn btn-primary btn-block" type="submit" name="do_save_email">Сохранить</button>
+                                                <?php
+                                                if ($error_email != '') {
+                                                    ?>
+                                                    <div class="text-danger text-center mt-2">
+                                                        <h5 style="margin-bottom: 0px;">
+                                                            <?php echo $error_email ?>
+                                                        </h5>
+                                                    </div>
+                                                <?php
+                                            }
+                                            ?>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-3 shadow p-3 bg-while rounded">
+                                        <div class="card-body">
+                                            <form action="user_settings.php?id=<?php echo $user['id'] ?>" method="POST">
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlTextarea1">О себе</label>
+                                                    <textarea class="form-control" name="about" id="exampleFormControlTextarea1" rows="3"><?php echo $user['about']; ?></textarea>
+                                                </div>
+                                                <button class="btn btn-primary btn-block" type="submit" name="do_save_about">Сохранить</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                <?php
+            }
+            ?>
             </div>
+        </div>
         </div>
     </main>
 
