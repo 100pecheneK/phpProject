@@ -1,5 +1,13 @@
 <?php
 require "includes/config.php";
+
+if ((int)$_GET['id'] == 0) {
+    $user_id = 1;
+} else {
+    $user_id = (int)$_GET['id'];
+}
+$user = mysqli_query($connection, "SELECT * FROM `users` WHERE `id` = " . $user_id);
+$user = mysqli_fetch_assoc($user);
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -24,7 +32,6 @@ require "includes/config.php";
     <!-- Конец навбара -->
 
     <main role="main" class="container" style="margin-top: 7rem;">
-
         <div class="shadow p-3 mb-5 bg-white rounded">
             <div class="coltainer">
                 <div class="row" style="margin-bottom: 15px;">
@@ -55,7 +62,17 @@ require "includes/config.php";
         </div>
 
         <div class="shadow p-3 mb-5 bg-white rounded">
-            <h6 class="border-bottom border-gray pb-2 mb-0">Вопросы</h6>
+            <div class="container border-bottom">
+                <div class="row justify-content-around">
+                    <div class="col mb-1">
+                        <h6 class="border-gray">Вопросы</h6>
+                    </div>
+                    <div class="col mb-1">
+                    <small class="d-block text-right"><button type="button" class="btn btn-secondary btn-sm">Появились вопросы</button></small>
+                    </div>
+                </div>
+            </div>
+
 
             <?php
             $questions = mysqli_query($connection, "SELECT * FROM `questions` ORDER BY `id` DESC LIMIT 20");
@@ -123,6 +140,8 @@ require "includes/config.php";
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="style/js/bootstrap.min.js"></script>
     <script src="style/js/my.js"></script>
+
+
 </body>
 
 </html>

@@ -1,5 +1,12 @@
 <?php
 require "config.php";
+if ((int)$_GET['id'] == 0) {
+    $user_id = 1;
+} else {
+    $user_id = (int)$_GET['id'];
+}
+$user = mysqli_query($connection, "SELECT * FROM `users` WHERE `id` = " . $_SESSION['logged_user']['id']);
+$user = mysqli_fetch_assoc($user);
 ?>
 <nav class="navbar navbar-expand-xl navbar-light fixed-top bg-light">
     <a class="navbar-brand" href="/index.php"><?php echo $config['title'] ?></a>
@@ -24,15 +31,16 @@ require "config.php";
         </form>
         <?php
         if (isset($_SESSION['logged_user'])) : ?>
-        <!-- Ссылка на профиль -->
+            <!-- Ссылка на профиль -->
             <a class="btn btn-outline-primary mr-sm-2" href="../pages/user_profile.php?id=<?php echo $_SESSION['logged_user']['id']; ?>">
                 <div class="container">
                     <div class="row">
                         <div class="col" style="padding-left: 0px; padding-right: 0px;">
-                            <img src="../img.jpg" alt="" style="height: 20px; width: 20px;">
+                            <img src="<?php echo "../images/users/" . $user['image']; ?>" alt="" style="height: 20px; width: 20px;">
                         </div>
                         <div class="col" style="padding-left: 12px; padding-right: 0px;">
-                            <?php echo mb_substr($_SESSION['logged_user']['login'], 0, 10, 'utf-8') . '...' ?>
+                            <?php echo mb_substr($user['login'], 0, 10, 'utf-8');
+                            if (iconv_strlen($user['login']) > 10) echo '...';?>
                         </div>
                     </div>
                 </div>
