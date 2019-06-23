@@ -1,6 +1,7 @@
+
 <?php
 require "includes/config.php";
-
+//  !! ПОЛЕТЕЛИ ПОЛЬЗОВАТЕЛИ
 if ((int)$_GET['id'] == 0) {
     $user_id = 1;
 } else {
