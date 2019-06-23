@@ -1,6 +1,13 @@
 <?php
 require "includes/config.php";
 
+if ((int)$_GET['id'] == 0) {
+    $user_id = 1;
+} else {
+    $user_id = (int)$_GET['id'];
+}
+$user = mysqli_query($connection, "SELECT * FROM `users` WHERE `id` = " . $user_id);
+$user = mysqli_fetch_assoc($user);
 ?>
 <!DOCTYPE html>
 <html lang="ru">

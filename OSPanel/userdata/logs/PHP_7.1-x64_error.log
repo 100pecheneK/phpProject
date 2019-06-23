@@ -1,0 +1,2 @@
+[23-Jun-2019 06:54:39 Europe/Moscow] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\nav.php on line 9
+[23-Jun-2019 06:54:40 Europe/Moscow] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\nav.php on line 9
