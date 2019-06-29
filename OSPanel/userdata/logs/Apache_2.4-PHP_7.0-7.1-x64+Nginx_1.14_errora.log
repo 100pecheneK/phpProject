@@ -1,6 +1,6 @@
-[Sun Jun 23 21:28:13.165167 2019] [mpm_winnt:notice] [pid 8492:tid 736] AH00455: Apache/2.4.38 (Win64) configured -- resuming normal operations
-[Sun Jun 23 21:28:13.165167 2019] [mpm_winnt:notice] [pid 8492:tid 736] AH00456: Apache Lounge VC14 Server built: Feb 28 2019 15:05:01
-[Sun Jun 23 21:28:13.165167 2019] [core:notice] [pid 8492:tid 736] AH00094: Command line: 'C:\\Users\\Admin\\Documents\\github\\phpproject\\ospanel\\modules\\http\\Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14\\bin\\httpd.exe -d C:/Users/Admin/Documents/GitHub/phpProject/OSPanel/modules/http/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14 -f c:\\users\\admin\\documents\\github\\phpproject\\ospanel\\modules\\http\\Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14\\conf\\httpd.conf'
-[Sun Jun 23 21:28:13.167176 2019] [mpm_winnt:notice] [pid 8492:tid 736] AH00418: Parent: Created child process 3748
-[Sun Jun 23 21:28:14.021774 2019] [mpm_winnt:notice] [pid 3748:tid 768] AH00354: Child: Starting 32 worker threads.
-[Sun Jun 23 21:29:18.591209 2019] [php7:error] [pid 3748:tid 484] [client 127.0.0.1:28169] script 'C:/Users/Admin/Documents/GitHub/phpProject/OSPanel/domains/mystackOverflow/index.php' not found or unable to stat, referer: http://mystackoverflow/about/about.php
+[Sat Jun 29 10:56:44.471350 2019] [mpm_winnt:notice] [pid 3316:tid 652] AH00455: Apache/2.4.38 (Win64) configured -- resuming normal operations
+[Sat Jun 29 10:56:44.471350 2019] [mpm_winnt:notice] [pid 3316:tid 652] AH00456: Apache Lounge VC14 Server built: Feb 28 2019 15:05:01
+[Sat Jun 29 10:56:44.471350 2019] [core:notice] [pid 3316:tid 652] AH00094: Command line: 'C:\\Users\\Admin\\Documents\\github\\phpproject\\ospanel\\modules\\http\\Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14\\bin\\httpd.exe -d C:/Users/Admin/Documents/GitHub/phpProject/OSPanel/modules/http/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14 -f c:\\users\\admin\\documents\\github\\phpproject\\ospanel\\modules\\http\\Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14\\conf\\httpd.conf'
+[Sat Jun 29 10:56:44.476356 2019] [mpm_winnt:notice] [pid 3316:tid 652] AH00418: Parent: Created child process 1584
+[Sat Jun 29 10:56:45.531426 2019] [mpm_winnt:notice] [pid 1584:tid 720] AH00354: Child: Starting 32 worker threads.
+[Sat Jun 29 12:43:30.222478 2019] [php7:error] [pid 1584:tid 968] [client 127.0.0.1:7350] script 'C:/Users/Admin/Documents/GitHub/phpProject/OSPanel/domains/mystackOverflow/pages/user/user_settings.php' not found or unable to stat, referer: http://mystackoverflow/pages/user/settings.php?id=1

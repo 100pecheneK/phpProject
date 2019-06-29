@@ -1,3 +1,984 @@
 c:\users\admin\documents\github\phpproject\ospanel\modules\database\MariaDB-10.3-x64\bin\mysqld.exe, Version: 10.3.13-MariaDB-log (mariadb.org binary distribution). started with:
 TCP Port: 3306, Named Pipe: (null)
 Time		    Id Command	Argument
+190629 10:58:27	     8 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		     8 Query	SET NAMES utf8mb4
+		     8 Query	SELECT `questions`.*  FROM `questions` ORDER BY `id` DESC -- keep-cache
+		     8 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '1' ) )   -- keep-cache
+		     8 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '2' ) )   -- keep-cache
+		     8 Quit	
+190629 11:11:45	     9 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		     9 Query	SET NAMES utf8mb4
+		     9 Query	SELECT `questions`.*  FROM `questions` ORDER BY `id` DESC -- keep-cache
+		     9 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '1' ) )   -- keep-cache
+		     9 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '2' ) )   -- keep-cache
+		     9 Quit	
+190629 11:12:03	    10 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		    10 Query	SET NAMES utf8mb4
+		    10 Query	SELECT `questions`.*  FROM `questions` ORDER BY `id` DESC -- keep-cache
+		    10 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '1' ) )   -- keep-cache
+		    10 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '2' ) )   -- keep-cache
+		    10 Quit	
+190629 11:12:10	    11 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		    11 Query	SET NAMES utf8mb4
+		    11 Query	SELECT `users`.*  FROM `users`  WHERE email = 'mistermihail23@gmail.com' LIMIT 1   -- keep-cache
+		    11 Quit	
+		    12 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		    12 Query	SET NAMES utf8mb4
+		    12 Query	SELECT `questions`.*  FROM `questions` ORDER BY `id` DESC -- keep-cache
+		    12 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '1' ) )   -- keep-cache
+		    12 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '2' ) )   -- keep-cache
+		    12 Quit	
+190629 11:38:38	    13 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		    13 Query	SET NAMES utf8mb4
+		    13 Query	SELECT `questions`.*  FROM `questions` ORDER BY `id` DESC -- keep-cache
+		    13 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '1' ) )   -- keep-cache
+		    13 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '2' ) )   -- keep-cache
+		    13 Quit	
+190629 11:39:04	    14 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		    14 Query	SET NAMES utf8mb4
+		    14 Query	SELECT `questions`.*  FROM `questions` ORDER BY `id` DESC -- keep-cache
+		    14 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '1' ) )   -- keep-cache
+		    14 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '2' ) )   -- keep-cache
+		    14 Quit	
+190629 11:39:11	    15 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		    15 Query	SET NAMES utf8mb4
+		    15 Query	SELECT `questions`.*  FROM `questions` ORDER BY `id` DESC -- keep-cache
+		    15 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '1' ) )   -- keep-cache
+		    15 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '2' ) )   -- keep-cache
+		    15 Quit	
+190629 11:55:33	    16 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		    16 Query	SET NAMES utf8mb4
+		    16 Query	SELECT `questions`.*  FROM `questions` ORDER BY `id` DESC -- keep-cache
+		    16 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '1' ) )   -- keep-cache
+		    16 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '2' ) )   -- keep-cache
+		    16 Quit	
+190629 12:39:33	    17 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		    17 Query	SET NAMES utf8mb4
+		    17 Query	SELECT `users`.*  FROM `users`  WHERE `id` = '1' LIMIT 1   -- keep-cache
+		    17 Query	SELECT `quest`.*  FROM `quest`  WHERE  users_id = '1'   -- keep-cache
+		    17 Query	show tables
+		    17 Query	DESCRIBE `question`
+		    17 Query	INSERT INTO `question` ( id, `title`,`text`,`users_id` ) VALUES
+			( NULL, '','','1' )
+		    17 Quit	
+190629 12:40:03	    18 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		    18 Query	SET NAMES utf8mb4
+		    18 Query	SELECT `users`.*  FROM `users`  WHERE `id` = '1' LIMIT 1   -- keep-cache
+		    18 Query	SELECT `quest`.*  FROM `quest`  WHERE  users_id = '1'   -- keep-cache
+		    18 Query	show tables
+		    18 Query	DESCRIBE `question`
+		    18 Query	INSERT INTO `question` ( id, `title`,`text`,`users_id` ) VALUES
+			( NULL, '','','1' )
+		    18 Quit	
+190629 12:40:13	    19 Connect	root@localhost as anonymous on 
+		    19 Query	SELECT @@version, @@version_comment
+		    19 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    19 Query	SET lc_messages = 'ru_RU'
+		    20 Connect	root@localhost as anonymous on 
+		    19 Query	SELECT CURRENT_USER()
+		    19 Query	SHOW GRANTS
+		    19 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    20 Quit	
+		    19 Quit	
+		    21 Connect	root@localhost as anonymous on 
+		    21 Query	SELECT @@version, @@version_comment
+		    21 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    21 Query	SET lc_messages = 'ru_RU'
+		    22 Connect	root@localhost as anonymous on 
+		    21 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+190629 12:40:14	    21 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    21 Query	SELECT 1 FROM (SELECT `GRANTEE`, `IS_GRANTABLE` FROM `INFORMATION_SCHEMA`.`COLUMN_PRIVILEGES` UNION SELECT `GRANTEE`, `IS_GRANTABLE` FROM `INFORMATION_SCHEMA`.`TABLE_PRIVILEGES` UNION SELECT `GRANTEE`, `IS_GRANTABLE` FROM `INFORMATION_SCHEMA`.`SCHEMA_PRIVILEGES` UNION SELECT `GRANTEE`, `IS_GRANTABLE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES`) t WHERE `IS_GRANTABLE` = 'YES' AND '''root''@''%''' LIKE `GRANTEE` LIMIT 1
+		    21 Query	SELECT 1 FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE `PRIVILEGE_TYPE` = 'CREATE USER' AND '''root''@''%''' LIKE `GRANTEE` LIMIT 1
+		    21 Query	SELECT 1 FROM mysql.user LIMIT 1
+		    21 Init DB	mysql
+		    21 Query	SELECT USER()
+		    21 Query	SELECT `CHARACTER_SET_NAME` AS `Charset`, `DESCRIPTION` AS `Description` FROM `information_schema`.`CHARACTER_SETS`
+		    21 Query	SELECT `CHARACTER_SET_NAME` AS `Charset`, `COLLATION_NAME` AS `Collation`, `IS_DEFAULT` AS `Default` FROM `information_schema`.`COLLATIONS`
+		    21 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`, (SELECT DB_first_level FROM ( SELECT DISTINCT SUBSTRING_INDEX(SCHEMA_NAME, '_', 1) DB_first_level FROM INFORMATION_SCHEMA.SCHEMATA WHERE TRUE ) t ORDER BY DB_first_level ASC LIMIT 0, 100) t2 WHERE TRUE AND 1 = LOCATE(CONCAT(DB_first_level, '_'), CONCAT(SCHEMA_NAME, '_')) ORDER BY SCHEMA_NAME ASC
+		    21 Query	SELECT COUNT(*) FROM ( SELECT DISTINCT SUBSTRING_INDEX(SCHEMA_NAME, '_', 1) DB_first_level FROM INFORMATION_SCHEMA.SCHEMATA WHERE TRUE ) t
+		    21 Query	SELECT COUNT(*) FROM ( SELECT DISTINCT SUBSTRING_INDEX(SCHEMA_NAME, '_', 1) DB_first_level FROM INFORMATION_SCHEMA.SCHEMATA WHERE TRUE ) t
+		    21 Query	SHOW MASTER LOGS
+		    22 Quit	
+		    21 Quit	
+190629 12:40:15	    23 Connect	root@localhost as anonymous on 
+		    23 Query	SELECT @@version, @@version_comment
+		    23 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    23 Query	SET lc_messages = 'ru_RU'
+		    24 Connect	root@localhost as anonymous on 
+		    23 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    23 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    24 Quit	
+		    23 Quit	
+		    25 Connect	root@localhost as anonymous on 
+		    25 Query	SELECT @@version, @@version_comment
+		    25 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    25 Query	SET lc_messages = 'ru_RU'
+		    26 Connect	root@localhost as anonymous on 
+		    25 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    25 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    26 Quit	
+		    25 Quit	
+		    27 Connect	root@localhost as anonymous on 
+		    27 Query	SELECT @@version, @@version_comment
+		    27 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    27 Query	SET lc_messages = 'ru_RU'
+		    28 Connect	root@localhost as anonymous on 
+		    27 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    27 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    27 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`, (SELECT DB_first_level FROM ( SELECT DISTINCT SUBSTRING_INDEX(SCHEMA_NAME, '_', 1) DB_first_level FROM INFORMATION_SCHEMA.SCHEMATA WHERE TRUE ) t ORDER BY DB_first_level ASC LIMIT 0, 100) t2 WHERE TRUE AND 1 = LOCATE(CONCAT(DB_first_level, '_'), CONCAT(SCHEMA_NAME, '_')) ORDER BY SCHEMA_NAME ASC
+		    27 Query	SELECT COUNT(*) FROM ( SELECT DISTINCT SUBSTRING_INDEX(SCHEMA_NAME, '_', 1) DB_first_level FROM INFORMATION_SCHEMA.SCHEMATA WHERE TRUE ) t
+		    27 Query	SELECT COUNT(*) FROM ( SELECT DISTINCT SUBSTRING_INDEX(SCHEMA_NAME, '_', 1) DB_first_level FROM INFORMATION_SCHEMA.SCHEMATA WHERE TRUE ) t
+		    27 Quit	
+		    28 Quit	
+		    29 Connect	root@localhost as anonymous on 
+		    29 Query	SELECT @@version, @@version_comment
+		    29 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    29 Query	SET lc_messages = 'ru_RU'
+		    30 Connect	root@localhost as anonymous on 
+		    29 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    29 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    30 Quit	
+		    29 Quit	
+190629 12:40:16	    31 Connect	root@localhost as anonymous on 
+		    31 Query	SELECT @@version, @@version_comment
+		    31 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    31 Query	SET lc_messages = 'ru_RU'
+		    32 Connect	root@localhost as anonymous on 
+		    32 Query	SHOW TABLES FROM `mystackoverflow`
+		    31 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    31 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    31 Init DB	mystackoverflow
+		    31 Query	SHOW TABLES FROM `mystackoverflow`
+		    31 Query	SELECT @@lower_case_table_names
+		    31 Query	SELECT *,
+                `TABLE_SCHEMA`       AS `Db`,
+                `TABLE_NAME`         AS `Name`,
+                `TABLE_TYPE`         AS `TABLE_TYPE`,
+                `ENGINE`             AS `Engine`,
+                `ENGINE`             AS `Type`,
+                `VERSION`            AS `Version`,
+                `ROW_FORMAT`         AS `Row_format`,
+                `TABLE_ROWS`         AS `Rows`,
+                `AVG_ROW_LENGTH`     AS `Avg_row_length`,
+                `DATA_LENGTH`        AS `Data_length`,
+                `MAX_DATA_LENGTH`    AS `Max_data_length`,
+                `INDEX_LENGTH`       AS `Index_length`,
+                `DATA_FREE`          AS `Data_free`,
+                `AUTO_INCREMENT`     AS `Auto_increment`,
+                `CREATE_TIME`        AS `Create_time`,
+                `UPDATE_TIME`        AS `Update_time`,
+                `CHECK_TIME`         AS `Check_time`,
+                `TABLE_COLLATION`    AS `Collation`,
+                `CHECKSUM`           AS `Checksum`,
+                `CREATE_OPTIONS`     AS `Create_options`,
+                `TABLE_COMMENT`      AS `Comment`
+            FROM `information_schema`.`TABLES` t
+            WHERE `TABLE_SCHEMA` 
+                IN ('mystackoverflow')
+                 ORDER BY Name ASC LIMIT 250 OFFSET 0
+		    31 Query	SHOW MASTER STATUS
+		    31 Query	SHOW SLAVE STATUS
+		    31 Query	SELECT COUNT(*) FROM `mystackoverflow`.`question`
+		    31 Query	SELECT COUNT(*) FROM `mystackoverflow`.`questions`
+		    31 Query	SELECT COUNT(*) FROM `mystackoverflow`.`users`
+		    31 Query	SELECT DEFAULT_COLLATION_NAME FROM information_schema.SCHEMATA WHERE SCHEMA_NAME = 'mystackoverflow' LIMIT 1
+190629 12:40:17	    31 Query	SELECT @@storage_engine
+		    31 Query	SHOW TABLES FROM `mystackoverflow`
+		    31 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='EVENT'
+		    31 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='TRIGGER'
+		    31 Query	SHOW TABLES FROM `mystackoverflow`
+		    31 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='EVENT'
+		    31 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='TRIGGER'
+		    32 Quit	
+		    31 Quit	
+		    33 Connect	root@localhost as anonymous on 
+		    33 Query	SELECT @@version, @@version_comment
+		    33 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    33 Query	SET lc_messages = 'ru_RU'
+		    34 Connect	root@localhost as anonymous on 
+		    33 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    33 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    33 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`, (SELECT DB_first_level FROM ( SELECT DISTINCT SUBSTRING_INDEX(SCHEMA_NAME, '_', 1) DB_first_level FROM INFORMATION_SCHEMA.SCHEMATA WHERE TRUE ) t ORDER BY DB_first_level ASC LIMIT 0, 100) t2 WHERE TRUE AND 1 = LOCATE(CONCAT(DB_first_level, '_'), CONCAT(SCHEMA_NAME, '_')) ORDER BY SCHEMA_NAME ASC
+		    33 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA`='mystackoverflow' AND `TABLE_TYPE`='BASE TABLE'
+		    33 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA`='mystackoverflow' AND `TABLE_TYPE`!='BASE TABLE'
+		    33 Query	SELECT @@lower_case_table_names
+		    33 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`ROUTINES` WHERE `ROUTINE_SCHEMA` ='mystackoverflow' AND `ROUTINE_TYPE`='FUNCTION'
+		    33 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`ROUTINES` WHERE `ROUTINE_SCHEMA` ='mystackoverflow'AND `ROUTINE_TYPE`='PROCEDURE'
+		    33 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`EVENTS` WHERE `EVENT_SCHEMA` ='mystackoverflow'
+		    33 Query	SELECT `TABLE_NAME` AS `name` FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA`='mystackoverflow' AND `TABLE_TYPE`='BASE TABLE' ORDER BY `TABLE_NAME` ASC LIMIT 0, 50
+		    33 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA`='mystackoverflow' AND `TABLE_TYPE`='BASE TABLE'
+		    33 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA`='mystackoverflow' AND `TABLE_TYPE`='BASE TABLE'
+		    34 Quit	
+		    33 Quit	
+190629 12:40:18	    35 Connect	root@localhost as anonymous on 
+		    35 Query	SELECT @@version, @@version_comment
+		    35 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    35 Query	SET lc_messages = 'ru_RU'
+		    36 Connect	root@localhost as anonymous on 
+		    36 Query	SHOW TABLES FROM `mystackoverflow`
+		    35 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    35 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    35 Query	SHOW SESSION VARIABLES LIKE 'FOREIGN_KEY_CHECKS'
+		    35 Query	SELECT DATABASE()
+		    35 Init DB	mystackoverflow
+		    35 Query	SELECT * FROM `question` LIMIT 0, 50
+		    35 Query	SELECT TABLE_NAME
+            FROM information_schema.VIEWS
+            WHERE TABLE_SCHEMA = 'mystackoverflow'
+                AND TABLE_NAME = 'question'
+		    35 Query	SELECT @@lower_case_table_names
+		    35 Query	SELECT *,
+                `TABLE_SCHEMA`       AS `Db`,
+                `TABLE_NAME`         AS `Name`,
+                `TABLE_TYPE`         AS `TABLE_TYPE`,
+                `ENGINE`             AS `Engine`,
+                `ENGINE`             AS `Type`,
+                `VERSION`            AS `Version`,
+                `ROW_FORMAT`         AS `Row_format`,
+                `TABLE_ROWS`         AS `Rows`,
+                `AVG_ROW_LENGTH`     AS `Avg_row_length`,
+                `DATA_LENGTH`        AS `Data_length`,
+                `MAX_DATA_LENGTH`    AS `Max_data_length`,
+                `INDEX_LENGTH`       AS `Index_length`,
+                `DATA_FREE`          AS `Data_free`,
+                `AUTO_INCREMENT`     AS `Auto_increment`,
+                `CREATE_TIME`        AS `Create_time`,
+                `UPDATE_TIME`        AS `Update_time`,
+                `CHECK_TIME`         AS `Check_time`,
+                `TABLE_COLLATION`    AS `Collation`,
+                `CHECKSUM`           AS `Checksum`,
+                `CREATE_OPTIONS`     AS `Create_options`,
+                `TABLE_COMMENT`      AS `Comment`
+            FROM `information_schema`.`TABLES` t
+            WHERE `TABLE_SCHEMA` 
+                IN ('mystackoverflow')
+                AND t.`TABLE_NAME`  = 'question' ORDER BY Name ASC
+		    35 Query	SELECT COUNT(*) FROM `mystackoverflow`.`question`
+		    35 Query	SHOW WARNINGS
+		    35 Query	SELECT TABLE_NAME
+            FROM information_schema.VIEWS
+            WHERE TABLE_SCHEMA = 'mystackoverflow'
+                AND TABLE_NAME = 'question'
+                AND IS_UPDATABLE = 'YES'
+		    35 Query	SHOW INDEXES FROM `mystackoverflow`.`question`
+		    35 Query	SELECT @@have_profiling
+		    35 Query	SHOW CREATE TABLE `mystackoverflow`.`question`
+		    35 Query	SHOW FULL COLUMNS FROM `mystackoverflow`.`question`
+		    35 Query	SHOW SESSION VARIABLES LIKE 'FOREIGN_KEY_CHECKS'
+		    35 Query	SHOW  COLUMNS FROM `mystackoverflow`.`question`
+		    35 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='TRIGGER'
+		    35 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='TRIGGER'
+		    36 Quit	
+		    35 Quit	
+		    37 Connect	root@localhost as anonymous on 
+		    37 Query	SELECT @@version, @@version_comment
+		    37 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    37 Query	SET lc_messages = 'ru_RU'
+		    38 Connect	root@localhost as anonymous on 
+		    37 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    37 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    37 Quit	
+		    38 Quit	
+190629 12:40:19	    39 Connect	root@localhost as anonymous on 
+		    39 Query	SELECT @@version, @@version_comment
+		    39 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    39 Query	SET lc_messages = 'ru_RU'
+		    40 Connect	root@localhost as anonymous on 
+		    40 Query	SHOW TABLES FROM `mystackoverflow`
+		    39 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    39 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    39 Init DB	mystackoverflow
+		    39 Query	SHOW TABLES FROM `mystackoverflow`
+		    39 Query	SELECT @@lower_case_table_names
+		    39 Query	SELECT *,
+                `TABLE_SCHEMA`       AS `Db`,
+                `TABLE_NAME`         AS `Name`,
+                `TABLE_TYPE`         AS `TABLE_TYPE`,
+                `ENGINE`             AS `Engine`,
+                `ENGINE`             AS `Type`,
+                `VERSION`            AS `Version`,
+                `ROW_FORMAT`         AS `Row_format`,
+                `TABLE_ROWS`         AS `Rows`,
+                `AVG_ROW_LENGTH`     AS `Avg_row_length`,
+                `DATA_LENGTH`        AS `Data_length`,
+                `MAX_DATA_LENGTH`    AS `Max_data_length`,
+                `INDEX_LENGTH`       AS `Index_length`,
+                `DATA_FREE`          AS `Data_free`,
+                `AUTO_INCREMENT`     AS `Auto_increment`,
+                `CREATE_TIME`        AS `Create_time`,
+                `UPDATE_TIME`        AS `Update_time`,
+                `CHECK_TIME`         AS `Check_time`,
+                `TABLE_COLLATION`    AS `Collation`,
+                `CHECKSUM`           AS `Checksum`,
+                `CREATE_OPTIONS`     AS `Create_options`,
+                `TABLE_COMMENT`      AS `Comment`
+            FROM `information_schema`.`TABLES` t
+            WHERE `TABLE_SCHEMA` 
+                IN ('mystackoverflow')
+                 ORDER BY Name ASC LIMIT 250 OFFSET 0
+		    39 Query	SHOW MASTER STATUS
+		    39 Query	SHOW SLAVE STATUS
+		    39 Query	SELECT COUNT(*) FROM `mystackoverflow`.`question`
+		    39 Query	SELECT COUNT(*) FROM `mystackoverflow`.`questions`
+		    39 Query	SELECT COUNT(*) FROM `mystackoverflow`.`users`
+		    39 Query	SELECT DEFAULT_COLLATION_NAME FROM information_schema.SCHEMATA WHERE SCHEMA_NAME = 'mystackoverflow' LIMIT 1
+		    39 Query	SELECT @@storage_engine
+		    39 Query	SHOW TABLES FROM `mystackoverflow`
+		    39 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='EVENT'
+		    39 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='TRIGGER'
+		    39 Query	SHOW TABLES FROM `mystackoverflow`
+		    39 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='EVENT'
+		    39 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='TRIGGER'
+		    40 Quit	
+		    39 Quit	
+190629 12:40:20	    41 Connect	root@localhost as anonymous on 
+		    41 Query	SELECT @@version, @@version_comment
+		    41 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    41 Query	SET lc_messages = 'ru_RU'
+		    42 Connect	root@localhost as anonymous on 
+		    42 Query	SHOW TABLES FROM `mystackoverflow`
+		    41 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    41 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    41 Query	SHOW SESSION VARIABLES LIKE 'FOREIGN_KEY_CHECKS'
+		    41 Query	SELECT DATABASE()
+		    41 Init DB	mystackoverflow
+		    41 Query	SELECT * FROM `questions` LIMIT 0, 50
+		    41 Query	SELECT TABLE_NAME
+            FROM information_schema.VIEWS
+            WHERE TABLE_SCHEMA = 'mystackoverflow'
+                AND TABLE_NAME = 'questions'
+		    41 Query	SELECT @@lower_case_table_names
+		    41 Query	SELECT *,
+                `TABLE_SCHEMA`       AS `Db`,
+                `TABLE_NAME`         AS `Name`,
+                `TABLE_TYPE`         AS `TABLE_TYPE`,
+                `ENGINE`             AS `Engine`,
+                `ENGINE`             AS `Type`,
+                `VERSION`            AS `Version`,
+                `ROW_FORMAT`         AS `Row_format`,
+                `TABLE_ROWS`         AS `Rows`,
+                `AVG_ROW_LENGTH`     AS `Avg_row_length`,
+                `DATA_LENGTH`        AS `Data_length`,
+                `MAX_DATA_LENGTH`    AS `Max_data_length`,
+                `INDEX_LENGTH`       AS `Index_length`,
+                `DATA_FREE`          AS `Data_free`,
+                `AUTO_INCREMENT`     AS `Auto_increment`,
+                `CREATE_TIME`        AS `Create_time`,
+                `UPDATE_TIME`        AS `Update_time`,
+                `CHECK_TIME`         AS `Check_time`,
+                `TABLE_COLLATION`    AS `Collation`,
+                `CHECKSUM`           AS `Checksum`,
+                `CREATE_OPTIONS`     AS `Create_options`,
+                `TABLE_COMMENT`      AS `Comment`
+            FROM `information_schema`.`TABLES` t
+            WHERE `TABLE_SCHEMA` 
+                IN ('mystackoverflow')
+                AND t.`TABLE_NAME`  = 'questions' ORDER BY Name ASC
+		    41 Query	SELECT COUNT(*) FROM `mystackoverflow`.`questions`
+		    41 Query	SHOW WARNINGS
+		    41 Query	SELECT TABLE_NAME
+            FROM information_schema.VIEWS
+            WHERE TABLE_SCHEMA = 'mystackoverflow'
+                AND TABLE_NAME = 'questions'
+                AND IS_UPDATABLE = 'YES'
+		    41 Query	SHOW INDEXES FROM `mystackoverflow`.`questions`
+		    41 Query	SHOW CREATE TABLE `mystackoverflow`.`questions`
+		    41 Query	SELECT *,
+                        `COLUMN_NAME`       AS `Field`,
+                        `COLUMN_TYPE`       AS `Type`,
+                        `COLLATION_NAME`    AS `Collation`,
+                        `IS_NULLABLE`       AS `Null`,
+                        `COLUMN_KEY`        AS `Key`,
+                        `COLUMN_DEFAULT`    AS `Default`,
+                        `EXTRA`             AS `Extra`,
+                        `PRIVILEGES`        AS `Privileges`,
+                        `COLUMN_COMMENT`    AS `Comment`
+                   FROM `information_schema`.`COLUMNS`
+ WHERE `TABLE_SCHEMA` = 'mystackoverflow'  AND `TABLE_NAME` = 'users'
+		    41 Query	SHOW FULL COLUMNS FROM `mystackoverflow`.`questions`
+		    41 Query	SELECT `login` FROM `mystackoverflow`.`users` WHERE `id` = 2
+		    41 Query	SELECT `login` FROM `mystackoverflow`.`users` WHERE `id` = 1
+		    41 Query	SHOW SESSION VARIABLES LIKE 'FOREIGN_KEY_CHECKS'
+		    41 Query	SHOW  COLUMNS FROM `mystackoverflow`.`questions`
+		    41 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='TRIGGER'
+		    41 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='TRIGGER'
+		    42 Quit	
+		    41 Quit	
+		    43 Connect	root@localhost as anonymous on 
+		    43 Query	SELECT @@version, @@version_comment
+		    43 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    43 Query	SET lc_messages = 'ru_RU'
+		    44 Connect	root@localhost as anonymous on 
+		    43 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    43 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    44 Quit	
+		    43 Quit	
+190629 12:40:22	    45 Connect	root@localhost as anonymous on 
+		    45 Query	SELECT @@version, @@version_comment
+		    45 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    45 Query	SET lc_messages = 'ru_RU'
+		    46 Connect	root@localhost as anonymous on 
+		    46 Query	SHOW TABLES FROM `mystackoverflow`
+		    45 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    45 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    45 Init DB	mystackoverflow
+		    45 Query	SHOW TABLES FROM `mystackoverflow`
+		    45 Query	SELECT @@lower_case_table_names
+		    45 Query	SELECT *,
+                `TABLE_SCHEMA`       AS `Db`,
+                `TABLE_NAME`         AS `Name`,
+                `TABLE_TYPE`         AS `TABLE_TYPE`,
+                `ENGINE`             AS `Engine`,
+                `ENGINE`             AS `Type`,
+                `VERSION`            AS `Version`,
+                `ROW_FORMAT`         AS `Row_format`,
+                `TABLE_ROWS`         AS `Rows`,
+                `AVG_ROW_LENGTH`     AS `Avg_row_length`,
+                `DATA_LENGTH`        AS `Data_length`,
+                `MAX_DATA_LENGTH`    AS `Max_data_length`,
+                `INDEX_LENGTH`       AS `Index_length`,
+                `DATA_FREE`          AS `Data_free`,
+                `AUTO_INCREMENT`     AS `Auto_increment`,
+                `CREATE_TIME`        AS `Create_time`,
+                `UPDATE_TIME`        AS `Update_time`,
+                `CHECK_TIME`         AS `Check_time`,
+                `TABLE_COLLATION`    AS `Collation`,
+                `CHECKSUM`           AS `Checksum`,
+                `CREATE_OPTIONS`     AS `Create_options`,
+                `TABLE_COMMENT`      AS `Comment`
+            FROM `information_schema`.`TABLES` t
+            WHERE `TABLE_SCHEMA` 
+                IN ('mystackoverflow')
+                 ORDER BY Name ASC LIMIT 250 OFFSET 0
+		    45 Query	SHOW MASTER STATUS
+		    45 Query	SHOW SLAVE STATUS
+		    45 Query	SELECT COUNT(*) FROM `mystackoverflow`.`question`
+		    45 Query	SELECT COUNT(*) FROM `mystackoverflow`.`questions`
+		    45 Query	SELECT COUNT(*) FROM `mystackoverflow`.`users`
+		    45 Query	SELECT DEFAULT_COLLATION_NAME FROM information_schema.SCHEMATA WHERE SCHEMA_NAME = 'mystackoverflow' LIMIT 1
+		    45 Query	SELECT @@storage_engine
+		    45 Query	SHOW TABLES FROM `mystackoverflow`
+		    45 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='EVENT'
+		    45 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='TRIGGER'
+		    45 Query	SHOW TABLES FROM `mystackoverflow`
+		    45 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='EVENT'
+		    45 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='TRIGGER'
+		    46 Quit	
+		    45 Quit	
+190629 12:40:47	    47 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		    47 Query	SET NAMES utf8mb4
+		    47 Query	SELECT `users`.*  FROM `users`  WHERE `id` = '1' LIMIT 1   -- keep-cache
+		    47 Query	SELECT `quest`.*  FROM `quest`  WHERE  users_id = '1'   -- keep-cache
+		    47 Query	show tables
+		    47 Query	DESCRIBE `questions`
+		    47 Query	ALTER TABLE `questions` ADD `users_id`  INT(11) UNSIGNED
+		    47 Query	CREATE INDEX index_foreignkey_questions_users ON `questions` (`users_id`)
+		    47 Query	SELECT DATABASE()
+		    47 Query	SELECT
+				information_schema.key_column_usage.constraint_name AS `name`,
+				information_schema.key_column_usage.referenced_table_name AS `table`,
+				information_schema.key_column_usage.column_name AS `from`,
+				information_schema.key_column_usage.referenced_column_name AS `to`,
+				information_schema.referential_constraints.update_rule AS `on_update`,
+				information_schema.referential_constraints.delete_rule AS `on_delete`
+				FROM information_schema.key_column_usage
+				INNER JOIN information_schema.referential_constraints
+				ON information_schema.referential_constraints.constraint_name = information_schema.key_column_usage.constraint_name
+			WHERE
+				information_schema.key_column_usage.table_schema = 'mystackoverflow'
+				AND information_schema.referential_constraints.constraint_schema  = 'mystackoverflow'
+				AND information_schema.key_column_usage.constraint_schema  = 'mystackoverflow'
+				AND information_schema.key_column_usage.table_name = 'questions'
+				AND information_schema.key_column_usage.constraint_name != 'PRIMARY'
+				AND information_schema.key_column_usage.referenced_table_name IS NOT NULL
+		    47 Query	DESCRIBE `questions`
+		    47 Query	ALTER TABLE `questions`
+				ADD CONSTRAINT c_fk_questions_users_id
+				FOREIGN KEY fk_questions_users_id ( `users_id` ) REFERENCES `users`
+				(`id`) ON DELETE SET NULL ON UPDATE SET NULL
+		    47 Query	INSERT INTO `questions` ( id, `title`,`text`,`users_id` ) VALUES
+			( NULL, 'Привет','ТЕст','1' )
+		    47 Quit	
+190629 12:40:49	    48 Connect	root@localhost as anonymous on 
+		    48 Query	SELECT @@version, @@version_comment
+		    48 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    48 Query	SET lc_messages = 'ru_RU'
+		    49 Connect	root@localhost as anonymous on 
+		    49 Query	SHOW TABLES FROM `mystackoverflow`
+		    48 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    48 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    48 Init DB	mystackoverflow
+		    48 Query	SHOW TABLES FROM `mystackoverflow`
+		    48 Query	SELECT @@lower_case_table_names
+		    48 Query	SELECT *,
+                `TABLE_SCHEMA`       AS `Db`,
+                `TABLE_NAME`         AS `Name`,
+                `TABLE_TYPE`         AS `TABLE_TYPE`,
+                `ENGINE`             AS `Engine`,
+                `ENGINE`             AS `Type`,
+                `VERSION`            AS `Version`,
+                `ROW_FORMAT`         AS `Row_format`,
+                `TABLE_ROWS`         AS `Rows`,
+                `AVG_ROW_LENGTH`     AS `Avg_row_length`,
+                `DATA_LENGTH`        AS `Data_length`,
+                `MAX_DATA_LENGTH`    AS `Max_data_length`,
+                `INDEX_LENGTH`       AS `Index_length`,
+                `DATA_FREE`          AS `Data_free`,
+                `AUTO_INCREMENT`     AS `Auto_increment`,
+                `CREATE_TIME`        AS `Create_time`,
+                `UPDATE_TIME`        AS `Update_time`,
+                `CHECK_TIME`         AS `Check_time`,
+                `TABLE_COLLATION`    AS `Collation`,
+                `CHECKSUM`           AS `Checksum`,
+                `CREATE_OPTIONS`     AS `Create_options`,
+                `TABLE_COMMENT`      AS `Comment`
+            FROM `information_schema`.`TABLES` t
+            WHERE `TABLE_SCHEMA` 
+                IN ('mystackoverflow')
+                 ORDER BY Name ASC LIMIT 250 OFFSET 0
+		    48 Query	SHOW MASTER STATUS
+		    48 Query	SHOW SLAVE STATUS
+		    48 Query	SELECT COUNT(*) FROM `mystackoverflow`.`question`
+		    48 Query	SELECT COUNT(*) FROM `mystackoverflow`.`questions`
+		    48 Query	SELECT COUNT(*) FROM `mystackoverflow`.`users`
+		    48 Query	SELECT DEFAULT_COLLATION_NAME FROM information_schema.SCHEMATA WHERE SCHEMA_NAME = 'mystackoverflow' LIMIT 1
+		    48 Query	SELECT @@storage_engine
+		    48 Query	SELECT (COUNT(DB_first_level) DIV 100) * 100 from (  SELECT distinct SUBSTRING_INDEX(SCHEMA_NAME,  '_', 1)  DB_first_level  FROM INFORMATION_SCHEMA.SCHEMATA  WHERE `SCHEMA_NAME` < 'mystackoverflow' ) t
+		    48 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`, (SELECT DB_first_level FROM ( SELECT DISTINCT SUBSTRING_INDEX(SCHEMA_NAME, '_', 1) DB_first_level FROM INFORMATION_SCHEMA.SCHEMATA WHERE TRUE ) t ORDER BY DB_first_level ASC LIMIT 0, 100) t2 WHERE TRUE AND 1 = LOCATE(CONCAT(DB_first_level, '_'), CONCAT(SCHEMA_NAME, '_')) ORDER BY SCHEMA_NAME ASC
+		    48 Query	SELECT COUNT(*) FROM ( SELECT DISTINCT SUBSTRING_INDEX(SCHEMA_NAME, '_', 1) DB_first_level FROM INFORMATION_SCHEMA.SCHEMATA WHERE TRUE ) t
+		    48 Query	SELECT COUNT(*) FROM ( SELECT DISTINCT SUBSTRING_INDEX(SCHEMA_NAME, '_', 1) DB_first_level FROM INFORMATION_SCHEMA.SCHEMATA WHERE TRUE ) t
+		    48 Query	SHOW TABLES FROM `mystackoverflow`
+		    48 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='EVENT'
+		    48 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='TRIGGER'
+		    48 Quit	
+		    49 Quit	
+190629 12:40:50	    50 Connect	root@localhost as anonymous on 
+		    50 Query	SELECT @@version, @@version_comment
+		    50 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    50 Query	SET lc_messages = 'ru_RU'
+		    51 Connect	root@localhost as anonymous on 
+		    50 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    50 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    51 Quit	
+		    50 Quit	
+		    52 Connect	root@localhost as anonymous on 
+		    52 Query	SELECT @@version, @@version_comment
+		    52 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    52 Query	SET lc_messages = 'ru_RU'
+		    53 Connect	root@localhost as anonymous on 
+		    52 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    52 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    52 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`, (SELECT DB_first_level FROM ( SELECT DISTINCT SUBSTRING_INDEX(SCHEMA_NAME, '_', 1) DB_first_level FROM INFORMATION_SCHEMA.SCHEMATA WHERE TRUE ) t ORDER BY DB_first_level ASC LIMIT 0, 100) t2 WHERE TRUE AND 1 = LOCATE(CONCAT(DB_first_level, '_'), CONCAT(SCHEMA_NAME, '_')) ORDER BY SCHEMA_NAME ASC
+		    52 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA`='mystackoverflow' AND `TABLE_TYPE`='BASE TABLE'
+		    52 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA`='mystackoverflow' AND `TABLE_TYPE`!='BASE TABLE'
+		    52 Query	SELECT @@lower_case_table_names
+		    52 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`ROUTINES` WHERE `ROUTINE_SCHEMA` ='mystackoverflow' AND `ROUTINE_TYPE`='FUNCTION'
+		    52 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`ROUTINES` WHERE `ROUTINE_SCHEMA` ='mystackoverflow'AND `ROUTINE_TYPE`='PROCEDURE'
+		    52 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`EVENTS` WHERE `EVENT_SCHEMA` ='mystackoverflow'
+		    52 Query	SELECT `TABLE_NAME` AS `name` FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA`='mystackoverflow' AND `TABLE_TYPE`='BASE TABLE' ORDER BY `TABLE_NAME` ASC LIMIT 0, 50
+		    52 Query	SELECT COUNT(*) FROM ( SELECT DISTINCT SUBSTRING_INDEX(SCHEMA_NAME, '_', 1) DB_first_level FROM INFORMATION_SCHEMA.SCHEMATA WHERE TRUE ) t
+		    52 Query	SELECT COUNT(*) FROM ( SELECT DISTINCT SUBSTRING_INDEX(SCHEMA_NAME, '_', 1) DB_first_level FROM INFORMATION_SCHEMA.SCHEMATA WHERE TRUE ) t
+		    52 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA`='mystackoverflow' AND `TABLE_TYPE`='BASE TABLE'
+		    52 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA`='mystackoverflow' AND `TABLE_TYPE`='BASE TABLE'
+		    53 Quit	
+		    52 Quit	
+		    54 Connect	root@localhost as anonymous on 
+		    54 Query	SELECT @@version, @@version_comment
+		    54 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    54 Query	SET lc_messages = 'ru_RU'
+		    55 Connect	root@localhost as anonymous on 
+		    54 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    54 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    55 Quit	
+		    54 Quit	
+		    56 Connect	root@localhost as anonymous on 
+		    56 Query	SELECT @@version, @@version_comment
+		    56 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    56 Query	SET lc_messages = 'ru_RU'
+		    57 Connect	root@localhost as anonymous on 
+		    56 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    56 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    57 Quit	
+		    56 Quit	
+190629 12:40:52	    58 Connect	root@localhost as anonymous on 
+		    58 Query	SELECT @@version, @@version_comment
+		    58 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    58 Query	SET lc_messages = 'ru_RU'
+		    59 Connect	root@localhost as anonymous on 
+		    59 Query	SHOW TABLES FROM `mystackoverflow`
+		    58 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    58 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    58 Query	SHOW SESSION VARIABLES LIKE 'FOREIGN_KEY_CHECKS'
+		    58 Query	SELECT DATABASE()
+		    58 Init DB	mystackoverflow
+		    58 Query	SELECT * FROM `questions` LIMIT 0, 50
+		    58 Query	SELECT TABLE_NAME
+            FROM information_schema.VIEWS
+            WHERE TABLE_SCHEMA = 'mystackoverflow'
+                AND TABLE_NAME = 'questions'
+		    58 Query	SELECT @@lower_case_table_names
+		    58 Query	SELECT *,
+                `TABLE_SCHEMA`       AS `Db`,
+                `TABLE_NAME`         AS `Name`,
+                `TABLE_TYPE`         AS `TABLE_TYPE`,
+                `ENGINE`             AS `Engine`,
+                `ENGINE`             AS `Type`,
+                `VERSION`            AS `Version`,
+                `ROW_FORMAT`         AS `Row_format`,
+                `TABLE_ROWS`         AS `Rows`,
+                `AVG_ROW_LENGTH`     AS `Avg_row_length`,
+                `DATA_LENGTH`        AS `Data_length`,
+                `MAX_DATA_LENGTH`    AS `Max_data_length`,
+                `INDEX_LENGTH`       AS `Index_length`,
+                `DATA_FREE`          AS `Data_free`,
+                `AUTO_INCREMENT`     AS `Auto_increment`,
+                `CREATE_TIME`        AS `Create_time`,
+                `UPDATE_TIME`        AS `Update_time`,
+                `CHECK_TIME`         AS `Check_time`,
+                `TABLE_COLLATION`    AS `Collation`,
+                `CHECKSUM`           AS `Checksum`,
+                `CREATE_OPTIONS`     AS `Create_options`,
+                `TABLE_COMMENT`      AS `Comment`
+            FROM `information_schema`.`TABLES` t
+            WHERE `TABLE_SCHEMA` 
+                IN ('mystackoverflow')
+                AND t.`TABLE_NAME`  = 'questions' ORDER BY Name ASC
+		    58 Query	SELECT COUNT(*) FROM `mystackoverflow`.`questions`
+		    58 Query	SHOW WARNINGS
+		    58 Query	SELECT TABLE_NAME
+            FROM information_schema.VIEWS
+            WHERE TABLE_SCHEMA = 'mystackoverflow'
+                AND TABLE_NAME = 'questions'
+                AND IS_UPDATABLE = 'YES'
+		    58 Query	SHOW INDEXES FROM `mystackoverflow`.`questions`
+		    58 Query	SHOW CREATE TABLE `mystackoverflow`.`questions`
+		    58 Query	SELECT *,
+                        `COLUMN_NAME`       AS `Field`,
+                        `COLUMN_TYPE`       AS `Type`,
+                        `COLLATION_NAME`    AS `Collation`,
+                        `IS_NULLABLE`       AS `Null`,
+                        `COLUMN_KEY`        AS `Key`,
+                        `COLUMN_DEFAULT`    AS `Default`,
+                        `EXTRA`             AS `Extra`,
+                        `PRIVILEGES`        AS `Privileges`,
+                        `COLUMN_COMMENT`    AS `Comment`
+                   FROM `information_schema`.`COLUMNS`
+ WHERE `TABLE_SCHEMA` = 'mystackoverflow'  AND `TABLE_NAME` = 'users'
+		    58 Query	SELECT *,
+                        `COLUMN_NAME`       AS `Field`,
+                        `COLUMN_TYPE`       AS `Type`,
+                        `COLLATION_NAME`    AS `Collation`,
+                        `IS_NULLABLE`       AS `Null`,
+                        `COLUMN_KEY`        AS `Key`,
+                        `COLUMN_DEFAULT`    AS `Default`,
+                        `EXTRA`             AS `Extra`,
+                        `PRIVILEGES`        AS `Privileges`,
+                        `COLUMN_COMMENT`    AS `Comment`
+                   FROM `information_schema`.`COLUMNS`
+ WHERE `TABLE_SCHEMA` = 'mystackoverflow'  AND `TABLE_NAME` = 'users'
+		    58 Query	SHOW FULL COLUMNS FROM `mystackoverflow`.`questions`
+		    58 Query	SELECT `login` FROM `mystackoverflow`.`users` WHERE `id` = 2
+		    58 Query	SELECT `login` FROM `mystackoverflow`.`users` WHERE `id` = 1
+		    58 Query	SELECT `login` FROM `mystackoverflow`.`users` WHERE `id` = 1
+		    58 Query	SHOW SESSION VARIABLES LIKE 'FOREIGN_KEY_CHECKS'
+		    58 Query	SHOW  COLUMNS FROM `mystackoverflow`.`questions`
+		    58 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='TRIGGER'
+		    58 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='TRIGGER'
+		    59 Quit	
+		    58 Quit	
+		    60 Connect	root@localhost as anonymous on 
+		    60 Query	SELECT @@version, @@version_comment
+		    60 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    60 Query	SET lc_messages = 'ru_RU'
+		    61 Connect	root@localhost as anonymous on 
+		    60 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    60 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    61 Quit	
+		    60 Quit	
+190629 12:40:55	    62 Connect	root@localhost as anonymous on 
+		    62 Query	SELECT @@version, @@version_comment
+		    62 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    62 Query	SET lc_messages = 'ru_RU'
+		    63 Connect	root@localhost as anonymous on 
+		    63 Query	SHOW TABLES FROM `mystackoverflow`
+		    62 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    62 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    62 Init DB	mystackoverflow
+		    62 Query	SHOW TABLES FROM `mystackoverflow`
+		    62 Query	SELECT @@lower_case_table_names
+		    62 Query	SELECT *,
+                `TABLE_SCHEMA`       AS `Db`,
+                `TABLE_NAME`         AS `Name`,
+                `TABLE_TYPE`         AS `TABLE_TYPE`,
+                `ENGINE`             AS `Engine`,
+                `ENGINE`             AS `Type`,
+                `VERSION`            AS `Version`,
+                `ROW_FORMAT`         AS `Row_format`,
+                `TABLE_ROWS`         AS `Rows`,
+                `AVG_ROW_LENGTH`     AS `Avg_row_length`,
+                `DATA_LENGTH`        AS `Data_length`,
+                `MAX_DATA_LENGTH`    AS `Max_data_length`,
+                `INDEX_LENGTH`       AS `Index_length`,
+                `DATA_FREE`          AS `Data_free`,
+                `AUTO_INCREMENT`     AS `Auto_increment`,
+                `CREATE_TIME`        AS `Create_time`,
+                `UPDATE_TIME`        AS `Update_time`,
+                `CHECK_TIME`         AS `Check_time`,
+                `TABLE_COLLATION`    AS `Collation`,
+                `CHECKSUM`           AS `Checksum`,
+                `CREATE_OPTIONS`     AS `Create_options`,
+                `TABLE_COMMENT`      AS `Comment`
+            FROM `information_schema`.`TABLES` t
+            WHERE `TABLE_SCHEMA` 
+                IN ('mystackoverflow')
+                 ORDER BY Name ASC LIMIT 250 OFFSET 0
+		    62 Query	SHOW MASTER STATUS
+		    62 Query	SHOW SLAVE STATUS
+		    62 Query	SELECT COUNT(*) FROM `mystackoverflow`.`question`
+		    62 Query	SELECT COUNT(*) FROM `mystackoverflow`.`questions`
+		    62 Query	SELECT COUNT(*) FROM `mystackoverflow`.`users`
+		    62 Query	SELECT DEFAULT_COLLATION_NAME FROM information_schema.SCHEMATA WHERE SCHEMA_NAME = 'mystackoverflow' LIMIT 1
+		    62 Query	SELECT @@storage_engine
+		    62 Query	SHOW TABLES FROM `mystackoverflow`
+		    62 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='EVENT'
+		    62 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='TRIGGER'
+		    62 Query	SHOW TABLES FROM `mystackoverflow`
+		    62 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='EVENT'
+		    62 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='TRIGGER'
+		    63 Quit	
+		    62 Quit	
+190629 12:40:57	    64 Connect	root@localhost as anonymous on 
+		    64 Query	SELECT @@version, @@version_comment
+		    64 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    64 Query	SET lc_messages = 'ru_RU'
+		    65 Connect	root@localhost as anonymous on 
+		    64 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    64 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    64 Query	SHOW SESSION VARIABLES LIKE 'FOREIGN_KEY_CHECKS'
+		    65 Quit	
+		    64 Quit	
+		    66 Connect	root@localhost as anonymous on 
+		    66 Query	SELECT @@version, @@version_comment
+		    66 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    66 Query	SET lc_messages = 'ru_RU'
+		    67 Connect	root@localhost as anonymous on 
+		    67 Query	SHOW TABLES FROM `mystackoverflow`
+		    66 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    66 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    66 Query	SHOW SESSION VARIABLES LIKE 'FOREIGN_KEY_CHECKS'
+		    66 Query	SHOW SESSION VARIABLES LIKE 'FOREIGN_KEY_CHECKS'
+		    66 Query	SELECT DATABASE()
+		    66 Init DB	mystackoverflow
+		    66 Query	DROP TABLE `question`
+190629 12:40:58	    66 Query	SHOW WARNINGS
+		    66 Query	SHOW SESSION VARIABLES LIKE 'FOREIGN_KEY_CHECKS'
+		    66 Query	SELECT TABLE_NAME
+            FROM information_schema.VIEWS
+            WHERE TABLE_SCHEMA = 'mystackoverflow'
+                AND TABLE_NAME = 'question'
+		    66 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='TRIGGER'
+		    66 Query	SELECT TABLE_NAME
+            FROM information_schema.VIEWS
+            WHERE TABLE_SCHEMA = 'mystackoverflow'
+                AND TABLE_NAME = 'question'
+		    66 Query	SELECT TABLE_NAME
+            FROM information_schema.VIEWS
+            WHERE TABLE_SCHEMA = 'mystackoverflow'
+                AND TABLE_NAME = 'question'
+		    66 Query	SELECT TABLE_NAME
+            FROM information_schema.VIEWS
+            WHERE TABLE_SCHEMA = 'mystackoverflow'
+                AND TABLE_NAME = 'question'
+		    66 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='TRIGGER'
+		    67 Quit	
+		    66 Quit	
+		    68 Connect	root@localhost as anonymous on 
+		    68 Query	SELECT @@version, @@version_comment
+		    68 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    68 Query	SET lc_messages = 'ru_RU'
+		    69 Connect	root@localhost as anonymous on 
+		    68 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    68 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    68 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`, (SELECT DB_first_level FROM ( SELECT DISTINCT SUBSTRING_INDEX(SCHEMA_NAME, '_', 1) DB_first_level FROM INFORMATION_SCHEMA.SCHEMATA WHERE TRUE ) t ORDER BY DB_first_level ASC LIMIT 0, 100) t2 WHERE TRUE AND 1 = LOCATE(CONCAT(DB_first_level, '_'), CONCAT(SCHEMA_NAME, '_')) ORDER BY SCHEMA_NAME ASC
+		    68 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA`='mystackoverflow' AND `TABLE_TYPE`='BASE TABLE'
+		    68 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA`='mystackoverflow' AND `TABLE_TYPE`!='BASE TABLE'
+		    68 Query	SELECT @@lower_case_table_names
+		    68 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`ROUTINES` WHERE `ROUTINE_SCHEMA` ='mystackoverflow' AND `ROUTINE_TYPE`='FUNCTION'
+		    68 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`ROUTINES` WHERE `ROUTINE_SCHEMA` ='mystackoverflow'AND `ROUTINE_TYPE`='PROCEDURE'
+		    68 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`EVENTS` WHERE `EVENT_SCHEMA` ='mystackoverflow'
+		    68 Query	SELECT `TABLE_NAME` AS `name` FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA`='mystackoverflow' AND `TABLE_TYPE`='BASE TABLE' ORDER BY `TABLE_NAME` ASC LIMIT 0, 50
+		    68 Query	SELECT COUNT(*) FROM ( SELECT DISTINCT SUBSTRING_INDEX(SCHEMA_NAME, '_', 1) DB_first_level FROM INFORMATION_SCHEMA.SCHEMATA WHERE TRUE ) t
+		    68 Query	SELECT COUNT(*) FROM ( SELECT DISTINCT SUBSTRING_INDEX(SCHEMA_NAME, '_', 1) DB_first_level FROM INFORMATION_SCHEMA.SCHEMATA WHERE TRUE ) t
+		    68 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA`='mystackoverflow' AND `TABLE_TYPE`='BASE TABLE'
+		    68 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA`='mystackoverflow' AND `TABLE_TYPE`='BASE TABLE'
+		    69 Quit	
+		    68 Quit	
+190629 12:40:59	    70 Connect	root@localhost as anonymous on 
+		    70 Query	SELECT @@version, @@version_comment
+		    70 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    70 Query	SET lc_messages = 'ru_RU'
+		    71 Connect	root@localhost as anonymous on 
+		    71 Query	SHOW TABLES FROM `mystackoverflow`
+		    70 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    70 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    70 Query	SHOW SESSION VARIABLES LIKE 'FOREIGN_KEY_CHECKS'
+		    70 Query	SELECT DATABASE()
+		    70 Init DB	mystackoverflow
+		    70 Query	SELECT * FROM `questions` LIMIT 0, 50
+		    70 Query	SELECT TABLE_NAME
+            FROM information_schema.VIEWS
+            WHERE TABLE_SCHEMA = 'mystackoverflow'
+                AND TABLE_NAME = 'questions'
+		    70 Query	SELECT @@lower_case_table_names
+		    70 Query	SELECT *,
+                `TABLE_SCHEMA`       AS `Db`,
+                `TABLE_NAME`         AS `Name`,
+                `TABLE_TYPE`         AS `TABLE_TYPE`,
+                `ENGINE`             AS `Engine`,
+                `ENGINE`             AS `Type`,
+                `VERSION`            AS `Version`,
+                `ROW_FORMAT`         AS `Row_format`,
+                `TABLE_ROWS`         AS `Rows`,
+                `AVG_ROW_LENGTH`     AS `Avg_row_length`,
+                `DATA_LENGTH`        AS `Data_length`,
+                `MAX_DATA_LENGTH`    AS `Max_data_length`,
+                `INDEX_LENGTH`       AS `Index_length`,
+                `DATA_FREE`          AS `Data_free`,
+                `AUTO_INCREMENT`     AS `Auto_increment`,
+                `CREATE_TIME`        AS `Create_time`,
+                `UPDATE_TIME`        AS `Update_time`,
+                `CHECK_TIME`         AS `Check_time`,
+                `TABLE_COLLATION`    AS `Collation`,
+                `CHECKSUM`           AS `Checksum`,
+                `CREATE_OPTIONS`     AS `Create_options`,
+                `TABLE_COMMENT`      AS `Comment`
+            FROM `information_schema`.`TABLES` t
+            WHERE `TABLE_SCHEMA` 
+                IN ('mystackoverflow')
+                AND t.`TABLE_NAME`  = 'questions' ORDER BY Name ASC
+		    70 Query	SELECT COUNT(*) FROM `mystackoverflow`.`questions`
+		    70 Query	SHOW WARNINGS
+		    70 Query	SELECT TABLE_NAME
+            FROM information_schema.VIEWS
+            WHERE TABLE_SCHEMA = 'mystackoverflow'
+                AND TABLE_NAME = 'questions'
+                AND IS_UPDATABLE = 'YES'
+		    70 Query	SHOW INDEXES FROM `mystackoverflow`.`questions`
+		    70 Query	SHOW CREATE TABLE `mystackoverflow`.`questions`
+		    70 Query	SELECT *,
+                        `COLUMN_NAME`       AS `Field`,
+                        `COLUMN_TYPE`       AS `Type`,
+                        `COLLATION_NAME`    AS `Collation`,
+                        `IS_NULLABLE`       AS `Null`,
+                        `COLUMN_KEY`        AS `Key`,
+                        `COLUMN_DEFAULT`    AS `Default`,
+                        `EXTRA`             AS `Extra`,
+                        `PRIVILEGES`        AS `Privileges`,
+                        `COLUMN_COMMENT`    AS `Comment`
+                   FROM `information_schema`.`COLUMNS`
+ WHERE `TABLE_SCHEMA` = 'mystackoverflow'  AND `TABLE_NAME` = 'users'
+		    70 Query	SELECT *,
+                        `COLUMN_NAME`       AS `Field`,
+                        `COLUMN_TYPE`       AS `Type`,
+                        `COLLATION_NAME`    AS `Collation`,
+                        `IS_NULLABLE`       AS `Null`,
+                        `COLUMN_KEY`        AS `Key`,
+                        `COLUMN_DEFAULT`    AS `Default`,
+                        `EXTRA`             AS `Extra`,
+                        `PRIVILEGES`        AS `Privileges`,
+                        `COLUMN_COMMENT`    AS `Comment`
+                   FROM `information_schema`.`COLUMNS`
+ WHERE `TABLE_SCHEMA` = 'mystackoverflow'  AND `TABLE_NAME` = 'users'
+		    70 Query	SHOW FULL COLUMNS FROM `mystackoverflow`.`questions`
+		    70 Query	SELECT `login` FROM `mystackoverflow`.`users` WHERE `id` = 2
+		    70 Query	SELECT `login` FROM `mystackoverflow`.`users` WHERE `id` = 1
+		    70 Query	SELECT `login` FROM `mystackoverflow`.`users` WHERE `id` = 1
+		    70 Query	SHOW SESSION VARIABLES LIKE 'FOREIGN_KEY_CHECKS'
+		    70 Query	SHOW  COLUMNS FROM `mystackoverflow`.`questions`
+		    70 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='TRIGGER'
+		    70 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='TRIGGER'
+		    71 Quit	
+		    70 Quit	
+		    72 Connect	root@localhost as anonymous on 
+		    72 Query	SELECT @@version, @@version_comment
+		    72 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		    72 Query	SET lc_messages = 'ru_RU'
+		    73 Connect	root@localhost as anonymous on 
+		    72 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		    72 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		    73 Quit	
+		    72 Quit	
+190629 12:41:20	    74 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		    74 Query	SET NAMES utf8mb4
+		    74 Query	SELECT `questions`.*  FROM `questions` ORDER BY `id` DESC -- keep-cache
+		    74 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '' ) )   -- keep-cache
+		    74 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '1' ) )   -- keep-cache
+		    74 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '2' ) )   -- keep-cache
+		    74 Quit	
+190629 12:41:22	    75 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		    75 Query	SET NAMES utf8mb4
+		    75 Query	SELECT `users`.*  FROM `users`  WHERE `id` = '1' LIMIT 1   -- keep-cache
+		    75 Quit	
+190629 12:41:23	    76 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		    76 Query	SET NAMES utf8mb4
+		    76 Query	SELECT `questions`.*  FROM `questions` ORDER BY `id` DESC -- keep-cache
+		    76 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '' ) )   -- keep-cache
+		    76 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '1' ) )   -- keep-cache
+		    76 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '2' ) )   -- keep-cache
+		    76 Quit	
+190629 12:42:39	    77 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		    77 Query	SET NAMES utf8mb4
+		    77 Query	SELECT `questions`.*  FROM `questions` ORDER BY `id` DESC -- keep-cache
+		    77 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '' ) )   -- keep-cache
+		    77 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '1' ) )   -- keep-cache
+		    77 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '2' ) )   -- keep-cache
+		    77 Quit	
+190629 12:42:57	    78 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		    78 Query	SET NAMES utf8mb4
+		    78 Query	SELECT `questions`.*  FROM `questions` ORDER BY `id` DESC -- keep-cache
+		    78 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '' ) )   -- keep-cache
+		    78 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '1' ) )   -- keep-cache
+		    78 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '2' ) )   -- keep-cache
+		    78 Quit	
+190629 12:43:14	    79 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		    79 Query	SET NAMES utf8mb4
+		    79 Query	SELECT `questions`.*  FROM `questions` ORDER BY `id` DESC -- keep-cache
+		    79 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '' ) )   -- keep-cache
+		    79 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '1' ) )   -- keep-cache
+		    79 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '2' ) )   -- keep-cache
+		    79 Quit	
+190629 12:43:16	    80 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		    80 Query	SET NAMES utf8mb4
+		    80 Query	SELECT `questions`.*  FROM `questions` ORDER BY `id` DESC -- keep-cache
+		    80 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '' ) )   -- keep-cache
+		    80 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '1' ) )   -- keep-cache
+		    80 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '2' ) )   -- keep-cache
+		    80 Quit	
+190629 12:43:20	    81 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		    81 Query	SET NAMES utf8mb4
+		    81 Query	SELECT `users`.*  FROM `users`  WHERE email = 'mistermihail23@gmail.com' LIMIT 1   -- keep-cache
+		    81 Quit	
+		    82 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		    82 Query	SET NAMES utf8mb4
+		    82 Query	SELECT `questions`.*  FROM `questions` ORDER BY `id` DESC -- keep-cache
+		    82 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '' ) )   -- keep-cache
+		    82 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '1' ) )   -- keep-cache
+		    82 Query	SELECT `users`.*  FROM `users`  WHERE ( `id` IN ( '2' ) )   -- keep-cache
+		    82 Quit	
+190629 12:43:22	    83 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		    83 Query	SET NAMES utf8mb4
+		    83 Query	SELECT `users`.*  FROM `users`  WHERE `id` = '1' LIMIT 1   -- keep-cache
+		    83 Quit	
+190629 12:43:23	    84 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		    84 Query	SET NAMES utf8mb4
+		    84 Query	SELECT `users`.*  FROM `users`  WHERE `id` = '1' LIMIT 1   -- keep-cache
+		    84 Quit	
+		    85 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		    85 Query	SET NAMES utf8mb4
+		    85 Query	SELECT `users`.*  FROM `users`  WHERE `id` = '1' LIMIT 1   -- keep-cache
+		    85 Quit	
+190629 12:43:31	    86 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		    86 Query	SET NAMES utf8mb4
+		    86 Query	SELECT `users`.*  FROM `users`  WHERE `id` = '1' LIMIT 1   -- keep-cache
+		    86 Quit	
