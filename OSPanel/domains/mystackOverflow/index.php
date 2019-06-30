@@ -86,7 +86,7 @@ $questions = R::findCollection('questions', "ORDER BY `id` DESC");
                                             <a href="#" title="08-06-19 16:29"><span>изменён 6 минут назад</span></a>
                                             <a href="#"><span>
                                                 <?php
-                                                $user = R::load('users', $question->user_id);
+                                                $user = R::load('users', $question->users_id);
                                                 echo $user->login;
                                                 ?>
                                             </span></a>

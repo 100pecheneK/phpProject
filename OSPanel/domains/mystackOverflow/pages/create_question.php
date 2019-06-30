@@ -74,7 +74,7 @@ if (isset($_SESSION['logged_user'])) {
                                         </select>
                                     </div>                                   
                                     <small class="d-block text-right mt-3">
-                                        <button class="btn btn-primary" type="submit" name="do_create_quest">Задавть вопрос</button>
+                                        <button class="btn btn-primary" type="submit" name="do_create_quest">Задать вопрос</button>
                                     </small>
                                 </form>
                             </div>
