@@ -93,7 +93,7 @@
         ─────────────────────────────────────────────────────────
         41:00 Загружаем сразу несколько записей R::loadAll()
         
-        $vars = R:loadAll('<имя_таблицы>', array(1, 2, 3));
+        $vars = R::loadAll('<имя_таблицы>', array(1, 2, 3));
         foreach($vars as $var){
             echo $var-><имя_поля>;
             //echo $var['<имя_поля>']
@@ -187,7 +187,7 @@
         
         Добавление
         
-        $player = R::dispence('player');
+        $player = R::dispense('player');
         $player->nickname = 'Котэ_фтапках';
         
         $item = R::dispense('item');
@@ -233,7 +233,7 @@
         ─────────────────────────────────────────────────────────
         40:06 Отношения Many-to-One (M:1)
         
-        $item = R::dispence('item');
+        $item = R::dispense('item');
         $item2->type = 'potion';
         $item2->model = 'Heal';
         $item2->qiantity = 7;
@@ -249,7 +249,7 @@
         ─────────────────────────────────────────────────────────
         53:30 Отношения Many-to-Many (M2M)
         
-        list($article1, $article2) = R::dispence('article', 2);
+        list($article1, $article2) = R::dispense('article', 2);
         
         $article->title = 'Изучаем RBPHP';
         $article->content = '...';
@@ -257,7 +257,7 @@
         $article->title = 'Отношения RBPHP';
         $article->content = '...';
         
-        $tag = R::dispence('tag');
+        $tag = R::dispense('tag');
         $tag->name = 'RBPHP';
         
         $article1->sharedTagList[] = $tag;
@@ -287,7 +287,7 @@
         
         $player = R::load('player', 1);
         
-        $nitem = R::dispence('item');
+        $nitem = R::dispense('item');
         $nitem->type = 'gold';
         
         $player->noLoad()->ownItemList[] = $nitem;

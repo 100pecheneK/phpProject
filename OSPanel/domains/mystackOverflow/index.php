@@ -1,7 +1,7 @@
 <?php
 require "includes/db.php";
 
-$questions = R::findCollection('questions', "ORDER BY `id` DESC");
+$questions = R::findAll('questions', "ORDER BY `id` DESC LIMIT 20");
 
 ?>
 <!DOCTYPE html>
@@ -45,7 +45,7 @@ $questions = R::findCollection('questions', "ORDER BY `id` DESC");
             <h6 class="border-bottom border-gray pb-2 mb-0">Новые вопросы</h6>
             <!-- Блок вопроса -->
             <?php
-            while ($question = $questions->next()) {
+            foreach ($questions as $question) {
                 ?>
                 <div class="media text-muted pt-3">
                     <div class="media-body pb-3 mb-0 lh-125 border-bottom border-gray">
@@ -75,21 +75,34 @@ $questions = R::findCollection('questions', "ORDER BY `id` DESC");
                                         <div class="w-100"></div>
                                         <div class="col-md-12 col-lg-6 text-left">
                                             <!-- Максимум 6 -->
-                                            <a class="badge badge-pill badge-light" href="#" role="button">Овощи</a>
-                                            <a class="badge badge-pill badge-light" href="#" role="button">Овощи</a>
-                                            <a class="badge badge-pill badge-light" href="#" role="button">Овощи</a>
-                                            <a class="badge badge-pill badge-light" href="#" role="button">Овощи</a>
-                                            <a class="badge badge-pill badge-light" href="#" role="button">Овощи</a>
-                                            <a class="badge badge-pill badge-light" href="#" role="button">Овощи</a>
+                                            <?php
+                                            $questions_tag = R::findCollection('questions_tags');
+
+                                            $arrTag = array();
+
+                                            while ($qt = $questions_tag->next()) {
+                                                if ($qt->questions_id == $question->id) {
+                                                    $arrTag[] = $qt->tags_id;
+                                                }
+                                            }
+
+                                            $tags = R::loadAll('tags', $arrTag);
+
+                                            foreach ($tags as $tag) {
+                                                ?>
+                                                <a class="badge badge-pill badge-light" href="#" role="button"><?php echo $tag->name; ?></a>
+                                            <?php
+                                            }
+                                            ?>
                                         </div>
                                         <div class="col-md-12 col-lg-6 text-right">
                                             <a href="#" title="08-06-19 16:29"><span>изменён 6 минут назад</span></a>
-                                            <a href="#"><span>
-                                                <?php
-                                                $user = R::load('users', $question->users_id);
-                                                echo $user->login;
-                                                ?>
-                                            </span></a>
+                                            <?php $user = R::load('users', $question->users_id); ?>
+                                            <a href="/pages/user/profile.php?id=<?php echo $user->id ?>"><span>
+                                                    <?php
+                                                    echo $user->login;
+                                                    ?>
+                                                </span></a>
                                             <span class="text-muted" title="уровень репутации">200к</span>
                                         </div>
                                     </div>

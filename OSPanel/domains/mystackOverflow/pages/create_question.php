@@ -8,12 +8,32 @@ if (isset($_SESSION['logged_user'])) {
         $id = $_SESSION['logged_user']['id'];
         $user = R::findOne('users', "`id` = ?", array($id));
 
-        $questions = R::dispense('questions');
-        $questions->title = $data['title'];
-        $questions->text = $data['text'];
+        $question = R::dispense('questions');
+        $question->title = $data['title'];
+        $question->text = $data['text'];
 
-        $user->ownQuestList[] = $questions;
-        R::store($user);
+        $user->ownQuestList[] = $question;
+        $id = R::store($user);
+
+        if (isset($data['tags'])) {
+            $selTag = $data['tags'];
+            $addTag = array();
+
+            $tags = R::findAll('tags');
+            foreach ($tags as $tag) {
+                foreach ($selTag as $st) {
+                    if ($tag->name == $st) {
+                        $addTag[] = $tag;
+                    }
+                }
+            }
+            foreach ($addTag as $at) {
+                $question->sharedTagsList[] = $at;
+            }
+
+            R::store($question);
+        }
+        header('Location: /');
     }
 } else {
     header('Location: /signup.php');
@@ -27,16 +47,15 @@ if (isset($_SESSION['logged_user'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap 4 -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-    <!-- <link href="/style/chosen/bootstrap-chosen.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="/style/bootstrap4/bootstrap.min.css">
     <link rel="stylesheet" href="/style/bootstrap-select-1.13.9/dist/css/bootstrap-select.css">
+
     <link rel="stylesheet" href="/style/my.css">
 
     <title>Создать вопрос</title>
 
     <style>
-        
+
     </style>
 </head>
 
@@ -62,17 +81,18 @@ if (isset($_SESSION['logged_user'])) {
                                     <div class="form-group">
                                         <label for="exampleFormControlTextarea1">Распишите вопрос подробнее</label>
                                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name='text'></textarea>
-                                    </div>                                    
+                                    </div>
                                     <div class="form-group">
                                         <label for="exampleFormControlSelect1">Тэги</label>
-                                        <select class="selectpicker" data-live-search="true" multiple>
+                                        <select class="selectpicker" id="exampleFormControlSelect1" data-live-search="true" multiple name="tags[]">
                                             <?php
-                                            for($i=0; $i<20; $i++){
-                                                echo '<option>Тэг номер ' . $i . '</option>';
+                                            $tags = R::findAll('tags');
+                                            foreach ($tags as $tag) {
+                                                echo '<option value="' . $tag->name . '">' . $tag->name . '</option>';
                                             }
                                             ?>
                                         </select>
-                                    </div>                                   
+                                    </div>
                                     <small class="d-block text-right mt-3">
                                         <button class="btn btn-primary" type="submit" name="do_create_quest">Задать вопрос</button>
                                     </small>
