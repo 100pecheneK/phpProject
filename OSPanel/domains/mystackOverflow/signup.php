@@ -36,79 +36,85 @@ if (isset($data['do_signup'])) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap 4 -->
     <link rel="stylesheet" href="/style/bootstrap4/bootstrap.min.css">
+    <link rel="stylesheet" href="/style/particles/particles.css">
     <title>Document</title>
 
 </head>
 
-<body>
-    <!-- Навбар -->
-    <?php include "includes/nav.php" ?>
-    <!-- /Навбар -->
+<body class="bg-light">
+    <!-- Партиклы -->
+    <div id="particles-js"></div>
+    <div id="page-wrapper">
+        <!-- Навбар -->
+        <?php include "includes/nav.php" ?>
+        <!-- /Навбар -->
 
-    <main role="main" class="container" style="margin-top: 7rem;">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xs-10" style="width: 20rem">
-                    <div class="card shadow p-3 mb-5 bg-white rounded">
-                        <div class="card-body">
+        <main role="main" class="container" style="margin-top: 7rem;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xs-10" style="width: 20rem">
+                        <div class="card shadow p-3 mb-5 bg-white rounded">
+                            <div class="card-body">
 
-                            <form action="/signup.php" method="POST" class="needs-validation" novalidate>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail">Email</label>
-                                    <input name="email" type="email" value="<?php echo @$data['email'] ?>" class="form-control" id="regInputEmail" placeholder="Ваш Email" required>
-                                    <div class="invalid-feedback">
-                                        Введите Email.
+                                <form action="/signup.php" method="POST" class="needs-validation" novalidate>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail">Email</label>
+                                        <input name="email" type="email" value="<?php echo @$data['email'] ?>" class="form-control" id="regInputEmail" placeholder="Ваш Email" required>
+                                        <div class="invalid-feedback">
+                                            Введите Email.
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInput">Имя</label>
-                                    <input name="login" type="text" value="<?php echo @$data['login'] ?>" class="form-control" id="regInput" placeholder="Отображаемое имя" required>
-                                    <div class="invalid-feedback">
-                                        Введите Отображаемое имя.
+                                    <div class="form-group">
+                                        <label for="exampleInput">Имя</label>
+                                        <input name="login" type="text" value="<?php echo @$data['login'] ?>" class="form-control" id="regInput" placeholder="Отображаемое имя" required>
+                                        <div class="invalid-feedback">
+                                            Введите Отображаемое имя.
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPass">Пароль</label>
-                                    <input type="password" class="form-control" name="password" id="regInputPass" placeholder="Ваш пароль" required>
-                                    <div class="invalid-feedback">
-                                        Введите пароль.
+                                    <div class="form-group">
+                                        <label for="exampleInputPass">Пароль</label>
+                                        <input type="password" class="form-control" name="password" id="regInputPass" placeholder="Ваш пароль" required>
+                                        <div class="invalid-feedback">
+                                            Введите пароль.
+                                        </div>
                                     </div>
-                                </div>
-                                <button class="btn btn-primary btn-block" type="submit" name="do_signup">Регистрация</button>
-                                <?php
-                                if ($suc == 'good') {
+                                    <button class="btn btn-primary btn-block" type="submit" name="do_signup">Регистрация</button>
+                                    <?php
+                                    if ($suc == 'good') {
+                                        ?>
+                                        <div class="text-success text-center mt-2">
+                                            <h5 style="margin-bottom: 0px;">
+                                                Вы зарегистрированны
+                                            </h5>
+                                        </div>
+                                    <?php
+                                    } else if ($suc == 'bad') { ?>
+                                        <div class="text-danger text-center mt-2">
+                                            <h5 style="margin-bottom: 0px;">
+                                                <?php echo $errors[0] ?>
+                                            </h5>
+                                        </div>
+                                    <?php
+                                    }
                                     ?>
-                                    <div class="text-success text-center mt-2">
-                                        <h5 style="margin-bottom: 0px;">
-                                            Вы зарегистрированны
-                                        </h5>
-                                    </div>
-                                <?php
-                            } else if ($suc == 'bad') { ?>
-                                    <div class="text-danger text-center mt-2">
-                                        <h5 style="margin-bottom: 0px;">
-                                            <?php echo $errors[0] ?>
-                                        </h5>
-                                    </div>
-                                <?php
-                            }
-                            ?>
-                            </form>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
 
-    <!-- Футер -->
-    <?php include "includes/foot.php" ?>
-    <!-- /Футер -->
+        <!-- Футер -->
+        <?php include "includes/foot.php" ?>
+        <!-- /Футер -->
+    </div>
+    <!-- /Партиклы -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="../style/js/bootstrap.min.js"></script>
+    <script src="/style/js/bootstrap.min.js"></script>
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
         (function() {
@@ -129,6 +135,8 @@ if (isset($data['do_signup'])) {
             }, false);
         })();
     </script>
+    <script src="/style/particles/particles.js"></script>
+    <script src="/style/particles/my.js"></script>
 </body>
 
 </html>
