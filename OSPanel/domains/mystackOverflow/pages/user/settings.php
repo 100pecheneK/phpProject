@@ -1,11 +1,48 @@
 <?php
 require "../../includes/db.php";
 
-$id = $_GET['id'];
-if ($_SESSION['logged_user']['id'] != $id){
-    header('Location: /');
-}
+$data = $_POST;
+$id = $_SESSION['logged_user']['id'];
 $user = R::findOne('users', "`id` = ?", array($id));
+
+// do_save_login
+if (isset($data['do_save_login'])) {
+    $do_save_login_error = '';
+    if (iconv_strlen($data['login']) > 100) {
+        $do_save_login_error = 'maxLen';
+    } else if ($data['login'] != '') {
+        $user->login = $data['login'];
+        R::store($user);
+        $_SESSION['logged_user'] = $user;
+        $do_save_login_error = 'no';
+    } else {
+        $do_save_login_error = 'yes';
+    }
+}
+
+// do_upload_img
+
+// do_save_password
+//      password_old
+//      password_new
+
+// do_save_email
+if (isset($data['do_save_email'])) {
+    $do_save_email_error = '';
+
+    // $email = R::findOne('users', 'email', array($data['email']));
+    $email = R::findLike('users', array('email' => array($data['email'])));
+    if ($email != Null) {
+        $do_save_email_error = 'yes';
+    } else {
+        $user->email = $data['email'];
+        R::store($user);
+        $do_save_email_errors[] = 'no';
+    }
+}
+
+// do_save_about
+
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -74,18 +111,43 @@ $user = R::findOne('users', "`id` = ?", array($id));
                             <div class="col-md-12 col-lg-6 pl-lg-0 pl-0 pr-lg-2 pr-0">
                                 <div class="card mt-3 shadow p-3 bg-while rounded">
                                     <div class="card-body">
-                                        <form action="user_settings.php?id=" method="POST">
+                                        <form action="settings.php?id=<?php $_SESSION['logged_user']['id'] ?>" method="POST">
                                             <div class="form-group">
                                                 <label for="exampleFormControlTextarea1">Отображаемое имя</label>
-                                                <input type="text" class="form-control" name="login" id="text" value="Имя">
+                                                <input type="text" class="form-control" name="login" id="text" value="<?php echo $user->login ?>">
                                             </div>
                                             <button class="btn btn-primary btn-block" type="submit" name="do_save_login">Сохранить</button>
+                                            <?php
+                                            if ($do_save_login_error == 'no') {
+                                                ?>
+                                                <div class="text-success text-center mt-2">
+                                                    <h5 style="margin-bottom: 0px;">
+                                                        Логин изменён
+                                                    </h5>
+                                                </div>
+                                            <?php
+                                            } else if ($do_save_login_error == 'yes') { ?>
+                                                <div class="text-danger text-center mt-2">
+                                                    <h5 style="margin-bottom: 0px;">
+                                                        Логин не может быть пустым
+                                                    </h5>
+                                                </div>
+                                            <?php
+                                            } else if ($do_save_login_error == 'maxLen') { ?>
+                                                <div class="text-danger text-center mt-2">
+                                                    <h5 style="margin-bottom: 0px;">
+                                                        Логин слишком длинный (больше 100 символов)
+                                                    </h5>
+                                                </div>
+                                            <?php
+                                            }
+                                            ?>
                                         </form>
                                     </div>
                                 </div>
                                 <div class="card mt-3 shadow p-3 bg-while rounded">
                                     <div class="card-body">
-                                        <form action="user_settings.php?id=" method="POST" enctype="multipart/form-data">
+                                        <form action="settings.php?id=<?php $_SESSION['logged_user']['id'] ?>" method="POST" enctype="multipart/form-data">
                                             <div class="form-group">
                                                 <label for="exampleFormControlSelect1">Аватар</label>
                                                 <select class="form-control" id="exampleFormControlSelect1" name="image">
@@ -104,7 +166,7 @@ $user = R::findOne('users', "`id` = ?", array($id));
                                 </div>
                                 <div class="card mt-3 shadow p-3 bg-while rounded">
                                     <div class="card-body">
-                                        <form action="user_settings.php?id=" method="POST" class="needs-validation" novalidate>
+                                        <form action="settings.php?id=<?php $_SESSION['logged_user']['id'] ?>" method="POST" class="needs-validation" novalidate>
                                             <div class="form-group">
                                                 <label for="exampleFormControlTextarea1">Старый пароль</label>
                                                 <input type="text" class="form-control" name="password_old" id="text" required>
@@ -125,26 +187,42 @@ $user = R::findOne('users', "`id` = ?", array($id));
                             <div class="col-md-12 col-lg-6 pl-lg-2 pl-0 pr-lg-0 pr-0">
                                 <div class="card mt-3 shadow p-3 bg-while rounded">
                                     <div class="card-body">
-                                        <form action="user_settings.php?id=" method="POST" class="needs-validation" novalidate>
+                                        <form action="settings.php?id=<?php $_SESSION['logged_user']['id'] ?>" method="POST" class="needs-validation" novalidate>
                                             <div class="form-group">
                                                 <label for="exampleFormControlTextarea1">Email</label>
-                                                <input name="email" type="email" value="имэил" class="form-control" id="regInputEmail" placeholder="Ваш Email" required>
+                                                <input name="email" type="email" value="<?php echo $user->email ?>" class="form-control" id="regInputEmail" placeholder="Ваш Email" required>
                                             </div>
                                             <div class="invalid-feedback">
                                                 Введите Email
                                             </div>
                                             <button class="btn btn-primary btn-block" type="submit" name="do_save_email">Сохранить</button>
-
-
+                                            <?php
+                                            if ($do_save_email_error == 'no') {
+                                                ?>
+                                                <div class="text-success text-center mt-2">
+                                                    <h5 style="margin-bottom: 0px;">
+                                                        Email изменён
+                                                    </h5>
+                                                </div>
+                                            <?php
+                                            } else if ($do_save_email_error == 'yes') { ?>
+                                                <div class="text-danger text-center mt-2">
+                                                    <h5 style="margin-bottom: 0px;">
+                                                        Email занят
+                                                    </h5>
+                                                </div>
+                                            <?php
+                                            }
+                                            ?>
                                         </form>
                                     </div>
                                 </div>
                                 <div class="card mt-3 shadow p-3 bg-while rounded">
                                     <div class="card-body">
-                                        <form action="user_settings.php?id=" method="POST">
+                                        <form action="settings.php?id=<?php $_SESSION['logged_user']['id'] ?>" method="POST">
                                             <div class="form-group">
                                                 <label for="exampleFormControlTextarea1">О себе</label>
-                                                <textarea class="form-control" name="about" id="exampleFormControlTextarea1" rows="3">Иоформация о себе</textarea>
+                                                <textarea class="form-control" name="about" id="exampleFormControlTextarea1" rows="3"><?php echo $user->about ?></textarea>
                                             </div>
                                             <button class="btn btn-primary btn-block" type="submit" name="do_save_about">Сохранить</button>
                                         </form>

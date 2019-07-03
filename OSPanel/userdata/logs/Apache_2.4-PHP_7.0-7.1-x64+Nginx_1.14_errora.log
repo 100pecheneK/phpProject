@@ -1,41 +1,5 @@
-[Mon Jul 01 09:13:17.949501 2019] [mpm_winnt:notice] [pid 1292:tid 596] AH00455: Apache/2.4.38 (Win64) configured -- resuming normal operations
-[Mon Jul 01 09:13:17.950500 2019] [mpm_winnt:notice] [pid 1292:tid 596] AH00456: Apache Lounge VC14 Server built: Feb 28 2019 15:05:01
-[Mon Jul 01 09:13:17.950500 2019] [core:notice] [pid 1292:tid 596] AH00094: Command line: 'C:\\Users\\Admin\\Documents\\github\\phpproject\\ospanel\\modules\\http\\Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14\\bin\\httpd.exe -d C:/Users/Admin/Documents/GitHub/phpProject/OSPanel/modules/http/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14 -f c:\\users\\admin\\documents\\github\\phpproject\\ospanel\\modules\\http\\Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14\\conf\\httpd.conf'
-[Mon Jul 01 09:13:17.956497 2019] [mpm_winnt:notice] [pid 1292:tid 596] AH00418: Parent: Created child process 6936
-[Mon Jul 01 09:13:19.347851 2019] [mpm_winnt:notice] [pid 6936:tid 700] AH00354: Child: Starting 32 worker threads.
-"tag" не является внутренней или внешней
-командой, исполняемой программой или пакетным файлом.
-"tag" не является внутренней или внешней
-командой, исполняемой программой или пакетным файлом.
-"tag" не является внутренней или внешней
-командой, исполняемой программой или пакетным файлом.
-"tag" не является внутренней или внешней
-командой, исполняемой программой или пакетным файлом.
-"tag" не является внутренней или внешней
-командой, исполняемой программой или пакетным файлом.
-"tag" не является внутренней или внешней
-командой, исполняемой программой или пакетным файлом.
-"tag" не является внутренней или внешней
-командой, исполняемой программой или пакетным файлом.
-"tag" не является внутренней или внешней
-командой, исполняемой программой или пакетным файлом.
-"tag" не является внутренней или внешней
-командой, исполняемой программой или пакетным файлом.
-"tag" не является внутренней или внешней
-командой, исполняемой программой или пакетным файлом.
-"tag" не является внутренней или внешней
-командой, исполняемой программой или пакетным файлом.
-"tag" не является внутренней или внешней
-командой, исполняемой программой или пакетным файлом.
-"tag" не является внутренней или внешней
-командой, исполняемой программой или пакетным файлом.
-"tag" не является внутренней или внешней
-командой, исполняемой программой или пакетным файлом.
-"tag" не является внутренней или внешней
-командой, исполняемой программой или пакетным файлом.
-"tag" не является внутренней или внешней
-командой, исполняемой программой или пакетным файлом.
-"tag" не является внутренней или внешней
-командой, исполняемой программой или пакетным файлом.
-"tag" не является внутренней или внешней
-командой, исполняемой программой или пакетным файлом.
+[Wed Jul 03 13:17:58.125026 2019] [mpm_winnt:notice] [pid 2412:tid 748] AH00455: Apache/2.4.38 (Win64) configured -- resuming normal operations
+[Wed Jul 03 13:17:58.125026 2019] [mpm_winnt:notice] [pid 2412:tid 748] AH00456: Apache Lounge VC14 Server built: Feb 28 2019 15:05:01
+[Wed Jul 03 13:17:58.125026 2019] [core:notice] [pid 2412:tid 748] AH00094: Command line: 'C:\\Users\\Admin\\Documents\\github\\phpproject\\ospanel\\modules\\http\\Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14\\bin\\httpd.exe -d C:/Users/Admin/Documents/GitHub/phpProject/OSPanel/modules/http/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14 -f c:\\users\\admin\\documents\\github\\phpproject\\ospanel\\modules\\http\\Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14\\conf\\httpd.conf'
+[Wed Jul 03 13:17:58.152859 2019] [mpm_winnt:notice] [pid 2412:tid 748] AH00418: Parent: Created child process 1292
+[Wed Jul 03 13:17:59.072310 2019] [mpm_winnt:notice] [pid 1292:tid 720] AH00354: Child: Starting 32 worker threads.

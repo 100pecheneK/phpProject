@@ -21,7 +21,10 @@
         </form>
         <?php
         if (isset($_SESSION['logged_user'])) : ?>
-            <a class="btn btn-outline-primary mr-sm-2" href="/pages/user/profile.php?id=<?php echo $_SESSION['logged_user']['id'] ?>"><?php echo $_SESSION['logged_user']['login'] ?></a>
+            <a class="btn btn-outline-primary mr-sm-2" href="/pages/user/profile.php?id=<?php echo $_SESSION['logged_user']['id'] ?>">
+                <?php echo  mb_substr($_SESSION['logged_user']['login'], 0, 10, 'utf-8');
+                if (iconv_strlen($_SESSION['logged_user']['login']) > 10) echo '...'; ?>
+            </a>
             <a class="btn btn-primary mr-sm-2" href="/logout.php">Выйти</a>
         <?php else : ?>
             <a class="btn btn-outline-primary mr-sm-2" href="/login.php">Войти</a>

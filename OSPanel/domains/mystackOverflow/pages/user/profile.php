@@ -2,7 +2,12 @@
 require "../../includes/db.php";
 
 $id = $_GET['id'];
+$data = $_POST;
+$id = $_GET['id'];
 $user = R::findOne('users', "`id` = ?", array($id));
+if ($user == Null) {
+    header('Location: /');
+ }
 ?>
 <!DOCTYPE html>
 <html lang="ru">
