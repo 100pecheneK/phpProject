@@ -6,13 +6,10 @@
     <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link active" href="#" role="button">Все вопросы</a>
+                <a class="nav-link active" href="/pages/questions.php" role="button">Все вопросы</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" role="button">Метки</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" role="button">Пользователи</a>
+                <a class="nav-link" href="/pages/users.php" role="button">Пользователи</a>
             </li>
         </ul>
         <form class="form-inline mt-2 mt-md-0">
