@@ -13140,3 +13140,181 @@ ROW_FORMAT = COMPACT
 		  1063 Query	DELETE FROM `answerslikes`  WHERE ( `id` IN ( '127' ) )
 		  1063 Query	SELECT COUNT(*) FROM `answerslikes` WHERE `answer_id` = 39 -- keep-cache
 		  1063 Quit	
+190715 20:15:46	  1064 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		  1064 Query	SET NAMES utf8mb4
+		  1064 Query	SELECT `questions`.*  FROM `questions`  WHERE `id` = '167' LIMIT 1   -- keep-cache
+		  1064 Query	SELECT `users`.*  FROM `users`  WHERE `id` = NULL LIMIT 1   -- keep-cache
+		  1064 Query	show tables
+		  1064 Query	DESCRIBE `questions`
+		  1064 Query	UPDATE `questions` SET  `title` = 'Тесовый заголовок' , `text` = 'Тестовый текст' , `users_id` = NULL , `views` = 135 , `rep` = '0' , `date` = '2019-07-14 12:54:52' , `user_id` = '1'  WHERE id = '167'
+		  1064 Query	SELECT * FROM answers WHERE question_id = '167' ORDER BY rep DESC
+		  1064 Query	SELECT `users`.*  FROM `users`  WHERE `id` = '1' LIMIT 1   -- keep-cache
+		  1064 Query	SELECT COUNT(*) FROM `answerslikes` WHERE `answer_id` = '39' AND `user_id` = '1' -- keep-cache
+		  1064 Query	SELECT COUNT(*) FROM `answerslikes` WHERE `answer_id` = '39' -- keep-cache
+		  1064 Query	SELECT COUNT(*) FROM `answerslikes` WHERE `answer_id` = '40' AND `user_id` = '1' -- keep-cache
+		  1064 Query	SELECT COUNT(*) FROM `answerslikes` WHERE `answer_id` = '40' -- keep-cache
+		  1064 Quit	
+190715 20:15:47	  1065 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		  1065 Query	SET NAMES utf8mb4
+		  1065 Query	SELECT COUNT(*) FROM `answerslikes` WHERE `answer_id` = 39 AND `user_id` = 1 -- keep-cache
+		  1065 Query	show tables
+		  1065 Query	DESCRIBE `answerslikes`
+		  1065 Query	INSERT INTO `answerslikes` ( id, `answer_id`,`user_id` ) VALUES
+			( NULL, 39,1 )
+		  1065 Query	SELECT COUNT(*) FROM `answerslikes` WHERE `answer_id` = 39 -- keep-cache
+		  1065 Quit	
+190715 20:15:48	  1066 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		  1066 Query	SET NAMES utf8mb4
+		  1066 Query	SELECT COUNT(*) FROM `answerslikes` WHERE `answer_id` = 39 AND `user_id` = 1 -- keep-cache
+		  1066 Query	SELECT `answerslikes`.*  FROM `answerslikes` WHERE `answer_id` = 39 AND `user_id` = 1 LIMIT 1   -- keep-cache
+		  1066 Query	DELETE FROM `answerslikes`  WHERE ( `id` IN ( '128' ) )
+		  1066 Query	SELECT COUNT(*) FROM `answerslikes` WHERE `answer_id` = 39 -- keep-cache
+		  1066 Quit	
+190715 20:15:49	  1067 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		  1067 Query	SET NAMES utf8mb4
+		  1067 Query	SELECT COUNT(*) FROM `answerslikes` WHERE `answer_id` = 39 AND `user_id` = 1 -- keep-cache
+		  1067 Query	show tables
+		  1067 Query	DESCRIBE `answerslikes`
+		  1067 Query	INSERT INTO `answerslikes` ( id, `answer_id`,`user_id` ) VALUES
+			( NULL, 39,1 )
+		  1067 Query	SELECT COUNT(*) FROM `answerslikes` WHERE `answer_id` = 39 -- keep-cache
+		  1067 Quit	
+		  1068 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		  1068 Query	SET NAMES utf8mb4
+		  1068 Query	SELECT COUNT(*) FROM `answerslikes` WHERE `answer_id` = 39 AND `user_id` = 1 -- keep-cache
+		  1068 Query	SELECT `answerslikes`.*  FROM `answerslikes` WHERE `answer_id` = 39 AND `user_id` = 1 LIMIT 1   -- keep-cache
+		  1068 Query	DELETE FROM `answerslikes`  WHERE ( `id` IN ( '129' ) )
+		  1068 Query	SELECT COUNT(*) FROM `answerslikes` WHERE `answer_id` = 39 -- keep-cache
+		  1068 Quit	
+190715 20:15:50	  1069 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		  1069 Query	SET NAMES utf8mb4
+		  1069 Query	SELECT COUNT(*) FROM `answerslikes` WHERE `answer_id` = 40 AND `user_id` = 1 -- keep-cache
+		  1069 Query	show tables
+		  1069 Query	DESCRIBE `answerslikes`
+		  1069 Query	INSERT INTO `answerslikes` ( id, `answer_id`,`user_id` ) VALUES
+			( NULL, 40,1 )
+		  1069 Query	SELECT COUNT(*) FROM `answerslikes` WHERE `answer_id` = 40 -- keep-cache
+		  1069 Quit	
+190715 20:15:51	  1070 Connect	root@WIN-R5EIFKQSONE as anonymous on mystackoverflow
+		  1070 Query	SET NAMES utf8mb4
+		  1070 Query	SELECT COUNT(*) FROM `answerslikes` WHERE `answer_id` = 40 AND `user_id` = 1 -- keep-cache
+		  1070 Query	SELECT `answerslikes`.*  FROM `answerslikes` WHERE `answer_id` = 40 AND `user_id` = 1 LIMIT 1   -- keep-cache
+		  1070 Query	DELETE FROM `answerslikes`  WHERE ( `id` IN ( '130' ) )
+		  1070 Query	SELECT COUNT(*) FROM `answerslikes` WHERE `answer_id` = 40 -- keep-cache
+		  1070 Quit	
+190715 20:16:14	  1071 Connect	root@localhost as anonymous on 
+		  1071 Query	SELECT @@version, @@version_comment
+		  1071 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		  1071 Query	SET lc_messages = 'ru_RU'
+		  1072 Connect	root@localhost as anonymous on 
+		  1072 Query	SHOW TABLES FROM `mystackoverflow`
+		  1071 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		  1071 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		  1071 Query	SHOW SESSION VARIABLES LIKE 'FOREIGN_KEY_CHECKS'
+		  1071 Query	SELECT DATABASE()
+		  1071 Init DB	mystackoverflow
+		  1071 Query	SELECT * FROM `answerslikes` LIMIT 0, 50
+		  1071 Query	SELECT TABLE_NAME
+            FROM information_schema.VIEWS
+            WHERE TABLE_SCHEMA = 'mystackoverflow'
+                AND TABLE_NAME = 'answerslikes'
+		  1071 Query	SELECT @@lower_case_table_names
+		  1071 Query	SELECT *,
+                `TABLE_SCHEMA`       AS `Db`,
+                `TABLE_NAME`         AS `Name`,
+                `TABLE_TYPE`         AS `TABLE_TYPE`,
+                `ENGINE`             AS `Engine`,
+                `ENGINE`             AS `Type`,
+                `VERSION`            AS `Version`,
+                `ROW_FORMAT`         AS `Row_format`,
+                `TABLE_ROWS`         AS `Rows`,
+                `AVG_ROW_LENGTH`     AS `Avg_row_length`,
+                `DATA_LENGTH`        AS `Data_length`,
+                `MAX_DATA_LENGTH`    AS `Max_data_length`,
+                `INDEX_LENGTH`       AS `Index_length`,
+                `DATA_FREE`          AS `Data_free`,
+                `AUTO_INCREMENT`     AS `Auto_increment`,
+                `CREATE_TIME`        AS `Create_time`,
+                `UPDATE_TIME`        AS `Update_time`,
+                `CHECK_TIME`         AS `Check_time`,
+                `TABLE_COLLATION`    AS `Collation`,
+                `CHECKSUM`           AS `Checksum`,
+                `CREATE_OPTIONS`     AS `Create_options`,
+                `TABLE_COMMENT`      AS `Comment`
+            FROM `information_schema`.`TABLES` t
+            WHERE `TABLE_SCHEMA` 
+                IN ('mystackoverflow')
+                AND t.`TABLE_NAME`  = 'answerslikes' ORDER BY Name ASC
+		  1071 Query	SELECT COUNT(*) FROM `mystackoverflow`.`answerslikes`
+		  1071 Query	SELECT COUNT(*) FROM `mystackoverflow`.`answerslikes`
+		  1071 Query	SHOW WARNINGS
+		  1071 Query	SELECT COUNT(*) FROM `mystackoverflow`.`answerslikes`
+		  1071 Query	SHOW CREATE TABLE `mystackoverflow`.`answerslikes`
+		  1071 Query	SHOW FULL COLUMNS FROM `mystackoverflow`.`answerslikes`
+		  1071 Query	SHOW INDEXES FROM `mystackoverflow`.`answerslikes`
+		  1071 Query	SHOW SESSION VARIABLES LIKE 'FOREIGN_KEY_CHECKS'
+		  1071 Query	SELECT (COUNT(DB_first_level) DIV 100) * 100 from (  SELECT distinct SUBSTRING_INDEX(SCHEMA_NAME,  '_', 1)  DB_first_level  FROM INFORMATION_SCHEMA.SCHEMATA  WHERE `SCHEMA_NAME` < 'mystackoverflow' ) t
+		  1071 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`, (SELECT DB_first_level FROM ( SELECT DISTINCT SUBSTRING_INDEX(SCHEMA_NAME, '_', 1) DB_first_level FROM INFORMATION_SCHEMA.SCHEMATA WHERE TRUE ) t ORDER BY DB_first_level ASC LIMIT 0, 100) t2 WHERE TRUE AND 1 = LOCATE(CONCAT(DB_first_level, '_'), CONCAT(SCHEMA_NAME, '_')) ORDER BY SCHEMA_NAME ASC
+		  1071 Query	SELECT COUNT(*) FROM ( SELECT DISTINCT SUBSTRING_INDEX(SCHEMA_NAME, '_', 1) DB_first_level FROM INFORMATION_SCHEMA.SCHEMATA WHERE TRUE ) t
+		  1071 Query	SELECT COUNT(*) FROM ( SELECT DISTINCT SUBSTRING_INDEX(SCHEMA_NAME, '_', 1) DB_first_level FROM INFORMATION_SCHEMA.SCHEMATA WHERE TRUE ) t
+		  1071 Query	SELECT `PRIVILEGE_TYPE` FROM `INFORMATION_SCHEMA`.`USER_PRIVILEGES` WHERE GRANTEE='''root''@''%''' AND PRIVILEGE_TYPE='TRIGGER'
+		  1071 Query	SHOW  COLUMNS FROM `mystackoverflow`.`answerslikes`
+		  1072 Quit	
+		  1071 Quit	
+		  1073 Connect	root@localhost as anonymous on 
+		  1073 Query	SELECT @@version, @@version_comment
+		  1073 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		  1073 Query	SET lc_messages = 'ru_RU'
+		  1074 Connect	root@localhost as anonymous on 
+		  1073 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		  1073 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		  1074 Quit	
+		  1073 Quit	
+		  1075 Connect	root@localhost as anonymous on 
+		  1075 Query	SELECT @@version, @@version_comment
+		  1075 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		  1075 Query	SET lc_messages = 'ru_RU'
+		  1076 Connect	root@localhost as anonymous on 
+		  1075 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		  1075 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		  1075 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`, (SELECT DB_first_level FROM ( SELECT DISTINCT SUBSTRING_INDEX(SCHEMA_NAME, '_', 1) DB_first_level FROM INFORMATION_SCHEMA.SCHEMATA WHERE TRUE ) t ORDER BY DB_first_level ASC LIMIT 0, 100) t2 WHERE TRUE AND 1 = LOCATE(CONCAT(DB_first_level, '_'), CONCAT(SCHEMA_NAME, '_')) ORDER BY SCHEMA_NAME ASC
+		  1075 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA`='mystackoverflow' AND `TABLE_TYPE`='BASE TABLE'
+		  1075 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA`='mystackoverflow' AND `TABLE_TYPE`!='BASE TABLE'
+		  1075 Query	SELECT @@lower_case_table_names
+		  1075 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`ROUTINES` WHERE `ROUTINE_SCHEMA` ='mystackoverflow' AND `ROUTINE_TYPE`='FUNCTION'
+		  1075 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`ROUTINES` WHERE `ROUTINE_SCHEMA` ='mystackoverflow'AND `ROUTINE_TYPE`='PROCEDURE'
+		  1075 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`EVENTS` WHERE `EVENT_SCHEMA` ='mystackoverflow'
+		  1075 Query	SELECT `TABLE_NAME` AS `name` FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA`='mystackoverflow' AND `TABLE_TYPE`='BASE TABLE' ORDER BY `TABLE_NAME` ASC LIMIT 0, 50
+		  1075 Query	SELECT COUNT(*) FROM ( SELECT DISTINCT SUBSTRING_INDEX(SCHEMA_NAME, '_', 1) DB_first_level FROM INFORMATION_SCHEMA.SCHEMATA WHERE TRUE ) t
+		  1075 Query	SELECT COUNT(*) FROM ( SELECT DISTINCT SUBSTRING_INDEX(SCHEMA_NAME, '_', 1) DB_first_level FROM INFORMATION_SCHEMA.SCHEMATA WHERE TRUE ) t
+		  1075 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA`='mystackoverflow' AND `TABLE_TYPE`='BASE TABLE'
+		  1075 Query	SELECT COUNT(*) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA`='mystackoverflow' AND `TABLE_TYPE`='BASE TABLE'
+		  1076 Quit	
+		  1075 Quit	
+		  1077 Connect	root@localhost as anonymous on 
+		  1077 Query	SELECT @@version, @@version_comment
+		  1077 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		  1077 Query	SET lc_messages = 'ru_RU'
+		  1078 Connect	root@localhost as anonymous on 
+		  1077 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+190715 20:16:15	  1077 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		  1078 Quit	
+		  1077 Quit	
+		  1079 Connect	root@localhost as anonymous on 
+		  1079 Query	SELECT @@version, @@version_comment
+		  1079 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		  1079 Query	SET lc_messages = 'ru_RU'
+		  1080 Connect	root@localhost as anonymous on 
+		  1079 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		  1079 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		  1080 Quit	
+		  1079 Quit	
+		  1081 Connect	root@localhost as anonymous on 
+		  1081 Query	SELECT @@version, @@version_comment
+		  1081 Query	SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci'
+		  1081 Query	SET lc_messages = 'ru_RU'
+		  1082 Connect	root@localhost as anonymous on 
+		  1081 Query	SELECT `SCHEMA_NAME` FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+		  1081 Query	SET collation_connection = 'utf8mb4_unicode_ci'
+		  1082 Quit	
+		  1081 Quit	

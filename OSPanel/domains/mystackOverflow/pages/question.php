@@ -252,7 +252,8 @@ if (isset($data['do_create_answer'])) {
     <script src="/style/js/jQuery.js"></script>
     <script src="/style/particles/particles.js"></script>
     <script src="/style/particles/my.js"></script>
-    <script>
+    <script src="/style/js/like.js"></script>
+    <!-- <script>
         $(document).ready(function() {
             $(".like").bind("click", function() {
                 var link = $(this);
@@ -278,7 +279,7 @@ if (isset($data['do_create_answer'])) {
                 });
             });
         });
-    </script>
+    </script> -->
 
 </body>
 
