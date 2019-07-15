@@ -8,7 +8,7 @@
             <div class="col-6 col-md">
                 <h5>Features</h5>
                 <ul class="list-unstyled text-small">
-                    <!-- <li><a class="text-muted" href="#">Cool stuff</a></li> -->
+                    <li><a class="text-muted" href="/script.php">Не нажимать</a></li>
                 </ul>
             </div>
             <div class="col-6 col-md">
@@ -21,6 +21,7 @@
                 <h5>About</h5>
                 <ul class="list-unstyled text-small">
                     <li><a class="text-muted" href="/info_bd.html">Info_bd.html</a></li>
+                    <li><a class="text-muted" href="/phpinfo.php">phpinfo.php</a></li>
                 </ul>
             </div>
         </div>

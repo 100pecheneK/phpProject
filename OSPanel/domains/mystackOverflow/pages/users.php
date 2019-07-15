@@ -1,3 +1,31 @@
+<?php
+require "../includes/db.php";
+
+
+// запросы пегинации
+$per_page = 18;
+$page = 1;
+
+if (isset($_GET['page'])) {
+    $page = (int) $_GET['page'];
+}
+
+$total_count = R::count('questions');
+
+$total_pages = ceil($total_count / $per_page);
+
+if ($page < 1 || $page > $total_pages) {
+    $page = 1;
+}
+
+$offset = ($per_page * $page) - $per_page;
+
+$users = $questions = R::findAll('users', "ORDER BY `rep` LIMIT $offset, $per_page");
+$users_exist = true;
+// /запросы пегинации
+
+
+?>
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -19,7 +47,8 @@
     </style>
 </head>
 
-<body class="bg-light">
+<body class="bg-<?php if (5 < date('G') && date('G') < 20) echo 'light';
+                else echo 'dark' ?>">
     <!-- Партиклы -->
     <div id="particles-js"></div>
     <div id="page-wrapper">
@@ -35,7 +64,27 @@
                     <div class="media-body pb-3 mb-0 lh-125 border-bottom border-gray">
                         <div class="container">
                             <div class="row">
-                               
+                                <?php
+                                foreach ($users as $user) {
+                                    ?>
+                                    <div class="col-12 col-6 col-md-4 col-lg-3 col-xl-2">
+                                        <div class="card mt-3 shadow p-0 bg-while rounded">
+                                            <div class="card-body p-0">
+                                                <img src="/images/users/<?php echo $user['image'] ?>" class="card-img-top" alt="...">
+                                                <div class="card-body p-1">
+                                                    <a href="/pages/user/profile.php?id=<?php echo $user['id'] ?>">
+                                                        <p class="card-text text-center">
+                                                            <?php echo  mb_substr($user['login'], 0, 10, 'utf-8');
+                                                            if (iconv_strlen($user['login']) > 10) echo '...';  ?>
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php
+                                }
+                                ?>
                             </div>
                         </div>
                     </div>
@@ -43,6 +92,62 @@
 
         </main>
         <!-- /Главный блок -->
+        <!-- Пегинация -->
+        <div class="col-12">
+            <?php
+            if ($total_pages <= 4) {
+                $page_left = 1;
+                $page_right = $total_pages;
+            } else {
+                $page_show = 2;
+                $page_left = $page - $page_show;
+                $page_right = $page + $page_show;
+                if ($page_left < 1) {
+                    $page_left = 1;
+                }
+                if ($page_right > $total_pages) {
+                    $page_right = $total_pages;
+                };
+                if ($page == 2) {
+                    $page_right = 5;
+                }
+                if ($page == 1) {
+                    $page_right = 5;
+                }
+                if ($page == $total_pages - 1) {
+                    $page_left = $total_pages - 4;
+                }
+                if ($page == $total_pages) {
+                    $page_left = $total_pages - 4;
+                }
+            }
+            if ($users_exist) {
+                ?>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center ">
+                        <li class="page-item shadow <?php if ($page <= 1) echo 'disabled'; ?> "><a class="page-link" href="/pages/users.php?page=<?php echo 1; ?>">Первая</a></li>
+                        <li class="page-item shadow <?php if ($page <= 1) echo 'disabled'; ?> "><a class="page-link" href="/pages/users.php?page=<?php echo ($page - 1); ?>">Назад</a></li>
+                        <li class="page-item shadow <?php if ($page >= $total_pages) echo 'disabled'; ?> "><a class="page-link" href="/pages/users.php?page=<?php echo ($page + 1); ?>">Вперёд</a></li>
+                        <li class="page-item shadow <?php if ($page >= $total_pages) echo 'disabled'; ?> "><a class="page-link" href="/pages/users.php?page=<?php echo $total_pages; ?>">Последняя</a></li>
+                    </ul>
+                    <ul class="pagination justify-content-center ">
+                        <li class="page-item shadow <?php if ($page - 3 < 1) echo 'disabled'; ?>"><a class="page-link" href="/pages/users.php?page=<?php echo ($page - 3); ?>">...</a></li>
+                        <?php
+                        for ($i = $page_left; $i <= $page_right; $i++) {
+                            ?>
+                            <li class="page-item shadow <?php if ($i == $page) echo 'disabled'; ?>"><a class="page-link" href="/pages/users.php?page=<?php echo $i; ?>"><?php echo $i ?></a></li>
+                        <?php
+                        }
+                        ?>
+                        <li class="page-item shadow <?php if ($page + 3 > $total_pages) echo 'disabled'; ?>"><a class="page-link" href="/pages/users.php?page=<?php echo ($page + 3); ?>">...</a></li>
+                    </ul>
+
+                </nav>
+            <?php
+            }
+            ?>
+        </div>
+        <!-- Конец пегинации -->
         <!-- Футер -->
         <?php include "../includes/foot.php" ?>
         <!-- /Футер -->

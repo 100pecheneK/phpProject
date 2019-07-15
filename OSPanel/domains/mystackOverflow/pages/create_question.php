@@ -9,10 +9,10 @@ if (isset($_SESSION['logged_user'])) {
         $user = R::findOne('users', "`id` = ?", array($id));
 
         $question = R::dispense('questions');
-        $question->title = $data['title'];
-        $question->text = $data['text'];
+        $question->title = strip_tags($data['title']);
+        $question->text = strip_tags($data['text']);
 
-        $user->ownQuestList[] = $question;
+        $user->ownQuestionList[] = $question;
         $id = R::store($user);
 
         if (isset($data['tags'])) {
@@ -48,8 +48,6 @@ if (isset($_SESSION['logged_user'])) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap 4 -->
     <link rel="stylesheet" href="/style/bootstrap4/bootstrap.min.css">
-    <link rel="stylesheet" href="/style/bootstrap-select-1.13.9/dist/css/bootstrap-select.css">
-
     <link rel="stylesheet" href="/style/my.css">
     <link rel="stylesheet" href="/style/particles/particles.css">
 
@@ -60,7 +58,8 @@ if (isset($_SESSION['logged_user'])) {
     </style>
 </head>
 
-<body class="bg-light">
+<body class="bg-<?php if (5 < date('G') && date('G') < 20) echo 'light';
+                else echo 'dark' ?>">
     <!-- Партиклы -->
     <div id="particles-js"></div>
     <div id="page-wrapper">
@@ -80,19 +79,27 @@ if (isset($_SESSION['logged_user'])) {
                                     <form action="create_question.php" method="POST">
                                         <div class="form-group">
                                             <label for="exampleFormControlInput1">Кратко изложите суть вопроса</label>
-                                            <input type="text" class="form-control" id="exampleFormControlInput1" name="title">
+                                            <input type="text" class="form-control" id="exampleFormControlInput1" name="title" required>
+                                            <div class="invalid-feedback">
+                                                Это поле обязательно
+                                            </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleFormControlTextarea1">Распишите вопрос подробнее</label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name='text'></textarea>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name='text' required></textarea>
+                                            <div class="invalid-feedback">
+                                                Это поле обязательно
+                                            </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleFormControlSelect1">Тэги</label>
-                                            <select class="selectpicker" id="exampleFormControlSelect1" data-live-search="true" multiple name="tags[]">
+                                            <select class="form-control" id="exampleFormControlSelect1" data-live-search="true" multiple name="tags[]">
                                                 <?php
                                                 $tags = R::findAll('tags');
                                                 foreach ($tags as $tag) {
-                                                    echo '<option value="' . $tag->name . '">' . $tag->name . '</option>';
+                                                    ?>
+                                                    <option value="<?php echo $tag->name ?>"><?php echo $tag->name ?></option>
+                                                <?php
                                                 }
                                                 ?>
                                             </select>
@@ -121,9 +128,8 @@ if (isset($_SESSION['logged_user'])) {
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <!-- Latest compiled and minified JavaScript -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script> -->
-    <script src="/style/my.js"></script>
+    <script src="/style/js/bootstrap.min.js"></script>
+    <script src="/style/js/jQuery.js"></script>    
     <script src="/style/particles/particles.js"></script>
     <script src="/style/particles/my.js"></script>
 </body>

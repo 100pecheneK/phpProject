@@ -3,6 +3,7 @@ require "includes/db.php";
 
 $data = $_POST;
 
+
 if (isset($data['do_login'])) {
     $errors = array();
     $suc = '';
@@ -11,7 +12,7 @@ if (isset($data['do_login'])) {
         if (password_verify($data['password'], $user->password)) {
             $_SESSION['logged_user'] = $user;
             $suc = 'good';
-            header('Location: /');
+            header("Location: /");
         } else {
             $errors[] = 'Пароль не верный!';
             $suc = 'bad';
@@ -38,7 +39,8 @@ if (isset($data['do_login'])) {
 
 </head>
 
-<body class="bg-light">
+<body class="bg-<?php if (5 < date('G') && date('G') < 20) echo 'light';
+                else echo 'dark' ?>">
     <!-- Партиклы -->
     <div id="particles-js"></div>
     <div id="page-wrapper">
@@ -124,6 +126,7 @@ if (isset($data['do_login'])) {
             }, false);
         })();
     </script>
+        <script src="/style/js/jQuery.js"></script>
     <script src="/style/particles/particles.js"></script>
     <script src="/style/particles/my.js"></script>
 </body>

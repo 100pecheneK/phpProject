@@ -1,5 +1,6 @@
 <?php
 require "includes/db.php";
+include "includes/diff.php";
 
 $questions = R::findAll('questions', "ORDER BY `id` DESC LIMIT 20");
 
@@ -13,6 +14,7 @@ $questions = R::findAll('questions', "ORDER BY `id` DESC LIMIT 20");
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap 4 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/bootstrap4/bootstrap.min.css">
     <link rel="stylesheet" href="style/particles/particles.css">
     <title>Мой Stack Overflow</title>
     <style>
@@ -20,7 +22,8 @@ $questions = R::findAll('questions', "ORDER BY `id` DESC LIMIT 20");
     </style>
 </head>
 
-<body class="bg-light">
+<body class="bg-<?php if (5 < date('G') && date('G') < 20) echo 'light';
+                else echo 'dark' ?>">
     <!-- Партиклы -->
     <div id="particles-js"></div>
     <div id="page-wrapper">
@@ -47,28 +50,32 @@ $questions = R::findAll('questions', "ORDER BY `id` DESC LIMIT 20");
                 <!-- Блок вопроса -->
                 <?php
                 foreach ($questions as $question) {
+                    // rep
+                    $rep = $question->rep;
+                    // answersCount
+                    $answersCount = R::count('answers', 'question_id = ?', array($question->id));
+                    // views
+                    $views = $question->views;
                     ?>
                     <div class="media text-muted pt-3">
                         <div class="media-body pb-3 mb-0 lh-125 border-bottom border-gray">
                             <div class="container">
-
-
                                 <div class="row">
                                     <div class="col-md-12 col-lg-3">
                                         <div class="row">
                                             <div class="col-4 p-1"><a class="btn btn-light btn-sm btn-block" href="#" role="button">
-                                                    <span class="badge badge-light">4</span>голоса</a>
+                                                    <span class="badge badge-light"><?php echo $rep ?></span>голоса</a>
                                             </div>
                                             <div class="col-4 p-1"><a class="btn btn-light btn-sm btn-block" href="#" role="button">
-                                                    <span class="badge badge-light">4</span>ответа</a></div>
+                                                    <span class="badge badge-light"><?php echo $answersCount ?></span>ответа</a></div>
                                             <div class="col-4 p-1"><a class="btn btn-light btn-sm btn-block" href="#" role="button">
-                                                    <span class="badge badge-light">4</span>показа</a></div>
+                                                    <span class="badge badge-light"><?php echo $views ?></span>показа</a></div>
                                         </div>
                                     </div>
                                     <div class="col-md-12 col-lg-9">
                                         <div class="row">
                                             <div class="col-12">
-                                                <a href="#">
+                                                <a href="pages/question.php?id=<?php echo $question->id ?>">
                                                     <!-- Превью текста не больше 250 символов(указывать в создании вопроса) -->
                                                     <h3 class="text-break"><?php echo $question->title ?></h3>
                                                 </a>
@@ -97,14 +104,30 @@ $questions = R::findAll('questions', "ORDER BY `id` DESC LIMIT 20");
                                                 ?>
                                             </div>
                                             <div class="col-md-12 col-lg-6 text-right">
-                                                <a href="#" title="08-06-19 16:29"><span>изменён 6 минут назад</span></a>
+                                                <?php
+                                                if ($answersCount == 0) {
+                                                    $time = 'Добавлен ' . diffphp($question->date) . ' назад';
+                                                } else if ($answersCount > 0) {
+                                                    $lastAnswer = R::getCol("SELECT `date` FROM `answers` WHERE `question_id` = $question->id  ORDER BY `id` DESC LIMIT 1");
+                                                    $time = 'Последний ответ дан ' . diffphp($lastAnswer[0]) . ' назад';
+                                                }
+                                                ?>
+                                                <a href="#" title="08-06-19 16:29"><span> <?php echo $time ?></span></a>
                                                 <?php $user = R::load('users', $question->users_id); ?>
                                                 <a href="/pages/user/profile.php?id=<?php echo $user->id ?>"><span>
                                                         <?php
                                                         echo $user->login;
                                                         ?>
                                                     </span></a>
-                                                <span class="text-muted" title="уровень репутации">200к</span>
+                                                <?php
+                                                if ($user->rep > 1000) {
+                                                    $user_rep = ($user->rep / 1000) . 'k';
+                                                    if ($user->rep > 1000000) {
+                                                        $user_rep = ($user->rep / 1000000) . 'm';
+                                                    }
+                                                }
+                                                ?>
+                                                <span class="text-muted" title="уровень репутации"><?php echo $user_rep ?></span>
                                             </div>
                                         </div>
                                     </div>
@@ -115,11 +138,12 @@ $questions = R::findAll('questions', "ORDER BY `id` DESC LIMIT 20");
                 <?php
                 }
                 ?>
-                <!-- Конец блока вопроса -->
-
                 <small class="d-block text-right mt-3">
-                    <a class="btn btn-primary" href="#" role="button">Больше вопросов</a>
+                    <a class="btn btn-primary" href="/pages/questions.php" role="button">Больше вопросов</a>
                 </small>
+            </div>
+            <!-- Конец блока вопроса -->
+
         </main>
         <!-- /Главный бло -->
         <!-- Футер -->
@@ -135,6 +159,8 @@ $questions = R::findAll('questions', "ORDER BY `id` DESC LIMIT 20");
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <!-- <script src="/style/js/bootstrap.min.js"></script> -->
+    <script src="/style/js/jQuery.js"></script>
     <script src="style/particles/particles.js"></script>
     <script src="style/particles/my.js"></script>
 

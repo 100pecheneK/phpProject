@@ -3,7 +3,6 @@ require "../../includes/db.php";
 
 $id = $_GET['id'];
 $data = $_POST;
-$id = $_GET['id'];
 $user = R::findOne('users', "`id` = ?", array($id));
 if ($user == Null) {
     header('Location: /');
@@ -23,7 +22,8 @@ if ($user == Null) {
     <title>Профиль</title>
 </head>
 
-<body class="bg-light">
+<body class="bg-<?php if (5 < date('G') && date('G') < 20) echo 'light';
+                else echo 'dark' ?>">
     <!-- Партиклы -->
     <div id="particles-js"></div>
     <div id="page-wrapper">
@@ -81,7 +81,7 @@ if ($user == Null) {
                                         <div class="row">
                                             <div class="col">
                                                 <div class="card text-center mx-auto shadow p-3 bg-while rounded" style="width: 12rem;">
-                                                    <img class="card-img-top mx-auto " src="../images/users/" alt="Card image cap" style="width: 10rem !important; height: 12rem !important; margin-top: 15px">
+                                                    <img class="card-img-top mx-auto " src="/images/users/<?php echo $user['image'] ?>" alt="Card image cap">
                                                     <div class="card-body">
                                                         <div class="row">
                                                             <div class="col-sm-12 mx-auto">
@@ -151,6 +151,7 @@ if ($user == Null) {
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="/style/js/bootstrap.min.js"></script>
     <script src="/style/js/my.js"></script>
+    <script src="/style/js/jQuery.js"></script>
     <script src="/style/particles/particles.js"></script>
     <script src="/style/particles/my.js"></script>
 </body>

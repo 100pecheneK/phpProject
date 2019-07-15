@@ -11,6 +11,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="/pages/users.php" role="button">Пользователи</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="" role="button"><?php echo date('y m d h:i:s') ?></a>
+            </li>
         </ul>
         <form class="form-inline mt-2 mt-md-0">
             <input class="form-control my-2 mr-sm-2" type="text" placeholder="Поиск" aria-label="Search">

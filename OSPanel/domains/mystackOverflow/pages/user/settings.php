@@ -2,19 +2,22 @@
 require "../../includes/db.php";
 
 $data = $_POST;
-$id = $_SESSION['logged_user']['id'];
+$id = $_GET['id'];
 $user = R::findOne('users', "`id` = ?", array($id));
-
+if ($user == Null) {
+    header('Location: /');
+}
 // do_save_login
 if (isset($data['do_save_login'])) {
     $do_save_login_error = '';
     if (iconv_strlen($data['login']) > 100) {
         $do_save_login_error = 'maxLen';
     } else if ($data['login'] != '') {
-        $user->login = $data['login'];
+        $user->login = strip_tags($data['login']);
         R::store($user);
         $_SESSION['logged_user'] = $user;
         $do_save_login_error = 'no';
+        header('Location: /pages/user/settings.php?id=' . $id);
     } else {
         $do_save_login_error = 'yes';
     }
@@ -31,6 +34,7 @@ if (isset($data['do_save_password'])) {
         $user->password = password_hash($data['password_new'], PASSWORD_DEFAULT);
         R::store($user);
         $do_save_password_error = 'no';
+        header('Location: /pages/user/settings.php?id=' . $id);
     } else {
         $do_save_password_error = 'yes';
     }
@@ -44,9 +48,10 @@ if (isset($data['do_save_email'])) {
     if ($email != Null) {
         $do_save_email_error = 'yes';
     } else {
-        $user->email = $data['email'];
+        $user->email = strip_tags($data['email']);
         R::store($user);
         $do_save_email_errors[] = 'no';
+        header('Location: /pages/user/settings.php?id=' . $id);
     }
 }
 
@@ -56,11 +61,58 @@ if (isset($data['do_save_about'])) {
     if (iconv_strlen($data['login']) > 1000) {
         $do_save_about_error = 'maxLen';
     } else {
-        $user->about = $data['about'];
+        $user->about = strip_tags($data['about']);
         R::store($user);
         $do_save_about_error = 'no';
+        header('Location: /pages/user/settings.php?id=' . $id);
     }
 }
+// do_save_color
+
+if (isset($data['do_save_color'])) {
+    $user = R::findOne('users', "`id` = ?", array($id));
+    $do_save_color = '';
+    switch ($data['color']) {
+        case '1':
+            $user->color = 'primary';
+            $color = 'primary';
+            $do_save_color = 'no';
+            break;
+        case '2':
+            $user->color = 'secondary';
+            $color = 'secondary';
+            $do_save_color = 'no';
+            break;
+        case '3':
+            $user->color = 'while';
+            $color = 'while';
+            $do_save_color = 'no';
+            break;
+        case '4':
+            $user->color = 'dark';
+            $color = 'dark';
+            $do_save_color = 'no';
+            break;
+        case '5':
+            $user->color = 'info';
+            $color = 'info';
+            $do_save_color = 'no';
+            break;
+        case '6':
+            $user->color = 'light';
+            $color = 'light';
+            $do_save_color = 'no';
+            break;
+        default:
+            $user->color = 'primary';
+            $color = 'primary';
+            $do_save_color = 'no';
+            break;
+    }
+    header('Location: /pages/user/settings.php?id=' . $id);
+    R::store($user);
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -77,7 +129,8 @@ if (isset($data['do_save_about'])) {
 
 </head>
 
-<body class="bg-light">
+<body class="bg-<?php if (5 < date('G') && date('G') < 20) echo 'light';
+                else echo 'dark' ?>">
     <!-- Партиклы -->
     <div id="particles-js"></div>
     <div id="page-wrapper">
@@ -133,7 +186,7 @@ if (isset($data['do_save_about'])) {
                                 <div class="col-md-12 col-lg-6 pl-lg-0 pl-0 pr-lg-2 pr-0">
                                     <div class="card mt-3 shadow p-3 bg-while rounded">
                                         <div class="card-body">
-                                            <form action="settings.php?id=<?php $_SESSION['logged_user']['id'] ?>" method="POST">
+                                            <form action="settings.php?id=<?php echo $_SESSION['logged_user']['id'] ?>" method="POST">
                                                 <div class="form-group">
                                                     <label for="exampleFormControlTextarea1">Отображаемое имя</label>
                                                     <input type="text" class="form-control" name="login" id="text" value="<?php echo $user->login ?>">
@@ -169,7 +222,7 @@ if (isset($data['do_save_about'])) {
                                     </div>
                                     <div class="card mt-3 shadow p-3 bg-while rounded">
                                         <div class="card-body">
-                                            <form action="settings.php?id=<?php $_SESSION['logged_user']['id'] ?>" method="POST" enctype="multipart/form-data">
+                                            <form action="settings.php?id=<?php echo $_SESSION['logged_user']['id'] ?>" method="POST" enctype="multipart/form-data">
                                                 <div class="form-group">
                                                     <label for="exampleFormControlSelect1">Аватар</label>
                                                     <select class="form-control" id="exampleFormControlSelect1" name="image">
@@ -188,7 +241,7 @@ if (isset($data['do_save_about'])) {
                                     </div>
                                     <div class="card mt-3 shadow p-3 bg-while rounded">
                                         <div class="card-body">
-                                            <form action="settings.php?id=<?php $_SESSION['logged_user']['id'] ?>" method="POST" class="needs-validation" novalidate>
+                                            <form action="settings.php?id=<?php echo $_SESSION['logged_user']['id'] ?>" method="POST" class="needs-validation" novalidate>
                                                 <div class="form-group">
                                                     <label for="exampleFormControlTextarea1">Старый пароль</label>
                                                     <input type="text" class="form-control" name="password_old" id="text" required>
@@ -227,7 +280,7 @@ if (isset($data['do_save_about'])) {
                                 <div class="col-md-12 col-lg-6 pl-lg-2 pl-0 pr-lg-0 pr-0">
                                     <div class="card mt-3 shadow p-3 bg-while rounded">
                                         <div class="card-body">
-                                            <form action="settings.php?id=<?php $_SESSION['logged_user']['id'] ?>" method="POST" class="needs-validation" novalidate>
+                                            <form action="settings.php?id=<?php echo $_SESSION['logged_user']['id'] ?>" method="POST" class="needs-validation" novalidate>
                                                 <div class="form-group">
                                                     <label for="exampleFormControlTextarea1">Email</label>
                                                     <input name="email" type="email" value="<?php echo $user->email ?>" class="form-control" id="regInputEmail" placeholder="Ваш Email" required>
@@ -259,7 +312,7 @@ if (isset($data['do_save_about'])) {
                                     </div>
                                     <div class="card mt-3 shadow p-3 bg-while rounded">
                                         <div class="card-body">
-                                            <form action="settings.php?id=<?php $_SESSION['logged_user']['id'] ?>" method="POST">
+                                            <form action="settings.php?id=<?php echo $_SESSION['logged_user']['id'] ?>" method="POST">
                                                 <div class="form-group">
                                                     <label for="exampleFormControlTextarea1">О себе</label>
                                                     <textarea class="form-control" name="about" id="exampleFormControlTextarea1" rows="3"><?php echo $user->about ?></textarea>
@@ -286,6 +339,35 @@ if (isset($data['do_save_about'])) {
                                             </form>
                                         </div>
                                     </div>
+                                    <div class="card mt-3 shadow p-3 bg-while rounded">
+                                        <div class="card-body">
+                                            <form action="settings.php?id=<?php echo $_SESSION['logged_user']['id'] ?>" method="POST" enctype="multipart/form-data">
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlSelect1">Цвет</label>
+                                                    <select class="form-control" id="exampleFormControlSelect1" name="color">
+                                                        <!-- selected -->
+                                                        <option class="bg-primary text-white" value="1" <?php echo $user->color == 'primary' ? 'selected' : '' ?>>primary</option>
+                                                        <option class="bg-secondary text-white" value="2" <?php echo $user->color == 'secondary' ? 'selected' : '' ?>>secondary</option>
+                                                        <option class="bg-while text-dark" value="3" <?php echo $user->color == 'while' ? 'selected' : '' ?>>while</option>
+                                                        <option class="bg-dark text-white" value="4" <?php echo $user->color == 'dark' ? 'selected' : '' ?>>dark</option>
+                                                        <option class="bg-info text-white" value="5" <?php echo $user->color == 'info' ? 'selected' : '' ?>>info</option>
+                                                        <option class="bg-light text-dark" value="6" <?php echo $user->color == 'light' ? 'selected' : '' ?>>light</option>
+                                                    </select>
+                                                </div>
+                                                <button class="btn btn-primary btn-block" type="submit" name="do_save_color">Сохранить</button>
+                                                <?php
+                                                if ($do_save_color == 'no') {
+                                                    ?>
+                                                    <div class="text-success text-center mt-2">
+                                                        <h5 style="margin-bottom: 0px;">
+                                                            Установлен цвет <?php echo $color ?>
+                                                        </h5>
+                                                    </div>
+                                                <?php
+                                                } ?>
+                                            </form>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -306,6 +388,7 @@ if (isset($data['do_save_about'])) {
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="/style/js/bootstrap.min.js"></script>
     <script src="/style/js/my.js"></script>
+    <script src="/style/js/jQuery.js"></script>
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
         (function() {

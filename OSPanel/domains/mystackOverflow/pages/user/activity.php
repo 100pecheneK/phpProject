@@ -1,7 +1,6 @@
 <?php
 require "../../includes/db.php";
 
-$id = $_GET['id'];
 $data = $_POST;
 $id = $_GET['id'];
 $user = R::findOne('users', "`id` = ?", array($id));
@@ -27,7 +26,8 @@ if ($user == Null) {
 
 </head>
 
-<body class="bg-light">
+<body class="bg-<?php if (5 < date('G') && date('G') < 20) echo 'light';
+                else echo 'dark' ?>">
     <!-- Партиклы -->
     <div id="particles-js"></div>
     <div id="page-wrapper">
@@ -86,21 +86,20 @@ if ($user == Null) {
                                             <h3>Последние вопросы</h3>
                                         </div>
                                     </div>
-                                    <div class="card mt-3 shadow p-3 bg-while rounded">
-                                        <div class="card-body">
-                                            This is some text within a card body.
+                                    <?php
+                                    $questions = R::getAll('SELECT * FROM questions WHERE users_id = ? ORDER BY id DESC LIMIT 3', array($id));
+                                    foreach ($questions as $question) {
+                                        ?>
+                                        <div class="card mt-3 shadow p-3 bg-while rounded">
+                                            <div class="card-body">
+                                                <?php echo mb_substr($question['title'], 0, 100, 'utf-8');
+                                                if (iconv_strlen($question['title']) > 100) echo '...'; ?>
+                                            </div>
+                                            <a class="text-right text-muted" href="/pages/question.php?id=<?php echo $question['id'] ?>" role="button">Смотреть</a>
                                         </div>
-                                    </div>
-                                    <div class="card mt-3 shadow p-3 bg-while rounded">
-                                        <div class="card-body">
-                                            This lorem is some text within a card body.
-                                        </div>
-                                    </div>
-                                    <div class="card mt-3 shadow p-3 bg-while rounded">
-                                        <div class="card-body">
-                                            This is some text within a card body.
-                                        </div>
-                                    </div>
+                                    <?php
+                                    }
+                                    ?>
                                 </div>
                                 <div class="col-md-12 col-lg-6 pl-lg-2 pl-0 pr-lg-0 pr-0">
                                     <div class="card mt-3 shadow p-3 bg-while rounded">
@@ -108,21 +107,20 @@ if ($user == Null) {
                                             <h3>Последние ответы</h3>
                                         </div>
                                     </div>
-                                    <div class="card mt-3 shadow p-3 bg-while rounded">
-                                        <div class="card-body">
-                                            This is some text within a card body.
+                                    <?php
+                                    $answers = R::getAll('SELECT * FROM answers WHERE user_id = ? ORDER BY id DESC LIMIT 3', array($id));
+                                    foreach ($answers as $answer) {
+                                        ?>
+                                        <div class="card mt-3 shadow p-3 bg-while rounded">
+                                            <div class="card-body">
+                                                <?php echo mb_substr($answer['text'], 0, 100, 'utf-8');
+                                                if (iconv_strlen($answer['text']) > 100) echo '...'; ?>
+                                            </div>
+                                            <a class="text-right text-muted" href="/pages/question.php?id=<?php echo $answer['question_id'] ?>" role="button">Смотреть</a>
                                         </div>
-                                    </div>
-                                    <div class="card mt-3 shadow p-3 bg-while rounded">
-                                        <div class="card-body">
-                                            This is some text within a card body.
-                                        </div>
-                                    </div>
-                                    <div class="card mt-3 shadow p-3 bg-while rounded">
-                                        <div class="card-body">
-                                            This is some text within a card body.
-                                        </div>
-                                    </div>
+                                    <?php
+                                    }
+                                    ?>
                                 </div>
                             </div>
                         </div>
@@ -144,6 +142,7 @@ if ($user == Null) {
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="/style/js/bootstrap.min.js"></script>
     <script src="/style/js/my.js"></script>
+    <script src="/style/js/jQuery.js"></script>
     <script src="/style/particles/particles.js"></script>
     <script src="/style/particles/my.js"></script>
 </body>
