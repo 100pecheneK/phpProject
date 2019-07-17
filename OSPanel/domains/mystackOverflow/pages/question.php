@@ -38,7 +38,8 @@ if (isset($data['do_create_answer'])) {
 
     <link rel="stylesheet" href="/style/my.css">
     <link rel="stylesheet" href="/style/particles/particles.css">
-
+    <link rel="stylesheet" href="/style/fontawesome-free-5.9.0-web/css/all.css">
+    <link rel="stylesheet" href="/style/like.css">
     <title>Создать вопрос</title>
 
     <style>
@@ -126,7 +127,7 @@ if (isset($data['do_create_answer'])) {
                         $sort = 'id DESC';
                         break;
                     case 'old':
-                        $sort = 'id';
+                        $sort = 'id ASC';
                         break;
                     case 'rep':
                         $sort = 'rep DESC';
@@ -174,14 +175,13 @@ if (isset($data['do_create_answer'])) {
                                     <div class="row">
                                         <!-- Дата -->
                                         <?php
-
                                         $inter = diffphp($answer['date']);
                                         ?>
-                                        <div class="col-12 p-0">
+                                        <div class="col-12 p-0 pb-2 ">
                                             <small class="d-block text-right "><?php echo 'ответ дан ' . $inter . ' назад' ?></small>
                                         </div>
                                         <!-- Пользователь -->
-                                        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-1 p-0 text-break">
+                                        <div class="col-12 col-sm-4 col-md-3 col-lg-1 p-0 pb-2 text-break">
                                             <a href="/pages/user/profile.php?id=<?php echo $user['id'] ?>" class="d-block btn btn-<?php echo $textColor ?> text-<?php echo $bgTextColor ?> m-0 p-0 rounded">
                                                 <div class="col p-0">
                                                     <h6 class="badge text-center d-block m-0"><?php echo $i ?></h6>
@@ -194,10 +194,11 @@ if (isset($data['do_create_answer'])) {
                                                 </div>
                                                 <div class="col p-0">
                                                     <?php
-                                                    if ($user->rep > 1000) {
-                                                        $rep = ($user->rep / 1000) . 'k';
-                                                        if ($user->rep > 1000000) {
-                                                            $rep = ($user->rep / 1000000) . 'm';
+                                                    $rep = $user->rep;                            
+                                                    if ($rep > 1000) {
+                                                        $rep = ($rep / 1000) . 'k';
+                                                        if ($rep > 1000000) {
+                                                            $rep = ($rep / 1000000) . 'm';
                                                         }
                                                     }
                                                     ?>
@@ -205,21 +206,31 @@ if (isset($data['do_create_answer'])) {
                                                 </div>
                                             </a>
                                         </div>
-                                        <!-- Ответ -->
-                                        <div class="col-xs-12 col-sm-8 col-md-9 col-xs-10">
-                                            <h2 class="text-break m-0"><?php echo $answer['text'] ?></h2>
-                                            <p><?php echo $answer['rep'] ?></p>
+                                        <!-- Ответ и Лайк -->
+                                        <div class="col-12 col-sm-8 col-md-9 col-lg-11">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-10 col-lg-11">
+                                                    <h2 class="text-break m-0"><?php echo $answer['text'] ?></h2>
+                                                    <p><?php echo $answer['rep'] ?></p>
+                                                </div>
+                                                <div class="col-12 col-sm-2 col-lg-1 p-0">
+                                                    <?php
+                                                    $like_check = R::count('answerslikes', 'WHERE `answer_id` = ? AND `user_id` = ?', array($answer['id'], $_SESSION['logged_user']['id']));
+                                                    $count = R::count('answerslikes', 'WHERE `answer_id` = ?', array($answer['id']));
+                                                    ?>
+                                                    <button class="float-right  btn btn-block btn-outline-light <?php if ($like_check == 1) echo 'active' ?> like" data-ans="<?php echo $answer['id'] ?>" data-usr="<?php echo $_SESSION['logged_user']['id'] ?>">
+                                                        <div class="row justify-content-between">
+                                                            <div class="col-4 col-sm-12">
+                                                                <i class="far fa-heart"></i>
+                                                            </div>
+                                                            <div class="col-8 col-sm-12">
+                                                                <div id="count_like" class="text-center"><?php echo $count ?></div>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <!-- Лайк -->
-                                        <div class="col-2">
-                                            <?php
-                                            $like_check = R::count('answerslikes', 'WHERE `answer_id` = ? AND `user_id` = ?', array($answer['id'], $_SESSION['logged_user']['id']));
-                                            ?>
-                                            <button class="like btn btn-secondary <?php if ($like_check == 1) echo 'active' ?>" data-ans="<?php echo $answer['id'] ?>" data-usr="<?php echo $_SESSION['logged_user']['id'] ?>">Лайк <div id="count_like"><?php $count = R::count('answerslikes', 'WHERE `answer_id` = ?', array($answer['id']));
-                                                                    echo $count ?></div></button>
-                                            
-                                        </div>
-
                                     </div>
                                 </div>
                             </div>

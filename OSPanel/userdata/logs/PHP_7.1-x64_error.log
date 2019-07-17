@@ -1,218 +1,162 @@
-[15-Jul-2019 16:50:58 Asia/Yekaterinburg] PHP Fatal error:  Uncaught Error: Call to undefined function int() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php:4
+[17-Jul-2019 14:42:39 Asia/Yekaterinburg] PHP Warning:  Attempt to assign property of non-object in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 16
+[17-Jul-2019 14:42:39 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: OODB Store requires a bean, got: array in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:9692
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(9960): RedBeanPHP\OODB->unboxIfNeeded(Array)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12641): RedBeanPHP\OODB->store(Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(17): RedBeanPHP\Facade::store(Array)
+#3 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 9692
+[17-Jul-2019 14:42:42 Asia/Yekaterinburg] PHP Warning:  Attempt to assign property of non-object in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 16
+[17-Jul-2019 14:42:42 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: OODB Store requires a bean, got: array in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:9692
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(9960): RedBeanPHP\OODB->unboxIfNeeded(Array)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12641): RedBeanPHP\OODB->store(Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(17): RedBeanPHP\Facade::store(Array)
+#3 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 9692
+[17-Jul-2019 14:42:49 Asia/Yekaterinburg] PHP Warning:  Attempt to assign property of non-object in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 16
+[17-Jul-2019 14:42:49 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: OODB Store requires a bean, got: array in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:9692
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(9960): RedBeanPHP\OODB->unboxIfNeeded(Array)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12641): RedBeanPHP\OODB->store(Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(17): RedBeanPHP\Facade::store(Array)
+#3 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 9692
+[17-Jul-2019 14:42:56 Asia/Yekaterinburg] PHP Warning:  Attempt to assign property of non-object in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 16
+[17-Jul-2019 14:42:56 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: OODB Store requires a bean, got: array in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:9692
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(9960): RedBeanPHP\OODB->unboxIfNeeded(Array)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12641): RedBeanPHP\OODB->store(Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(17): RedBeanPHP\Facade::store(Array)
+#3 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 9692
+[17-Jul-2019 14:43:16 Asia/Yekaterinburg] PHP Warning:  Attempt to assign property of non-object in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 17
+[17-Jul-2019 14:43:16 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: OODB Store requires a bean, got: array in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:9692
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(9960): RedBeanPHP\OODB->unboxIfNeeded(Array)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12641): RedBeanPHP\OODB->store(Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(18): RedBeanPHP\Facade::store(Array)
+#3 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 9692
+[17-Jul-2019 14:43:40 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: OODB Store requires a bean, got: array in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:9692
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(9960): RedBeanPHP\OODB->unboxIfNeeded(Array)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12641): RedBeanPHP\OODB->store(Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(18): RedBeanPHP\Facade::store(Array)
+#3 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 9692
+[17-Jul-2019 14:43:59 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: OODB Store requires a bean, got: array in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:9692
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(9960): RedBeanPHP\OODB->unboxIfNeeded(Array)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12641): RedBeanPHP\OODB->store(Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(18): RedBeanPHP\Facade::store(Array)
+#3 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 9692
+[17-Jul-2019 14:44:43 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: OODB Store requires a bean, got: array in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:9692
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(9960): RedBeanPHP\OODB->unboxIfNeeded(Array)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12641): RedBeanPHP\OODB->store(Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(18): RedBeanPHP\Facade::store(Array)
+#3 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 9692
+[17-Jul-2019 14:45:11 Asia/Yekaterinburg] PHP Fatal error:  Uncaught Error: Unsupported operand types in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php:16
 Stack trace:
 #0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 4
-[15-Jul-2019 16:51:03 Asia/Yekaterinburg] PHP Fatal error:  Uncaught Error: Call to undefined function int() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php:4
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 16
+[17-Jul-2019 14:45:15 Asia/Yekaterinburg] PHP Fatal error:  Uncaught Error: Unsupported operand types in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php:16
 Stack trace:
 #0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 4
-[15-Jul-2019 16:51:14 Asia/Yekaterinburg] PHP Fatal error:  Uncaught Error: Call to undefined function int() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php:4
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 16
+[17-Jul-2019 14:48:12 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Identifier does not conform to RedBeanPHP security policies. in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:5880
 Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 4
-[15-Jul-2019 16:51:24 Asia/Yekaterinburg] PHP Fatal error:  Uncaught Error: Call to undefined function int() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php:4
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(5946): RedBeanPHP\QueryWriter\AQueryWriter->check(NULL)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(6059): RedBeanPHP\QueryWriter\AQueryWriter->esc(NULL)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(8742): RedBeanPHP\QueryWriter\AQueryWriter->queryRecord(NULL, Array, 'WHERE `id` = ? ...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(9906): RedBeanPHP\Repository->find(NULL, Array, 'WHERE `id` = ? ...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(10466): RedBeanPHP\OODB->find(NULL, Array, 'WHERE `id` = ? ... in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 5880
+[17-Jul-2019 14:48:30 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Identifier does not conform to RedBeanPHP security policies. in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:5880
 Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 4
-[15-Jul-2019 16:52:21 Asia/Yekaterinburg] PHP Fatal error:  Uncaught Error: Call to undefined function int() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php:4
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(5946): RedBeanPHP\QueryWriter\AQueryWriter->check(NULL)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(6059): RedBeanPHP\QueryWriter\AQueryWriter->esc(NULL)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(8742): RedBeanPHP\QueryWriter\AQueryWriter->queryRecord(NULL, Array, 'WHERE `id` = ? ...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(9906): RedBeanPHP\Repository->find(NULL, Array, 'WHERE `id` = ? ...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(10466): RedBeanPHP\OODB->find(NULL, Array, 'WHERE `id` = ? ... in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 5880
+[17-Jul-2019 14:49:13 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Identifier does not conform to RedBeanPHP security policies. in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:5880
 Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 4
-[15-Jul-2019 16:52:23 Asia/Yekaterinburg] PHP Fatal error:  Uncaught Error: Call to undefined function int() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php:4
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(5946): RedBeanPHP\QueryWriter\AQueryWriter->check(NULL)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(6059): RedBeanPHP\QueryWriter\AQueryWriter->esc(NULL)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(8742): RedBeanPHP\QueryWriter\AQueryWriter->queryRecord(NULL, Array, 'WHERE `id` = ? ...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(9906): RedBeanPHP\Repository->find(NULL, Array, 'WHERE `id` = ? ...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(10466): RedBeanPHP\OODB->find(NULL, Array, 'WHERE `id` = ? ... in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 5880
+[17-Jul-2019 14:50:12 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Identifier does not conform to RedBeanPHP security policies. in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:5880
 Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 4
-[15-Jul-2019 16:52:23 Asia/Yekaterinburg] PHP Fatal error:  Uncaught Error: Call to undefined function int() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php:4
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(5946): RedBeanPHP\QueryWriter\AQueryWriter->check(NULL)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(6059): RedBeanPHP\QueryWriter\AQueryWriter->esc(NULL)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(8742): RedBeanPHP\QueryWriter\AQueryWriter->queryRecord(NULL, Array, 'WHERE `id` = ? ...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(9906): RedBeanPHP\Repository->find(NULL, Array, 'WHERE `id` = ? ...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(10466): RedBeanPHP\OODB->find(NULL, Array, 'WHERE `id` = ? ... in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 5880
+[17-Jul-2019 14:50:52 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Identifier does not conform to RedBeanPHP security policies. in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:5880
 Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 4
-[15-Jul-2019 16:52:29 Asia/Yekaterinburg] PHP Fatal error:  Uncaught Error: Call to undefined function int() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php:4
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(5946): RedBeanPHP\QueryWriter\AQueryWriter->check(NULL)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(6059): RedBeanPHP\QueryWriter\AQueryWriter->esc(NULL)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(8742): RedBeanPHP\QueryWriter\AQueryWriter->queryRecord(NULL, Array, 'WHERE `id` = ? ...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(9906): RedBeanPHP\Repository->find(NULL, Array, 'WHERE `id` = ? ...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(10466): RedBeanPHP\OODB->find(NULL, Array, 'WHERE `id` = ? ... in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 5880
+[17-Jul-2019 14:52:02 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Identifier does not conform to RedBeanPHP security policies. in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:5880
 Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 4
-[15-Jul-2019 16:52:30 Asia/Yekaterinburg] PHP Fatal error:  Uncaught Error: Call to undefined function int() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php:4
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(5946): RedBeanPHP\QueryWriter\AQueryWriter->check(NULL)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(6059): RedBeanPHP\QueryWriter\AQueryWriter->esc(NULL)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(8742): RedBeanPHP\QueryWriter\AQueryWriter->queryRecord(NULL, Array, 'WHERE `id` = ? ...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(9906): RedBeanPHP\Repository->find(NULL, Array, 'WHERE `id` = ? ...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(10466): RedBeanPHP\OODB->find(NULL, Array, 'WHERE `id` = ? ... in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 5880
+[17-Jul-2019 14:53:12 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: OODB Store requires a bean, got: array in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:9692
 Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 4
-[15-Jul-2019 16:52:31 Asia/Yekaterinburg] PHP Fatal error:  Uncaught Error: Call to undefined function int() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php:4
-Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 4
-[15-Jul-2019 16:52:32 Asia/Yekaterinburg] PHP Fatal error:  Uncaught Error: Call to undefined function int() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php:4
-Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 4
-[15-Jul-2019 16:52:32 Asia/Yekaterinburg] PHP Fatal error:  Uncaught Error: Call to undefined function int() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php:4
-Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 4
-[15-Jul-2019 16:52:32 Asia/Yekaterinburg] PHP Fatal error:  Uncaught Error: Call to undefined function int() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php:4
-Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 4
-[15-Jul-2019 16:52:32 Asia/Yekaterinburg] PHP Fatal error:  Uncaught Error: Call to undefined function int() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php:4
-Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 4
-[15-Jul-2019 16:58:27 Asia/Yekaterinburg] PHP Fatal error:  Uncaught Error: Call to undefined function int() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php:4
-Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 4
-[15-Jul-2019 16:59:21 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Invalid type: answers_likes in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:15723
-Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(15797): RedBeanPHP\Util\DispenseHelper::checkType('answers_likes')
-#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12838): RedBeanPHP\Util\DispenseHelper::dispense(Object(RedBeanPHP\OODB), 'answers_likes', 1, false)
-#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(13): RedBeanPHP\Facade::dispense('answers_likes')
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(9960): RedBeanPHP\OODB->unboxIfNeeded(Array)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12641): RedBeanPHP\OODB->store(Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\pages\question.php(221): RedBeanPHP\Facade::store(Array)
 #3 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 15723
-[15-Jul-2019 16:59:24 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Invalid type: answers_likes in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:15723
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 9692
+[17-Jul-2019 14:55:10 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: OODB Store requires a bean, got: string in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:9692
 Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(15797): RedBeanPHP\Util\DispenseHelper::checkType('answers_likes')
-#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12838): RedBeanPHP\Util\DispenseHelper::dispense(Object(RedBeanPHP\OODB), 'answers_likes', 1, false)
-#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(13): RedBeanPHP\Facade::dispense('answers_likes')
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(9960): RedBeanPHP\OODB->unboxIfNeeded('39')
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12641): RedBeanPHP\OODB->store('39')
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\pages\question.php(223): RedBeanPHP\Facade::store('39')
 #3 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 15723
-[15-Jul-2019 16:59:25 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Invalid type: answers_likes in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:15723
-Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(15797): RedBeanPHP\Util\DispenseHelper::checkType('answers_likes')
-#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12838): RedBeanPHP\Util\DispenseHelper::dispense(Object(RedBeanPHP\OODB), 'answers_likes', 1, false)
-#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(13): RedBeanPHP\Facade::dispense('answers_likes')
-#3 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 15723
-[15-Jul-2019 16:59:25 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Invalid type: answers_likes in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:15723
-Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(15797): RedBeanPHP\Util\DispenseHelper::checkType('answers_likes')
-#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12838): RedBeanPHP\Util\DispenseHelper::dispense(Object(RedBeanPHP\OODB), 'answers_likes', 1, false)
-#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(13): RedBeanPHP\Facade::dispense('answers_likes')
-#3 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 15723
-[15-Jul-2019 16:59:26 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Invalid type: answers_likes in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:15723
-Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(15797): RedBeanPHP\Util\DispenseHelper::checkType('answers_likes')
-#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12838): RedBeanPHP\Util\DispenseHelper::dispense(Object(RedBeanPHP\OODB), 'answers_likes', 1, false)
-#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(13): RedBeanPHP\Facade::dispense('answers_likes')
-#3 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 15723
-[15-Jul-2019 16:59:26 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Invalid type: answers_likes in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:15723
-Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(15797): RedBeanPHP\Util\DispenseHelper::checkType('answers_likes')
-#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12838): RedBeanPHP\Util\DispenseHelper::dispense(Object(RedBeanPHP\OODB), 'answers_likes', 1, false)
-#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(13): RedBeanPHP\Facade::dispense('answers_likes')
-#3 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 15723
-[15-Jul-2019 16:59:26 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Invalid type: answers_likes in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:15723
-Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(15797): RedBeanPHP\Util\DispenseHelper::checkType('answers_likes')
-#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12838): RedBeanPHP\Util\DispenseHelper::dispense(Object(RedBeanPHP\OODB), 'answers_likes', 1, false)
-#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(13): RedBeanPHP\Facade::dispense('answers_likes')
-#3 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 15723
-[15-Jul-2019 16:59:27 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Invalid type: answers_likes in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:15723
-Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(15797): RedBeanPHP\Util\DispenseHelper::checkType('answers_likes')
-#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12838): RedBeanPHP\Util\DispenseHelper::dispense(Object(RedBeanPHP\OODB), 'answers_likes', 1, false)
-#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(13): RedBeanPHP\Facade::dispense('answers_likes')
-#3 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 15723
-[15-Jul-2019 16:59:28 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Invalid type: answers_likes in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:15723
-Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(15797): RedBeanPHP\Util\DispenseHelper::checkType('answers_likes')
-#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12838): RedBeanPHP\Util\DispenseHelper::dispense(Object(RedBeanPHP\OODB), 'answers_likes', 1, false)
-#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(13): RedBeanPHP\Facade::dispense('answers_likes')
-#3 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 15723
-[15-Jul-2019 17:03:15 Asia/Yekaterinburg] PHP Fatal error:  Uncaught Error: Using $this when not in object context in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php:7
-Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 7
-[15-Jul-2019 17:03:16 Asia/Yekaterinburg] PHP Fatal error:  Uncaught Error: Using $this when not in object context in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php:7
-Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 7
-[15-Jul-2019 17:05:20 Asia/Yekaterinburg] PHP Fatal error:  Uncaught Error: Call to undefined function alert() in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php:5
-Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php on line 5
-[15-Jul-2019 17:16:51 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Invalid type: answers_likes in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:15723
-Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(15797): RedBeanPHP\Util\DispenseHelper::checkType('answers_likes')
-#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12838): RedBeanPHP\Util\DispenseHelper::dispense(Object(RedBeanPHP\OODB), 'answers_likes', 1, false)
-#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(11): RedBeanPHP\Facade::dispense('answers_likes')
-#3 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 15723
-[15-Jul-2019 17:19:03 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Invalid type: answers_likes in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:15723
-Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(15797): RedBeanPHP\Util\DispenseHelper::checkType('answers_likes')
-#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12838): RedBeanPHP\Util\DispenseHelper::dispense(Object(RedBeanPHP\OODB), 'answers_likes', 1, false)
-#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(11): RedBeanPHP\Facade::dispense('answers_likes')
-#3 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 15723
-[15-Jul-2019 17:19:18 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Invalid type: answers_likes in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:15723
-Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(15797): RedBeanPHP\Util\DispenseHelper::checkType('answers_likes')
-#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12838): RedBeanPHP\Util\DispenseHelper::dispense(Object(RedBeanPHP\OODB), 'answers_likes', 1, false)
-#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(11): RedBeanPHP\Facade::dispense('answers_likes')
-#3 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 15723
-[15-Jul-2019 17:19:53 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Invalid type: answers_likes in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:15723
-Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(15797): RedBeanPHP\Util\DispenseHelper::checkType('answers_likes')
-#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12838): RedBeanPHP\Util\DispenseHelper::dispense(Object(RedBeanPHP\OODB), 'answers_likes', 1, false)
-#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(11): RedBeanPHP\Facade::dispense('answers_likes')
-#3 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 15723
-[15-Jul-2019 17:19:59 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Invalid type: answers_likes in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:15723
-Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(15797): RedBeanPHP\Util\DispenseHelper::checkType('answers_likes')
-#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12838): RedBeanPHP\Util\DispenseHelper::dispense(Object(RedBeanPHP\OODB), 'answers_likes', 1, false)
-#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(11): RedBeanPHP\Facade::dispense('answers_likes')
-#3 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 15723
-[15-Jul-2019 17:20:00 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Invalid type: answers_likes in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:15723
-Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(15797): RedBeanPHP\Util\DispenseHelper::checkType('answers_likes')
-#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12838): RedBeanPHP\Util\DispenseHelper::dispense(Object(RedBeanPHP\OODB), 'answers_likes', 1, false)
-#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(11): RedBeanPHP\Facade::dispense('answers_likes')
-#3 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 15723
-[15-Jul-2019 17:20:00 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Invalid type: answers_likes in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:15723
-Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(15797): RedBeanPHP\Util\DispenseHelper::checkType('answers_likes')
-#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12838): RedBeanPHP\Util\DispenseHelper::dispense(Object(RedBeanPHP\OODB), 'answers_likes', 1, false)
-#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(11): RedBeanPHP\Facade::dispense('answers_likes')
-#3 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 15723
-[15-Jul-2019 17:20:00 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Invalid type: answers_likes in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:15723
-Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(15797): RedBeanPHP\Util\DispenseHelper::checkType('answers_likes')
-#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12838): RedBeanPHP\Util\DispenseHelper::dispense(Object(RedBeanPHP\OODB), 'answers_likes', 1, false)
-#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(11): RedBeanPHP\Facade::dispense('answers_likes')
-#3 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 15723
-[15-Jul-2019 17:20:00 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Invalid type: answers_likes in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:15723
-Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(15797): RedBeanPHP\Util\DispenseHelper::checkType('answers_likes')
-#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12838): RedBeanPHP\Util\DispenseHelper::dispense(Object(RedBeanPHP\OODB), 'answers_likes', 1, false)
-#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(11): RedBeanPHP\Facade::dispense('answers_likes')
-#3 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 15723
-[15-Jul-2019 17:20:36 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Invalid type: answers_likes in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:15723
-Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(15797): RedBeanPHP\Util\DispenseHelper::checkType('answers_likes')
-#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12838): RedBeanPHP\Util\DispenseHelper::dispense(Object(RedBeanPHP\OODB), 'answers_likes', 1, false)
-#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(11): RedBeanPHP\Facade::dispense('answers_likes')
-#3 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 15723
-[15-Jul-2019 17:20:58 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Invalid type: answers_likes in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:15723
-Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(15797): RedBeanPHP\Util\DispenseHelper::checkType('answers_likes')
-#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12838): RedBeanPHP\Util\DispenseHelper::dispense(Object(RedBeanPHP\OODB), 'answers_likes', 1, false)
-#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(11): RedBeanPHP\Facade::dispense('answers_likes')
-#3 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 15723
-[15-Jul-2019 17:27:44 Asia/Yekaterinburg] PHP Fatal error:  Uncaught [42000] - SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Array -- keep-cache' at line 1
-trace: #0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(1041): RedBeanPHP\Driver\RPDO->runQuery('SELECT `answers...', Array)
-#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(4167): RedBeanPHP\Driver\RPDO->GetAll('SELECT `answers...', Array)
-#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(6075): RedBeanPHP\Adapter\DBAdapter->get('SELECT `answers...', Array)
-#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(9338): RedBeanPHP\QueryWriter\AQueryWriter->queryRecord('answerslikes', Array)
-#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(9992): RedBeanPHP\R in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 774
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 9692
+[17-Jul-2019 15:05:39 Asia/Yekaterinburg] PHP Fatal error:  Uncaught [42000] - SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `id` =' at line 1
+trace: #0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(1041): RedBeanPHP\Driver\RPDO->runQuery('SELECT `user_id...', Array)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(1062): RedBeanPHP\Driver\RPDO->GetAll('SELECT `user_id...', Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(4189): RedBeanPHP\Driver\RPDO->GetCol('SELECT `user_id...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12222): RedBeanPHP\Adapter\DBAdapter->getCol('SELECT `user_id...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(13222): RedBeanPHP\Facade::query(' in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 774
+[17-Jul-2019 15:05:47 Asia/Yekaterinburg] PHP Fatal error:  Uncaught [42000] - SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `id` =' at line 1
+trace: #0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(1041): RedBeanPHP\Driver\RPDO->runQuery('SELECT `user_id...', Array)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(1062): RedBeanPHP\Driver\RPDO->GetAll('SELECT `user_id...', Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(4189): RedBeanPHP\Driver\RPDO->GetCol('SELECT `user_id...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12222): RedBeanPHP\Adapter\DBAdapter->getCol('SELECT `user_id...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(13222): RedBeanPHP\Facade::query(' in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 774
+[17-Jul-2019 15:06:02 Asia/Yekaterinburg] PHP Fatal error:  Uncaught [42000] - SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `id` = 39' at line 1
+trace: #0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(1041): RedBeanPHP\Driver\RPDO->runQuery('SELECT `user_id...', Array)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(1062): RedBeanPHP\Driver\RPDO->GetAll('SELECT `user_id...', Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(4189): RedBeanPHP\Driver\RPDO->GetCol('SELECT `user_id...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12222): RedBeanPHP\Adapter\DBAdapter->getCol('SELECT `user_id...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(13222): RedBeanPHP\Facade::quer in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 774
+[17-Jul-2019 15:09:16 Asia/Yekaterinburg] PHP Fatal error:  Uncaught [42000] - SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '+= 1 WHERE id = 'Array'' at line 1
+trace: #0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(1118): RedBeanPHP\Driver\RPDO->runQuery('UPDATE users SE...', Array)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(4156): RedBeanPHP\Driver\RPDO->Execute('UPDATE users SE...', Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12222): RedBeanPHP\Adapter\DBAdapter->exec('UPDATE users SE...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(13136): RedBeanPHP\Facade::query('exec', 'UPDATE users SE...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(17): RedBeanPHP\Facade: in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 774
+[17-Jul-2019 15:09:19 Asia/Yekaterinburg] PHP Fatal error:  Uncaught [42000] - SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '+= 1 WHERE id = 'Array'' at line 1
+trace: #0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(1118): RedBeanPHP\Driver\RPDO->runQuery('UPDATE users SE...', Array)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(4156): RedBeanPHP\Driver\RPDO->Execute('UPDATE users SE...', Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12222): RedBeanPHP\Adapter\DBAdapter->exec('UPDATE users SE...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(13136): RedBeanPHP\Facade::query('exec', 'UPDATE users SE...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\func\like.php(17): RedBeanPHP\Facade: in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 774
+[17-Jul-2019 15:58:40 Asia/Yekaterinburg] PHP Fatal error:  Uncaught [22001] - SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'title' at row 1
+trace: #0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(1041): RedBeanPHP\Driver\RPDO->runQuery('INSERT INTO `qu...', Array)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(1081): RedBeanPHP\Driver\RPDO->GetAll('INSERT INTO `qu...', Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(4250): RedBeanPHP\Driver\RPDO->GetOne('INSERT INTO `qu...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(5855): RedBeanPHP\Adapter\DBAdapter->getCell('INSERT INTO `qu...', Array, 0)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(5982): RedBeanPHP\QueryWriter\AQueryWriter->insertRecord('questions', Array, Array)
+#5 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackO in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 774

@@ -12,6 +12,10 @@ if ($_SESSION['logged_user']) {
         $like->answer_id = $ans_id;
         $like->user_id = $usr_id;
         R::store($like);
+        
+        $answer_user_id = R::getCol("SELECT `user_id` FROM `answers` WHERE `id` = ?", array($ans_id));   
+        R::exec('UPDATE users SET rep = rep + 1 WHERE id = ?', array($answer_user_id[0]));
+
         $isActive = True;
     } else {
         // Удаляем
@@ -19,10 +23,15 @@ if ($_SESSION['logged_user']) {
             $ans_id, $usr_id
         ));
         R::trash($del);
+
+        $answer_user_id = R::getCol("SELECT `user_id` FROM `answers` WHERE `id` = ?", array($ans_id));   
+        R::exec('UPDATE users SET rep = rep - 1 WHERE id = ?', array($answer_user_id[0]));
+
         $isActive = false;
     }
     $count = R::count('answerslikes', 'WHERE `answer_id` = ?', array($ans_id));
-
+    R::exec('UPDATE answers SET rep = ? WHERE id = ?', array($count, $ans_id));
+    
     $out = array(
         // Количество лайков
         'count' => $count,
