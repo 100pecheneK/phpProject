@@ -48,187 +48,189 @@ if (isset($data['do_create_answer'])) {
 </head>
 
 <body class="bg-<?php if (5 < date('G') && date('G') < 20) echo 'light';
-                else echo 'dark' ?>">
-    <!-- Партиклы -->
-    <div id="particles-js"></div>
-    <div id="page-wrapper">
-        <!-- Навбар -->
-        <?php include "../includes/nav.php" ?>
-        <!-- /Навбар -->
-        <!-- Главный блок -->
-        <main role="main" class="container mt-4">
-            <div class="shadow p-3 mb-5 bg-white rounded">
-                <h6 class="pb-2 mb-0">Вопрос пользоателя - <a href="/pages/user/profile.php?id=<?php echo $user->id ?>"><?php echo $user->login ?></a></h6>
-                <!-- Вопрос -->
-                <div class="row">
-                    <div class="col">
-                        <div class="jumbotron jumbotron-fluid shadow pt-3 pb-3 p-md-3 bg-primary text-white rounded">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col">
-                                        <h1 class="text-break pb-2 mb-0"><?php echo $question->title ?></h1>
-                                        <h3 class="text-break"><?php echo $question->text ?></h3>
-                                    </div>
+else echo 'dark' ?>">
+<!-- Партиклы -->
+<div id="particles-js"></div>
+<div id="page-wrapper">
+    <!-- Навбар -->
+    <?php include "../includes/nav.php" ?>
+    <!-- /Навбар -->
+    <!-- Главный блок -->
+    <main role="main" class="container mt-4">
+        <div class="shadow p-3 mb-5 bg-white rounded">
+            <h6 class="pb-2 mb-0">Вопрос пользоателя - <a
+                        href="/pages/user/profile.php?id=<?php echo $user->id ?>"><?php echo $user->login ?></a></h6>
+            <!-- Вопрос -->
+            <div class="row">
+                <div class="col">
+                    <div class="jumbotron jumbotron-fluid shadow pt-3 pb-3 p-md-3 bg-primary text-white rounded">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <h1 class="text-break pb-2 mb-0"><?php echo $question->title ?></h1>
+                                    <h3 class="text-break"><?php echo $question->text ?></h3>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Дать ответ -->
-                <div class="row">
-                    <div class="col">
-                        <div class="jumbotron jumbotron-fluid shadow p-3 p-3 p-md-3 bg-while rounded">
-                            <?php
-                            if ($_SESSION['logged_user'] != Null) { ?>
-                                <form action="question.php?id=<?php echo $question->id ?>" method="POST">
-                                    <div class="form-group">
-                                        <label for="exampleFormControlTextarea1">Ответить на вопрос</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name='text' required></textarea>
-                                        <div class="invalid-feedback">
-                                            Это поле обязательно
-                                        </div>
+            <!-- Дать ответ -->
+            <div class="row">
+                <div class="col">
+                    <div class="jumbotron jumbotron-fluid shadow p-3 p-3 p-md-3 bg-while rounded">
+                        <?php
+                        if ($_SESSION['logged_user'] != Null) { ?>
+                            <form action="question.php?id=<?php echo $question->id ?>" method="POST">
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Ответить на вопрос</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name='text'
+                                              required></textarea>
+                                    <div class="invalid-feedback">
+                                        Это поле обязательно
                                     </div>
-                                    <small class="d-block text-right mt-3">
-                                        <button class="btn btn-primary" type="submit" name="do_create_answer">Ответить</button>
-                                    </small>
-                                </form>
-                            <?php
-                            } else { ?>
-                                <div class="text-muted text-center">
-                                    <h5 style="margin-bottom: 0px;">
-                                        <?php echo 'Дать ответ могут только зарегистрированные пользователи' ?>
-                                    </h5>
                                 </div>
+                                <small class="d-block text-right mt-3">
+                                    <button class="btn btn-primary" type="submit" name="do_create_answer">Ответить
+                                    </button>
+                                </small>
+                            </form>
                             <?php
-                            }
-                            ?>
-                        </div>
+                        } else { ?>
+                            <div class="text-muted text-center">
+                                <h5 style="margin-bottom: 0px;">
+                                    <?php echo 'Дать ответ могут только зарегистрированные пользователи' ?>
+                                </h5>
+                            </div>
+                            <?php
+                        }
+                        ?>
                     </div>
                 </div>
-                <!-- Сортировка -->
+            </div>
+            <!-- Сортировка -->
 
-                <div class="row justify-content-center">
-                    <div class="col-xs-12 col-md">
-                        <a class="btn btn-light btn-sm btn-block" href="/pages/question.php?id=<?php echo $question->id ?>&sort=new" role="button">Новые</a>
-                    </div>
-                    <div class="col-xs-12 col-md">
-                        <a class="btn btn-light btn-sm btn-block" href="/pages/question.php?id=<?php echo $question->id ?>&sort=old" role="button">Старые</a>
-                    </div>
-                    <div class="col-xs-12 col-md">
-                        <a class="btn btn-light btn-sm btn-block" href="/pages/question.php?id=<?php echo $question->id ?>&sort=rep" role="button">Рейтинг</a>
-                    </div>
+            <div class="row justify-content-center">
+                <div class="col-xs-12 col-md">
+                    <a class="btn btn-light btn-sm btn-block"
+                       href="/pages/question.php?id=<?php echo $question->id ?>&sort=new" role="button">Новые</a>
                 </div>
+                <div class="col-xs-12 col-md">
+                    <a class="btn btn-light btn-sm btn-block"
+                       href="/pages/question.php?id=<?php echo $question->id ?>&sort=old" role="button">Старые</a>
+                </div>
+                <div class="col-xs-12 col-md">
+                    <a class="btn btn-light btn-sm btn-block"
+                       href="/pages/question.php?id=<?php echo $question->id ?>&sort=rep" role="button">Рейтинг</a>
+                </div>
+            </div>
 
-                <!-- Ответы -->
-                <?php
-                switch ($sort) {
-                    case 'new':
-                        $sort = 'id DESC';
+            <!-- Ответы -->
+            <?php
+            switch ($sort) {
+                case 'new':
+                    $sort = 'id DESC';
+                    break;
+                case 'old':
+                    $sort = 'id ASC';
+                    break;
+                case 'rep':
+                    $sort = 'rep DESC';
+                    break;
+                default:
+                    $sort = 'rep DESC';
+                    break;
+            }
+            $answers = R::getAll('SELECT * FROM answers WHERE question_id = ? ORDER BY ' . $sort, array($id));
+            $i = 1;
+            $bgColor = 'dark';
+            foreach ($answers as $answer) {
+                $user = R::findOne('users', "`id` = ?", array($answer['user_id']));
+                switch ($user->color) {
+                    case 'primary':
+                        $textColor = 'light';
+                        $bgTextColor = 'dark';
                         break;
-                    case 'old':
-                        $sort = 'id ASC';
+                    case 'secondary':
+                        $textColor = 'light';
+                        $bgTextColor = 'dark';
                         break;
-                    case 'rep':
-                        $sort = 'rep DESC';
+                    case 'dark':
+                        $textColor = 'light';
+                        $bgTextColor = 'dark';
                         break;
-                    default:
-                        $sort = 'rep DESC';
+                    case 'info':
+                        $textColor = 'light';
+                        $bgTextColor = 'dark';
                         break;
                 }
-                $answers = R::getAll('SELECT * FROM answers WHERE question_id = ? ORDER BY ' . $sort, array($id));
-                $i = 1;
-                $bgColor = 'dark';
-                foreach ($answers as $answer) {
-                    $user = R::findOne('users', "`id` = ?", array($answer['user_id']));
-                    switch ($user->color) {
-                        case 'primary':
-                            $textColor = 'light';
-                            $bgTextColor = 'dark';
-                            break;
-                        case 'secondary':
-                            $textColor = 'light';
-                            $bgTextColor = 'dark';
-                            break;
-                        case 'while':
-                            $textColor = 'dark';
-                            $bgTextColor = 'white';
-                            break;
-                        case 'dark':
-                            $textColor = 'light';
-                            $bgTextColor = 'dark';
-                            break;
-                        case 'info':
-                            $textColor = 'light';
-                            $bgTextColor = 'dark';
-                            break;
-                        case 'light':
-                            $textColor = 'dark';
-                            $bgTextColor = 'white';
-                            break;
-                    }
-                    ?>
-                    <div class="row align-items-center mt-3">
-                        <div class="col">
-                            <div class="jumbotron jumbotron-fluid text-<?php echo $textColor ?> shadow mb-0 p-3 bg-<?php echo $user->color ?> rounded">
-                                <div class="container">
-                                    <div class="row">
-                                        <!-- Дата -->
-                                        <?php
-                                        $inter = diffphp($answer['date']);
-                                        ?>
-                                        <div class="col-12 p-0 pb-2 ">
-                                            <small class="d-block text-right "><?php echo 'ответ дан ' . $inter . ' назад' ?></small>
-                                        </div>
-                                        <!-- Пользователь -->
-                                        <div class="col-12 col-sm-4 col-md-3 col-lg-1 p-0 pb-2 text-break">
-                                            <a href="/pages/user/profile.php?id=<?php echo $user['id'] ?>" class="d-block btn btn-<?php echo $textColor ?> text-<?php echo $bgTextColor ?> m-0 p-0 rounded">
-                                                <div class="col p-0">
-                                                    <h6 class="badge text-center d-block m-0"><?php echo $i ?></h6>
-                                                </div>
-                                                <div class="col p-0">
-                                                    <h6 href="/pages/user/profile.php?id=<?php echo $user['id'] ?>" class="d-block text-center m-0">
-                                                        <?php echo  mb_substr($user['login'], 0, 10, 'utf-8');
-                                                        if (iconv_strlen($user['login']) > 10) echo '...'; ?>
-                                                    </h6>
-                                                </div>
-                                                <div class="col p-0">
-                                                    <?php
-                                                    $rep = $user->rep;                            
-                                                    if ($rep > 1000) {
-                                                        $rep = ($rep / 1000) . 'k';
-                                                        if ($rep > 1000000) {
-                                                            $rep = ($rep / 1000000) . 'm';
-                                                        }
+                ?>
+                <div class="row align-items-center mt-3">
+                    <div class="col">
+                        <div class="jumbotron jumbotron-fluid text-<?php echo $textColor ?> shadow mb-0 p-3 bg-<?php echo $user->color ?> rounded">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- Дата -->
+                                    <?php
+                                    $inter = diffphp($answer['date']);
+                                    ?>
+                                    <div class="col-12 p-0 pb-2 ">
+                                        <small class="d-block text-right "><?php echo 'ответ дан ' . $inter . ' назад' ?></small>
+                                    </div>
+                                    <!-- Пользователь -->
+                                    <div class="col-12 col-sm-4 col-md-3 col-lg-1 p-0 pb-2 text-break">
+                                        <a href="/pages/user/profile.php?id=<?php echo $user['id'] ?>"
+                                           class="d-block btn btn-<?php echo $textColor ?> text-<?php echo $bgTextColor ?> m-0 p-0 rounded">
+                                            <div class="col p-0">
+                                                <h6 class="badge text-center d-block m-0"><?php echo $i ?></h6>
+                                            </div>
+                                            <div class="col p-0">
+                                                <h6 href="/pages/user/profile.php?id=<?php echo $user['id'] ?>"
+                                                    class="d-block text-center m-0">
+                                                    <?php echo mb_substr($user['login'], 0, 10, 'utf-8');
+                                                    if (iconv_strlen($user['login']) > 10) echo '...'; ?>
+                                                </h6>
+                                            </div>
+                                            <div class="col p-0">
+                                                <?php
+                                                $rep = $user->rep;
+                                                if ($rep > 1000) {
+                                                    $rep = ($rep / 1000) . 'k';
+                                                    if ($rep > 1000000) {
+                                                        $rep = ($rep / 1000000) . 'm';
                                                     }
-                                                    ?>
-                                                    <h6 class="d-block text-center badge m-0"><?php echo $rep ?></h6>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <!-- Ответ и Лайк -->
-                                        <div class="col-12 col-sm-8 col-md-9 col-lg-11">
-                                            <div class="row">
-                                                <div class="col-12 col-sm-10 col-lg-11">
-                                                    <h2 class="text-break m-0"><?php echo $answer['text'] ?></h2>
-                                                    <p><?php echo $answer['rep'] ?></p>
-                                                </div>
-                                                <div class="col-12 col-sm-2 col-lg-1 p-0">
-                                                    <?php
-                                                    $like_check = R::count('answerslikes', 'WHERE `answer_id` = ? AND `user_id` = ?', array($answer['id'], $_SESSION['logged_user']['id']));
-                                                    $count = R::count('answerslikes', 'WHERE `answer_id` = ?', array($answer['id']));
-                                                    ?>
-                                                    <button class="float-right  btn btn-block btn-outline-light <?php if ($like_check == 1) echo 'active' ?> like" data-ans="<?php echo $answer['id'] ?>" data-usr="<?php echo $_SESSION['logged_user']['id'] ?>">
-                                                        <div class="row justify-content-between">
-                                                            <div class="col-4 col-sm-12">
-                                                                <i class="far fa-heart"></i>
-                                                            </div>
-                                                            <div class="col-8 col-sm-12">
-                                                                <div id="count_like" class="text-center"><?php echo $count ?></div>
-                                                            </div>
+                                                }
+                                                ?>
+                                                <h6 class="d-block text-center badge m-0"><?php echo $rep ?></h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Ответ и Лайк -->
+                                    <div class="col-12 col-sm-8 col-md-9 col-lg-11">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-10 col-lg-11">
+                                                <h2 class="text-break m-0"><?php echo $answer['text'] ?></h2>
+                                                <p><?php echo $answer['rep'] ?></p>
+                                            </div>
+                                            <div class="col-12 col-sm-2 col-lg-1 p-0">
+                                                <?php
+                                                $like_check = R::count('answerslikes', 'WHERE `answer_id` = ? AND `user_id` = ?', array($answer['id'], $_SESSION['logged_user']['id']));
+                                                $count = R::count('answerslikes', 'WHERE `answer_id` = ?', array($answer['id']));
+                                                ?>
+                                                <button class="float-right  btn btn-block btn-outline-light <?php if ($like_check == 1) echo 'active' ?> like"
+                                                        data-ans="<?php echo $answer['id'] ?>"
+                                                        data-usr="<?php echo $_SESSION['logged_user']['id'] ?>">
+                                                    <div class="row justify-content-between">
+                                                        <div class="col-4 col-sm-12">
+                                                            <i class="far fa-heart"></i>
                                                         </div>
-                                                    </button>
-                                                </div>
+                                                        <div class="col-8 col-sm-12">
+                                                            <div id="count_like"
+                                                                 class="text-center"><?php echo $count ?></div>
+                                                        </div>
+                                                    </div>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -236,61 +238,63 @@ if (isset($data['do_create_answer'])) {
                             </div>
                         </div>
                     </div>
-                    <?php
-                    $i++;
-                }
-                ?>
+                </div>
+                <?php
+                $i++;
+            }
+            ?>
 
 
+    </main>
+    <!-- /Главный блок -->
+    <!-- Футер -->
+    <?php include "../includes/foot.php" ?>
+    <!-- /Футер -->
+    <!-- Партиклы -->
+</div>
+<!-- Bootstrap 4 -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+<script src="/style/js/bootstrap.min.js"></script>
+<script src="/style/my.js"></script>
+<script src="/style/js/jQuery.js"></script>
+<script src="/style/particles/particles.js"></script>
+<script src="/style/particles/my.js"></script>
+<script src="/style/js/like.js"></script>
+<!-- <script>
+    $(document).ready(function() {
+        $(".like").bind("click", function() {
+            var link = $(this);
+            var ans = link.data('ans');
+            var usr = link.data('usr');
 
-
-        </main>
-        <!-- /Главный блок -->
-        <!-- Футер -->
-        <?php include "../includes/foot.php" ?>
-        <!-- /Футер -->
-        <!-- Партиклы -->
-    </div>
-    <!-- Bootstrap 4 -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <script src="/style/js/bootstrap.min.js"></script>
-    <script src="/style/my.js"></script>
-    <script src="/style/js/jQuery.js"></script>
-    <script src="/style/particles/particles.js"></script>
-    <script src="/style/particles/my.js"></script>
-    <script src="/style/js/like.js"></script>
-    <!-- <script>
-        $(document).ready(function() {
-            $(".like").bind("click", function() {
-                var link = $(this);
-                var ans = link.data('ans');
-                var usr = link.data('usr');
-
-                $.ajax({
-                    url: "/func/like.php",
-                    type: "POST",
-                    data: {
-                        ans: ans,
-                        usr: usr
-                    },
-                    dataType: "json",
-                    success: function(result) {
-                        if (result.isActive) {
-                            link.addClass('active');
-                        } else {
-                            link.removeClass('active');
-                        }
-                        $('#count_like', link).html(result.count);
+            $.ajax({
+                url: "/func/like.php",
+                type: "POST",
+                data: {
+                    ans: ans,
+                    usr: usr
+                },
+                dataType: "json",
+                success: function(result) {
+                    if (result.isActive) {
+                        link.addClass('active');
+                    } else {
+                        link.removeClass('active');
                     }
-                });
+                    $('#count_like', link).html(result.count);
+                }
             });
         });
-    </script> -->
+    });
+</script> -->
 
 </body>
 

@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="58e7e281-f5bc-4eb3-8f67-255417d73a1c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mystackOverflow/includes/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/../mystackOverflow/includes/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mystackOverflow/includes/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/../mystackOverflow/includes/nav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mystackOverflow/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/../mystackOverflow/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mystackOverflow/pages/question.php" beforeDir="false" afterPath="$PROJECT_DIR$/../mystackOverflow/pages/question.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mystackOverflow/pages/user/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/../mystackOverflow/pages/user/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mystackOverflow/pages/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/../mystackOverflow/pages/users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mystackOverflow/script.php" beforeDir="false" afterPath="$PROJECT_DIR$/../mystackOverflow/script.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../modules/conemu/ConEmu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../modules/conemu/ConEmu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../modules/http/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14/conf/httpd.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../modules/http/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14/conf/httpd.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../modules/http/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14/conf/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../modules/http/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14/conf/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/aria_log.00000001" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/aria_log.00000001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/aria_log_control" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/aria_log_control" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/ib_buffer_pool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/ib_logfile0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/ibtmp1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mysql/innodb_index_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mysql/innodb_index_stats.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mysql/innodb_table_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mysql/innodb_table_stats.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mystackoverflow/answers.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mystackoverflow/answers.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mystackoverflow/answerslikes.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mystackoverflow/answerslikes.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mystackoverflow/questions.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mystackoverflow/questions.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mystackoverflow/questions_tags.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mystackoverflow/questions_tags.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mystackoverflow/users.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mystackoverflow/users.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/logs/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/logs/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14_error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/logs/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14_errora.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/logs/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14_errora.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/logs/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14_queries.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/logs/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14_queries.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/logs/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14_queriesa.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/logs/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14_queriesa.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/logs/MariaDB-10.3-x64_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/logs/MariaDB-10.3-x64_error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/logs/MariaDB-10.3-x64_queries.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/logs/MariaDB-10.3-x64_queries.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/logs/PHP_7.1-x64_error.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/logs/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/logs/main.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/profiles/Default.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/profiles/Default.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/profiles/Default_aliases.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/profiles/Default_aliases.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/temp/httpd.pid" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/temp/httpd.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/temp/mysql.pid" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/temp/mysql.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/temp/nginx.pid" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/temp/nginx.pid" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/PaymentService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/PaymentServices/PayPal.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" column="34" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/PaymentServices/Visa.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/PaymentServices/PaymentSystemInterface.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/components/componentsInterfaces/interface RamInterface.php" />
+        <option value="$PROJECT_DIR$/devices/macbook.php" />
+        <option value="$PROJECT_DIR$/components/componentsInterfaces/GpuInterface.php" />
+        <option value="$PROJECT_DIR$/components/componentsInterfaces/RamInterface.php" />
+        <option value="$PROJECT_DIR$/components/componentsInterfaces/StorageInterface.php" />
+        <option value="$PROJECT_DIR$/devices/MacBook.php" />
+        <option value="$PROJECT_DIR$/components/componentsInterfaces/CpuInterface.php" />
+        <option value="$PROJECT_DIR$/autoload.php" />
+        <option value="$PROJECT_DIR$/components/Ram.php" />
+        <option value="$PROJECT_DIR$/components/Gpu.php" />
+        <option value="$PROJECT_DIR$/components/Cpu.php" />
+        <option value="$PROJECT_DIR$/components/Storage.php" />
+        <option value="$PROJECT_DIR$/app/components/componentsInterfaces/CpuInterface.php" />
+        <option value="$PROJECT_DIR$/app/components/Interfaces/CpuInterface.php" />
+        <option value="$PROJECT_DIR$/app/components/interfaces/CpuInterface.php" />
+        <option value="$PROJECT_DIR$/app/components/interfaces/GpuInterface.php" />
+        <option value="$PROJECT_DIR$/app/components/interfaces/RamInterface.php" />
+        <option value="$PROJECT_DIR$/app/components/interfaces/StorageInterface.php" />
+        <option value="$PROJECT_DIR$/app/devices/MacBook.php" />
+        <option value="$PROJECT_DIR$/app/components/Cpu.php" />
+        <option value="$PROJECT_DIR$/app/components/Storage.php" />
+        <option value="$PROJECT_DIR$/app/components/Gpu.php" />
+        <option value="$PROJECT_DIR$/app/components/Ram.php" />
+        <option value="$PROJECT_DIR$/app/components/MacBook.php" />
+        <option value="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
+        <option value="$PROJECT_DIR$/del/index.php" />
+        <option value="$PROJECT_DIR$/app/PaymentSystems/PaymentService.php" />
+        <option value="$PROJECT_DIR$/app/PaymentSystems/PaymentSystemInterface/PaymentSystemInterface.php" />
+        <option value="$PROJECT_DIR$/vendor/autoload.php" />
+        <option value="$PROJECT_DIR$/app/devices/Test1.php" />
+        <option value="$PROJECT_DIR$/app/Test1.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/PayPal.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/app/PaymentSystems/WebMoney.php" />
+        <option value="$PROJECT_DIR$/app/PaymentSystems/PayPal.php" />
+        <option value="$PROJECT_DIR$/app/playerMove/moveInterfaces/MoveInterfaces.php" />
+        <option value="$PROJECT_DIR$/app/playerMove/Left.php" />
+        <option value="$PROJECT_DIR$/app/playerMove/Right.php" />
+        <option value="$PROJECT_DIR$/app/playerMove/Forward.php" />
+        <option value="$PROJECT_DIR$/app/playerMove/Jump.php" />
+        <option value="$PROJECT_DIR$/app/playerMove/Back.php" />
+        <option value="$PROJECT_DIR$/app/playerMove/moveInterfaces/MoveInterface.php" />
+        <option value="$PROJECT_DIR$/app/Player.php" />
+        <option value="$PROJECT_DIR$/app/PayementService.php" />
+        <option value="$PROJECT_DIR$/app/PayementServices/PayementSystemInterface.php" />
+        <option value="$PROJECT_DIR$/app/PayementServices/PaymentSystemInterface.php" />
+        <option value="$PROJECT_DIR$/app/PaymentService.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/app/PayementServices/PayPal.php" />
+        <option value="$PROJECT_DIR$/app/PayementServices/Visa.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="30" />
+    <option name="y" value="54" />
+    <option name="width" value="1044" />
+    <option name="height" value="606" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="PaymentServices" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test" />
+      <recent name="C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\web" />
+      <recent name="C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\playerMove" />
+      <recent name="C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app" />
+      <recent name="C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\PaymentSystems" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="58e7e281-f5bc-4eb3-8f67-255417d73a1c" name="Default Changelist" comment="" />
+      <created>1563625760140</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563625760140</updated>
+      <workItem from="1563625761474" duration="727000" />
+      <workItem from="1563636376714" duration="145000" />
+      <workItem from="1563636605286" duration="175000" />
+      <workItem from="1563636809813" duration="836000" />
+      <workItem from="1563637664266" duration="115000" />
+      <workItem from="1563637796536" duration="84000" />
+      <workItem from="1563637899513" duration="16000" />
+      <workItem from="1563780704655" duration="11075000" />
+      <workItem from="1563812225767" duration="4500000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="17673000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="30" y="54" width="1044" height="606" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25963488" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32988507" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/devices/MacBook.php" />
+    <entry file="file://$PROJECT_DIR$/components/componentsInterfaces/CpuInterface.php" />
+    <entry file="file://$PROJECT_DIR$/components/componentsInterfaces/GpuInterface.php" />
+    <entry file="file://$PROJECT_DIR$/components/componentsInterfaces/RamInterface.php" />
+    <entry file="file://$PROJECT_DIR$/components/componentsInterfaces/StorageInterface.php" />
+    <entry file="file://$PROJECT_DIR$/components/Gpu.php" />
+    <entry file="file://$PROJECT_DIR$/components/Ram.php" />
+    <entry file="file://$PROJECT_DIR$/components/Cpu.php" />
+    <entry file="file://$PROJECT_DIR$/components/Storage.php" />
+    <entry file="file://$PROJECT_DIR$/autoload.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_real.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-600">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Новая папка/index.php" />
+    <entry file="file://$PROJECT_DIR$/app/components/interfaces/Gpu.php" />
+    <entry file="file://$PROJECT_DIR$/app/components/interfaces/Ram.php" />
+    <entry file="file://$PROJECT_DIR$/app/components/interfaces/Storage.php" />
+    <entry file="file://$PROJECT_DIR$/app/components/Storage.php" />
+    <entry file="file://$PROJECT_DIR$/app/components/Cpu.php" />
+    <entry file="file://$PROJECT_DIR$/app/components/Ram.php" />
+    <entry file="file://$PROJECT_DIR$/app/components/Gpu.php" />
+    <entry file="file://$PROJECT_DIR$/app/components/interfaces/Cpu.php" />
+    <entry file="file://$PROJECT_DIR$/app/components/MacBook.php" />
+    <entry file="file://$PROJECT_DIR$/del/index.php" />
+    <entry file="file://$PROJECT_DIR$/del/app/Test1.php" />
+    <entry file="file://$PROJECT_DIR$/app/PaymentSystems/PaymentService.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_psr4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Test1.php" />
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/PaymentSystems/WebMoney.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/PaymentSystems/PayPal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/PaymentSystems/PaymentSystemInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/PaymentService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/playerMove/Left.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/playerMove/Right.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/playerMove/Jump.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/playerMove/Back.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/playerMove/MoveInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/playerMove/Forward.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Player.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/PaymentServices/PaymentSystemInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/PaymentServices/Visa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/PaymentServices/PayPal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/PaymentService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

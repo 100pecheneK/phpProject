@@ -13,10 +13,6 @@
                 <a class="nav-link" href="/pages/users.php" role="button">Пользователи</a>
             </li>            
         </ul>
-        <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control my-2 mr-sm-2" type="text" placeholder="Поиск" aria-label="Search">
-            <button class="btn btn-outline-success my-2 mr-sm-2" type="submit">Поиск</button>
-        </form>
         <?php
         if (isset($_SESSION['logged_user'])) : ?>
             <a class="btn btn-outline-primary mr-sm-2" href="/pages/user/profile.php?id=<?php echo $_SESSION['logged_user']['id'] ?>">

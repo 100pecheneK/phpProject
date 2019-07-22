@@ -1,5 +1,2 @@
-127.0.0.1;localhost
-172.18.164.57;mysite
 192.168.0.104;mystackOverflow
-54.39.176.97;mysite
-testblog.test;mysite
+mstore.com;MStore

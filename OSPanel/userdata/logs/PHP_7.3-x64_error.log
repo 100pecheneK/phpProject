@@ -1,0 +1,105 @@
+[22-Jul-2019 20:04:09 Europe/Moscow] PHP Fatal error:  Interface 'test\app\playerMove\MoveInterface' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\playerMove\Back.php on line 7
+[22-Jul-2019 20:04:55 Europe/Moscow] PHP Fatal error:  Interface 'test\app\playerMove\MoveInterface' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\playerMove\Back.php on line 6
+[22-Jul-2019 20:04:56 Europe/Moscow] PHP Fatal error:  Interface 'test\app\playerMove\MoveInterface' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\playerMove\Back.php on line 6
+[22-Jul-2019 20:06:19 Europe/Moscow] PHP Fatal error:  Interface 'test\app\MoveInterface' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\playerMove\Back.php on line 6
+[22-Jul-2019 20:07:35 Europe/Moscow] PHP Fatal error:  Interface 'test\app\playerMove\MoveInterface' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\playerMove\Back.php on line 6
+[22-Jul-2019 20:08:58 Europe/Moscow] PHP Fatal error:  Interface 'test\app\playerMove\MoveInterface' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\playerMove\Back.php on line 5
+[22-Jul-2019 20:08:58 Europe/Moscow] PHP Fatal error:  Interface 'test\app\playerMove\MoveInterface' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\playerMove\Back.php on line 5
+[22-Jul-2019 20:08:58 Europe/Moscow] PHP Fatal error:  Interface 'test\app\playerMove\MoveInterface' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\playerMove\Back.php on line 5
+[22-Jul-2019 20:08:59 Europe/Moscow] PHP Fatal error:  Interface 'test\app\playerMove\MoveInterface' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\playerMove\Back.php on line 5
+[22-Jul-2019 20:09:20 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 4 passed to test\app\Player::__construct() must implement interface test\app\playerMove\MoveInterface, instance of test\app\playerMove\Forward given, called in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 14 and defined in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php:18
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php(14): test\app\Player->__construct('Misha', '123', Object(test\app\playerMove\Back), Object(test\app\playerMove\Forward), Object(test\app\playerMove\Jump), Object(test\app\playerMove\Left), Object(test\app\playerMove\Right))
+#1 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php on line 18
+[22-Jul-2019 20:09:21 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 4 passed to test\app\Player::__construct() must implement interface test\app\playerMove\MoveInterface, instance of test\app\playerMove\Forward given, called in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 14 and defined in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php:18
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php(14): test\app\Player->__construct('Misha', '123', Object(test\app\playerMove\Back), Object(test\app\playerMove\Forward), Object(test\app\playerMove\Jump), Object(test\app\playerMove\Left), Object(test\app\playerMove\Right))
+#1 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php on line 18
+[22-Jul-2019 20:09:45 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 3 passed to test\app\Player::__construct() must be an instance of test\app\playerMove, instance of test\app\playerMove\Back given, called in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 14 and defined in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php:18
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php(14): test\app\Player->__construct('Misha', '123', Object(test\app\playerMove\Back), Object(test\app\playerMove\Forward), Object(test\app\playerMove\Jump), Object(test\app\playerMove\Left), Object(test\app\playerMove\Right))
+#1 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php on line 18
+[22-Jul-2019 20:09:46 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 3 passed to test\app\Player::__construct() must be an instance of test\app\playerMove, instance of test\app\playerMove\Back given, called in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 14 and defined in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php:18
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php(14): test\app\Player->__construct('Misha', '123', Object(test\app\playerMove\Back), Object(test\app\playerMove\Forward), Object(test\app\playerMove\Jump), Object(test\app\playerMove\Left), Object(test\app\playerMove\Right))
+#1 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php on line 18
+[22-Jul-2019 20:10:32 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 4 passed to test\app\Player::__construct() must implement interface test\app\playerMove\MoveInterface, instance of test\app\playerMove\Forward given, called in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 14 and defined in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php:18
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php(14): test\app\Player->__construct('Misha', '123', Object(test\app\playerMove\Back), Object(test\app\playerMove\Forward), Object(test\app\playerMove\Jump), Object(test\app\playerMove\Left), Object(test\app\playerMove\Right))
+#1 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php on line 18
+[22-Jul-2019 20:11:14 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 4 passed to test\app\Player::__construct() must implement interface test\app\playerMove\MoveInterface, instance of test\app\playerMove\Forward given, called in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 14 and defined in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php:18
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php(14): test\app\Player->__construct('Misha', '123', Object(test\app\playerMove\Back), Object(test\app\playerMove\Forward), Object(test\app\playerMove\Jump), Object(test\app\playerMove\Left), Object(test\app\playerMove\Right))
+#1 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php on line 18
+[22-Jul-2019 20:11:14 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 4 passed to test\app\Player::__construct() must implement interface test\app\playerMove\MoveInterface, instance of test\app\playerMove\Forward given, called in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 14 and defined in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php:18
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php(14): test\app\Player->__construct('Misha', '123', Object(test\app\playerMove\Back), Object(test\app\playerMove\Forward), Object(test\app\playerMove\Jump), Object(test\app\playerMove\Left), Object(test\app\playerMove\Right))
+#1 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php on line 18
+[22-Jul-2019 20:11:15 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 4 passed to test\app\Player::__construct() must implement interface test\app\playerMove\MoveInterface, instance of test\app\playerMove\Forward given, called in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 14 and defined in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php:18
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php(14): test\app\Player->__construct('Misha', '123', Object(test\app\playerMove\Back), Object(test\app\playerMove\Forward), Object(test\app\playerMove\Jump), Object(test\app\playerMove\Left), Object(test\app\playerMove\Right))
+#1 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php on line 18
+[22-Jul-2019 20:11:15 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 4 passed to test\app\Player::__construct() must implement interface test\app\playerMove\MoveInterface, instance of test\app\playerMove\Forward given, called in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 14 and defined in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php:18
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php(14): test\app\Player->__construct('Misha', '123', Object(test\app\playerMove\Back), Object(test\app\playerMove\Forward), Object(test\app\playerMove\Jump), Object(test\app\playerMove\Left), Object(test\app\playerMove\Right))
+#1 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php on line 18
+[22-Jul-2019 20:25:49 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'test\app\PaymentServices\PayPal' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 5
+[22-Jul-2019 20:27:45 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'test\app\PaymentServices\PayPal' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 5
+[22-Jul-2019 20:28:19 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'test\app\PaymentServices\Visa' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php:6
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 6
+[22-Jul-2019 20:28:20 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'test\app\PaymentServices\Visa' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php:6
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 6
+[22-Jul-2019 20:28:23 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to test\app\PaymentService::payment() must be an instance of test\app\PaymentServices\PaymentSystemInterface, null given, called in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 10 and defined in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\PaymentService.php:9
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php(10): test\app\PaymentService->payment(NULL)
+#1 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\PaymentService.php on line 9
+[22-Jul-2019 20:28:30 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'test\app\PaymentServices\PayPal' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 5
+[22-Jul-2019 20:28:31 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'test\app\PaymentServices\PayPal' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 5
+[22-Jul-2019 20:28:31 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'test\app\PaymentServices\PayPal' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 5
+[22-Jul-2019 20:28:34 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'test\app\PaymentServices\PayPal' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 5
+[22-Jul-2019 20:28:35 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'test\app\PaymentServices\PayPal' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 5
+[22-Jul-2019 20:28:35 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'test\app\PaymentServices\PayPal' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 5
+[22-Jul-2019 20:29:25 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'test\app\PaymentServices\PayPal' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 5
+[22-Jul-2019 20:30:52 Europe/Moscow] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\web\index.php on line 3
+[22-Jul-2019 20:30:52 Europe/Moscow] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.;c:/users/admin/documents/github/phpproject/ospanel/modules/php/PHP_7.3-x64;c:/users/admin/documents/github/phpproject/ospanel/modules/php/PHP_7.3-x64/PEAR/pear') in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\web\index.php on line 3

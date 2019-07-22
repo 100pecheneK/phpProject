@@ -10,7 +10,7 @@ if (isset($_GET['page'])) {
     $page = (int) $_GET['page'];
 }
 
-$total_count = R::count('questions');
+$total_count = R::count('users');
 
 $total_pages = ceil($total_count / $per_page);
 
@@ -20,7 +20,7 @@ if ($page < 1 || $page > $total_pages) {
 
 $offset = ($per_page * $page) - $per_page;
 
-$users = $questions = R::findAll('users', "ORDER BY `rep` LIMIT $offset, $per_page");
+$users = $questions = R::findAll('users', "ORDER BY `rep` DESC LIMIT $offset, $per_page");
 $users_exist = true;
 // /запросы пегинации
 
@@ -78,6 +78,9 @@ $users_exist = true;
                                                             if (iconv_strlen($user['login']) > 10) echo '...';  ?>
                                                         </p>
                                                     </a>
+                                                    <p class="card-text text-center">
+                                                        <?php echo  $user['rep']  ?>
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>

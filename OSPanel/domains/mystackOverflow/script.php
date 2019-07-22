@@ -1,16 +1,6 @@
 <?php
 require "includes/db.php";
 
-for($i = 0; $i < 10; $i++){
-    $question = R::dispense('questions');
-    $question->title = 'Тесовый заголовок';
-    $question->text = 'Тестовый текст';
-    $question->user_id = 1;
-    $question->views = $i;
-    R::store($question);
-    sleep(10);
-}
-
 ?>
 
 <!DOCTYPE html>

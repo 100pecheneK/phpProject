@@ -22,9 +22,6 @@ if (isset($data['do_save_login'])) {
         $do_save_login_error = 'yes';
     }
 }
-
-// do_upload_img
-
 // do_save_password
 //      password_old
 //      password_new
@@ -84,23 +81,13 @@ if (isset($data['do_save_color'])) {
             $do_save_color = 'no';
             break;
         case '3':
-            $user->color = 'while';
-            $color = 'while';
-            $do_save_color = 'no';
-            break;
-        case '4':
             $user->color = 'dark';
             $color = 'dark';
             $do_save_color = 'no';
             break;
-        case '5':
+        case '4':
             $user->color = 'info';
             $color = 'info';
-            $do_save_color = 'no';
-            break;
-        case '6':
-            $user->color = 'light';
-            $color = 'light';
             $do_save_color = 'no';
             break;
         default:
@@ -222,21 +209,9 @@ if (isset($data['do_save_color'])) {
                                     </div>
                                     <div class="card mt-3 shadow p-3 bg-while rounded">
                                         <div class="card-body">
-                                            <form action="settings.php?id=<?php echo $_SESSION['logged_user']['id'] ?>" method="POST" enctype="multipart/form-data">
-                                                <div class="form-group">
-                                                    <label for="exampleFormControlSelect1">Аватар</label>
-                                                    <select class="form-control" id="exampleFormControlSelect1" name="image">
-                                                        <option value="1">Аватар 1</option>
-                                                        <option value="2">Аватар 2</option>
-                                                        <option value="3">Аватар 3</option>
-                                                        <option value="4">Аватар 4</option>
-                                                        <option value="5">Аватар 5</option>
-                                                        <option value="6">Аватар 6</option>
-                                                        <option value="7">Аватар 7</option>
-                                                    </select>
-                                                </div>
-                                                <button class="btn btn-primary btn-block" type="submit" name="do_upload_img">Сохранить</button>
-                                            </form>
+                                            
+                                                <a class="btn btn-primary btn-block" href="/pages/user/avatar.php?id=<?php echo $_SESSION['logged_user']['id'] ?>">Изменить аватар</a>
+                                            
                                         </div>
                                     </div>
                                     <div class="card mt-3 shadow p-3 bg-while rounded">
@@ -348,10 +323,9 @@ if (isset($data['do_save_color'])) {
                                                         <!-- selected -->
                                                         <option class="bg-primary text-white" value="1" <?php echo $user->color == 'primary' ? 'selected' : '' ?>>primary</option>
                                                         <option class="bg-secondary text-white" value="2" <?php echo $user->color == 'secondary' ? 'selected' : '' ?>>secondary</option>
-                                                        <option class="bg-while text-dark" value="3" <?php echo $user->color == 'while' ? 'selected' : '' ?>>while</option>
-                                                        <option class="bg-dark text-white" value="4" <?php echo $user->color == 'dark' ? 'selected' : '' ?>>dark</option>
-                                                        <option class="bg-info text-white" value="5" <?php echo $user->color == 'info' ? 'selected' : '' ?>>info</option>
-                                                        <option class="bg-light text-dark" value="6" <?php echo $user->color == 'light' ? 'selected' : '' ?>>light</option>
+                                                        <option class="bg-dark text-white" value="3" <?php echo $user->color == 'dark' ? 'selected' : '' ?>>dark</option>
+                                                        <option class="bg-info text-white" value="4" <?php echo $user->color == 'info' ? 'selected' : '' ?>>info</option>
+
                                                     </select>
                                                 </div>
                                                 <button class="btn btn-primary btn-block" type="submit" name="do_save_color">Сохранить</button>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d8f9d81f-c51c-463b-8ec0-227c4c54727d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/includes/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/nav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/question.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/question.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/user/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/user/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.php" beforeDir="false" afterPath="$PROJECT_DIR$/script.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../modules/http/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14/conf/httpd.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../modules/http/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14/conf/httpd.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../modules/http/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14/conf/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../../modules/http/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14/conf/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/aria_log.00000001" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/aria_log.00000001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/aria_log_control" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/aria_log_control" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/ib_buffer_pool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/ib_logfile0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/ibtmp1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mysql/innodb_index_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mysql/innodb_index_stats.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mysql/innodb_table_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mysql/innodb_table_stats.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mystackoverflow/answers.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mystackoverflow/answers.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mystackoverflow/answerslikes.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mystackoverflow/answerslikes.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mystackoverflow/questions.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mystackoverflow/questions.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mystackoverflow/questions_tags.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mystackoverflow/questions_tags.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mystackoverflow/users.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/MariaDB-10.3-x64/mystackoverflow/users.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/logs/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/logs/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14_error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/logs/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14_errora.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/logs/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14_errora.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/logs/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14_queries.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/logs/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14_queries.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/logs/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14_queriesa.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/logs/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14_queriesa.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/logs/MariaDB-10.3-x64_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/logs/MariaDB-10.3-x64_error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/logs/MariaDB-10.3-x64_queries.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/logs/MariaDB-10.3-x64_queries.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/logs/PHP_7.1-x64_error.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/logs/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/logs/main.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/profiles/Default.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/profiles/Default.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/profiles/Default_aliases.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/profiles/Default_aliases.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/temp/httpd.pid" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/temp/httpd.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/temp/mysql.pid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../userdata/temp/nginx.pid" beforeDir="false" afterPath="$PROJECT_DIR$/../../userdata/temp/nginx.pid" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/pages/question.php" />
+        <option value="$PROJECT_DIR$/pages/user/avatar.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+        <option value="$PROJECT_DIR$/.idea/mystackOverflow.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/php.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="265" />
+    <option name="y" value="77" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../modules/php/PHP_7.3-x64/php.exe" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet.xml" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8f9d81f-c51c-463b-8ec0-227c4c54727d" name="Default Changelist" comment="" />
+      <created>1563538427296</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563538427296</updated>
+      <workItem from="1563538428465" duration="928000" />
+      <workItem from="1563539379357" duration="1027000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1955000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.092750534" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32911393" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32911393" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/style/js/bootstrap.bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="185" column="6" lean-forward="true" selection-start-line="185" selection-start-column="6" selection-end-line="185" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1485">
+          <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/user/avatar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="200" column="51" selection-start-line="200" selection-start-column="51" selection-end-line="200" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/questions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="73" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
