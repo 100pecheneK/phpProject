@@ -1,105 +1,268 @@
-[22-Jul-2019 20:04:09 Europe/Moscow] PHP Fatal error:  Interface 'test\app\playerMove\MoveInterface' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\playerMove\Back.php on line 7
-[22-Jul-2019 20:04:55 Europe/Moscow] PHP Fatal error:  Interface 'test\app\playerMove\MoveInterface' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\playerMove\Back.php on line 6
-[22-Jul-2019 20:04:56 Europe/Moscow] PHP Fatal error:  Interface 'test\app\playerMove\MoveInterface' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\playerMove\Back.php on line 6
-[22-Jul-2019 20:06:19 Europe/Moscow] PHP Fatal error:  Interface 'test\app\MoveInterface' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\playerMove\Back.php on line 6
-[22-Jul-2019 20:07:35 Europe/Moscow] PHP Fatal error:  Interface 'test\app\playerMove\MoveInterface' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\playerMove\Back.php on line 6
-[22-Jul-2019 20:08:58 Europe/Moscow] PHP Fatal error:  Interface 'test\app\playerMove\MoveInterface' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\playerMove\Back.php on line 5
-[22-Jul-2019 20:08:58 Europe/Moscow] PHP Fatal error:  Interface 'test\app\playerMove\MoveInterface' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\playerMove\Back.php on line 5
-[22-Jul-2019 20:08:58 Europe/Moscow] PHP Fatal error:  Interface 'test\app\playerMove\MoveInterface' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\playerMove\Back.php on line 5
-[22-Jul-2019 20:08:59 Europe/Moscow] PHP Fatal error:  Interface 'test\app\playerMove\MoveInterface' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\playerMove\Back.php on line 5
-[22-Jul-2019 20:09:20 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 4 passed to test\app\Player::__construct() must implement interface test\app\playerMove\MoveInterface, instance of test\app\playerMove\Forward given, called in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 14 and defined in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php:18
+[25-Jul-2019 09:57:26 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'NewsController' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\components\Router.php:48
 Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php(14): test\app\Player->__construct('Misha', '123', Object(test\app\playerMove\Back), Object(test\app\playerMove\Forward), Object(test\app\playerMove\Jump), Object(test\app\playerMove\Left), Object(test\app\playerMove\Right))
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\index.php(19): Router->run()
 #1 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php on line 18
-[22-Jul-2019 20:09:21 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 4 passed to test\app\Player::__construct() must implement interface test\app\playerMove\MoveInterface, instance of test\app\playerMove\Forward given, called in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 14 and defined in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php:18
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\components\Router.php on line 48
+[25-Jul-2019 09:58:16 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'NewsController' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\components\Router.php:48
 Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php(14): test\app\Player->__construct('Misha', '123', Object(test\app\playerMove\Back), Object(test\app\playerMove\Forward), Object(test\app\playerMove\Jump), Object(test\app\playerMove\Left), Object(test\app\playerMove\Right))
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\index.php(19): Router->run()
 #1 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php on line 18
-[22-Jul-2019 20:09:45 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 3 passed to test\app\Player::__construct() must be an instance of test\app\playerMove, instance of test\app\playerMove\Back given, called in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 14 and defined in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php:18
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\components\Router.php on line 48
+[25-Jul-2019 09:58:16 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'NewsController' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\components\Router.php:48
 Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php(14): test\app\Player->__construct('Misha', '123', Object(test\app\playerMove\Back), Object(test\app\playerMove\Forward), Object(test\app\playerMove\Jump), Object(test\app\playerMove\Left), Object(test\app\playerMove\Right))
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\index.php(19): Router->run()
 #1 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php on line 18
-[22-Jul-2019 20:09:46 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 3 passed to test\app\Player::__construct() must be an instance of test\app\playerMove, instance of test\app\playerMove\Back given, called in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 14 and defined in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php:18
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\components\Router.php on line 48
+[25-Jul-2019 10:25:30 Europe/Moscow] PHP Warning:  preg_match(): Unknown modifier '(' in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\components\Router.php on line 33
+[25-Jul-2019 10:29:59 Europe/Moscow] PHP Notice:  Array to string conversion in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\components\Router.php on line 46
+[25-Jul-2019 10:30:00 Europe/Moscow] PHP Notice:  Array to string conversion in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\components\Router.php on line 46
+[25-Jul-2019 10:36:02 Europe/Moscow] PHP Notice:  Undefined variable: parameners in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\controllers\NewsController.php on line 14
+[25-Jul-2019 10:36:03 Europe/Moscow] PHP Notice:  Undefined variable: parameners in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\controllers\NewsController.php on line 14
+[25-Jul-2019 10:40:58 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function NewsController::actionView(), 2 passed in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\components\Router.php on line 59 and exactly 3 expected in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\controllers\NewsController.php:10
 Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php(14): test\app\Player->__construct('Misha', '123', Object(test\app\playerMove\Back), Object(test\app\playerMove\Forward), Object(test\app\playerMove\Jump), Object(test\app\playerMove\Left), Object(test\app\playerMove\Right))
-#1 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php on line 18
-[22-Jul-2019 20:10:32 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 4 passed to test\app\Player::__construct() must implement interface test\app\playerMove\MoveInterface, instance of test\app\playerMove\Forward given, called in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 14 and defined in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php:18
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\components\Router.php(59): NewsController->actionView('sport', '1')
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\index.php(19): Router->run()
+#2 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\controllers\NewsController.php on line 10
+[25-Jul-2019 10:40:59 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function NewsController::actionView(), 2 passed in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\components\Router.php on line 59 and exactly 3 expected in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\controllers\NewsController.php:10
 Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php(14): test\app\Player->__construct('Misha', '123', Object(test\app\playerMove\Back), Object(test\app\playerMove\Forward), Object(test\app\playerMove\Jump), Object(test\app\playerMove\Left), Object(test\app\playerMove\Right))
-#1 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php on line 18
-[22-Jul-2019 20:11:14 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 4 passed to test\app\Player::__construct() must implement interface test\app\playerMove\MoveInterface, instance of test\app\playerMove\Forward given, called in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 14 and defined in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php:18
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\components\Router.php(59): NewsController->actionView('sport', '1')
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\index.php(19): Router->run()
+#2 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\controllers\NewsController.php on line 10
+[25-Jul-2019 10:47:58 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function NewsController::actionView(), 1 passed in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\components\Router.php on line 59 and exactly 2 expected in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\controllers\NewsController.php:17
 Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php(14): test\app\Player->__construct('Misha', '123', Object(test\app\playerMove\Back), Object(test\app\playerMove\Forward), Object(test\app\playerMove\Jump), Object(test\app\playerMove\Left), Object(test\app\playerMove\Right))
-#1 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php on line 18
-[22-Jul-2019 20:11:14 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 4 passed to test\app\Player::__construct() must implement interface test\app\playerMove\MoveInterface, instance of test\app\playerMove\Forward given, called in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 14 and defined in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php:18
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\components\Router.php(59): NewsController->actionView('4')
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\index.php(19): Router->run()
+#2 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\controllers\NewsController.php on line 17
+[25-Jul-2019 13:01:54 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Unsupported database (). in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:12452
 Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php(14): test\app\Player->__construct('Misha', '123', Object(test\app\playerMove\Back), Object(test\app\playerMove\Forward), Object(test\app\playerMove\Jump), Object(test\app\playerMove\Left), Object(test\app\playerMove\Right))
-#1 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php on line 18
-[22-Jul-2019 20:11:15 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 4 passed to test\app\Player::__construct() must implement interface test\app\playerMove\MoveInterface, instance of test\app\playerMove\Forward given, called in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 14 and defined in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php:18
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12315): RedBeanPHP\Facade::addDatabase('default', '127.0.0.1;mstor...', 'root', '', false, false)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\db.php(8): RedBeanPHP\Facade::setup('127.0.0.1;mstor...', 'root', '')
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\index.php(2): require('C:\\Users\\Admin\\...')
+#3 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 12452
+[25-Jul-2019 13:01:55 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Unsupported database (). in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:12452
 Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php(14): test\app\Player->__construct('Misha', '123', Object(test\app\playerMove\Back), Object(test\app\playerMove\Forward), Object(test\app\playerMove\Jump), Object(test\app\playerMove\Left), Object(test\app\playerMove\Right))
-#1 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php on line 18
-[22-Jul-2019 20:11:15 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 4 passed to test\app\Player::__construct() must implement interface test\app\playerMove\MoveInterface, instance of test\app\playerMove\Forward given, called in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 14 and defined in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php:18
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12315): RedBeanPHP\Facade::addDatabase('default', '127.0.0.1;mstor...', 'root', '', false, false)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\db.php(8): RedBeanPHP\Facade::setup('127.0.0.1;mstor...', 'root', '')
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\index.php(2): require('C:\\Users\\Admin\\...')
+#3 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 12452
+[25-Jul-2019 13:02:00 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Unsupported database (). in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:12452
 Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php(14): test\app\Player->__construct('Misha', '123', Object(test\app\playerMove\Back), Object(test\app\playerMove\Forward), Object(test\app\playerMove\Jump), Object(test\app\playerMove\Left), Object(test\app\playerMove\Right))
-#1 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\Player.php on line 18
-[22-Jul-2019 20:25:49 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'test\app\PaymentServices\PayPal' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php:5
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12315): RedBeanPHP\Facade::addDatabase('default', '127.0.0.1;mstor...', 'root', '', false, false)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\db.php(8): RedBeanPHP\Facade::setup('127.0.0.1;mstor...', 'root', '')
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\script.php(2): require('C:\\Users\\Admin\\...')
+#3 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 12452
+[25-Jul-2019 13:02:21 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Unsupported database (). in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:12452
 Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 5
-[22-Jul-2019 20:27:45 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'test\app\PaymentServices\PayPal' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php:5
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12315): RedBeanPHP\Facade::addDatabase('default', '127.0.0.1;mstor...', 'root', '', false, false)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\db.php(8): RedBeanPHP\Facade::setup('127.0.0.1;mstor...', 'root', '')
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\script.php(2): require('C:\\Users\\Admin\\...')
+#3 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 12452
+[25-Jul-2019 13:02:22 Asia/Yekaterinburg] PHP Fatal error:  Uncaught RedBeanPHP\RedException: Unsupported database (). in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php:12452
 Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 5
-[22-Jul-2019 20:28:19 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'test\app\PaymentServices\Visa' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php:6
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php(12315): RedBeanPHP\Facade::addDatabase('default', '127.0.0.1;mstor...', 'root', '', false, false)
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\db.php(8): RedBeanPHP\Facade::setup('127.0.0.1;mstor...', 'root', '')
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\script.php(2): require('C:\\Users\\Admin\\...')
+#3 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\includes\rb.php on line 12452
+[25-Jul-2019 13:05:18 Asia/Yekaterinburg] PHP Parse error:  syntax error, unexpected '++' (T_INC), expecting ')' in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\mystackOverflow\script.php on line 4
+[25-Jul-2019 11:07:37 Europe/Moscow] PHP Notice:  Undefined variable: newsListl in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\models\News.php on line 19
+[25-Jul-2019 11:36:28 Europe/Moscow] PHP Notice:  Undefined variable: newsList in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\controllers\NewsController.php on line 21
+[25-Jul-2019 11:36:31 Europe/Moscow] PHP Notice:  Undefined variable: newsList in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\controllers\NewsController.php on line 21
+[25-Jul-2019 11:37:19 Europe/Moscow] PHP Notice:  Array to string conversion in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php on line 5566
+[25-Jul-2019 11:37:43 Europe/Moscow] PHP Notice:  Array to string conversion in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php on line 5566
+[25-Jul-2019 11:38:59 Europe/Moscow] PHP Warning:  strtoupper() expects parameter 1 to be string, array given in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php on line 5938
+[25-Jul-2019 11:38:59 Europe/Moscow] PHP Notice:  Array to string conversion in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php on line 5938
+[25-Jul-2019 11:38:59 Europe/Moscow] PHP Warning:  strtoupper() expects parameter 1 to be string, array given in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php on line 5938
+[25-Jul-2019 11:38:59 Europe/Moscow] PHP Notice:  Array to string conversion in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php on line 5938
+[25-Jul-2019 11:51:05 Europe/Moscow] PHP Parse error:  syntax error, unexpected ')' in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 6
+[25-Jul-2019 11:54:26 Europe/Moscow] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 8
+[25-Jul-2019 12:00:16 Europe/Moscow] PHP Parse error:  syntax error, unexpected end of file, expecting ';' in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\config\dbConfig.php on line 9
+[25-Jul-2019 12:00:16 Europe/Moscow] PHP Parse error:  syntax error, unexpected end of file, expecting ';' in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\config\dbConfig.php on line 9
+[25-Jul-2019 12:00:17 Europe/Moscow] PHP Parse error:  syntax error, unexpected end of file, expecting ';' in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\config\dbConfig.php on line 9
+[25-Jul-2019 12:00:17 Europe/Moscow] PHP Parse error:  syntax error, unexpected end of file, expecting ';' in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\config\dbConfig.php on line 9
+[25-Jul-2019 12:00:23 Europe/Moscow] PHP Notice:  Undefined variable: host in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 6
+[25-Jul-2019 12:00:23 Europe/Moscow] PHP Notice:  Undefined variable: dbname in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 7
+[25-Jul-2019 12:00:23 Europe/Moscow] PHP Notice:  Undefined variable: login in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 8
+[25-Jul-2019 12:00:23 Europe/Moscow] PHP Notice:  Undefined variable: password in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 9
+[25-Jul-2019 12:00:23 Europe/Moscow] PHP Notice:  Undefined variable: host in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 11
+[25-Jul-2019 12:00:23 Europe/Moscow] PHP Notice:  Undefined variable: dbname in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 11
+[25-Jul-2019 12:00:23 Europe/Moscow] PHP Notice:  Undefined variable: login in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 11
+[25-Jul-2019 12:00:23 Europe/Moscow] PHP Notice:  Undefined variable: password in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 11
+[25-Jul-2019 12:00:23 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: Could not connect to database (?). in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php:1017
 Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 6
-[22-Jul-2019 20:28:20 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'test\app\PaymentServices\Visa' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php:6
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(741): RedBeanPHP\Driver\RPDO->connect()
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(1041): RedBeanPHP\Driver\RPDO->runQuery('SELECT `news`.*...', Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(4167): RedBeanPHP\Driver\RPDO->GetAll('SELECT `news`.*...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(6075): RedBeanPHP\Adapter\DBAdapter->get('SELECT `news`.*...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(7855): RedBeanPHP\QueryWriter\AQueryWriter->queryRecord('news', Array, '`id` = ? LIMIT ...', Array)
+#5 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(9019): RedBeanPHP\Repository->find( in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php on line 1017
+[25-Jul-2019 12:00:24 Europe/Moscow] PHP Notice:  Undefined variable: host in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 6
+[25-Jul-2019 12:00:24 Europe/Moscow] PHP Notice:  Undefined variable: dbname in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 7
+[25-Jul-2019 12:00:24 Europe/Moscow] PHP Notice:  Undefined variable: login in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 8
+[25-Jul-2019 12:00:24 Europe/Moscow] PHP Notice:  Undefined variable: password in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 9
+[25-Jul-2019 12:00:24 Europe/Moscow] PHP Notice:  Undefined variable: host in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 11
+[25-Jul-2019 12:00:24 Europe/Moscow] PHP Notice:  Undefined variable: dbname in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 11
+[25-Jul-2019 12:00:24 Europe/Moscow] PHP Notice:  Undefined variable: login in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 11
+[25-Jul-2019 12:00:24 Europe/Moscow] PHP Notice:  Undefined variable: password in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 11
+[25-Jul-2019 12:00:24 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: Could not connect to database (?). in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php:1017
 Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 6
-[22-Jul-2019 20:28:23 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to test\app\PaymentService::payment() must be an instance of test\app\PaymentServices\PaymentSystemInterface, null given, called in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 10 and defined in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\PaymentService.php:9
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(741): RedBeanPHP\Driver\RPDO->connect()
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(1041): RedBeanPHP\Driver\RPDO->runQuery('SELECT `news`.*...', Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(4167): RedBeanPHP\Driver\RPDO->GetAll('SELECT `news`.*...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(6075): RedBeanPHP\Adapter\DBAdapter->get('SELECT `news`.*...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(7855): RedBeanPHP\QueryWriter\AQueryWriter->queryRecord('news', Array, '`id` = ? LIMIT ...', Array)
+#5 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(9019): RedBeanPHP\Repository->find( in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php on line 1017
+[25-Jul-2019 12:00:24 Europe/Moscow] PHP Notice:  Undefined variable: host in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 6
+[25-Jul-2019 12:00:24 Europe/Moscow] PHP Notice:  Undefined variable: dbname in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 7
+[25-Jul-2019 12:00:24 Europe/Moscow] PHP Notice:  Undefined variable: login in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 8
+[25-Jul-2019 12:00:24 Europe/Moscow] PHP Notice:  Undefined variable: password in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 9
+[25-Jul-2019 12:00:24 Europe/Moscow] PHP Notice:  Undefined variable: host in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 11
+[25-Jul-2019 12:00:24 Europe/Moscow] PHP Notice:  Undefined variable: dbname in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 11
+[25-Jul-2019 12:00:24 Europe/Moscow] PHP Notice:  Undefined variable: login in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 11
+[25-Jul-2019 12:00:24 Europe/Moscow] PHP Notice:  Undefined variable: password in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 11
+[25-Jul-2019 12:00:24 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: Could not connect to database (?). in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php:1017
 Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php(10): test\app\PaymentService->payment(NULL)
-#1 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\app\PaymentService.php on line 9
-[22-Jul-2019 20:28:30 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'test\app\PaymentServices\PayPal' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php:5
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(741): RedBeanPHP\Driver\RPDO->connect()
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(1041): RedBeanPHP\Driver\RPDO->runQuery('SELECT `news`.*...', Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(4167): RedBeanPHP\Driver\RPDO->GetAll('SELECT `news`.*...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(6075): RedBeanPHP\Adapter\DBAdapter->get('SELECT `news`.*...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(7855): RedBeanPHP\QueryWriter\AQueryWriter->queryRecord('news', Array, '`id` = ? LIMIT ...', Array)
+#5 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(9019): RedBeanPHP\Repository->find( in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php on line 1017
+[25-Jul-2019 12:06:38 Europe/Moscow] PHP Notice:  Undefined variable: login in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 9
+[25-Jul-2019 12:06:38 Europe/Moscow] PHP Notice:  Undefined variable: password in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 9
+[25-Jul-2019 12:06:38 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: Could not connect to database (mstore). in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php:1017
 Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 5
-[22-Jul-2019 20:28:31 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'test\app\PaymentServices\PayPal' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php:5
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(741): RedBeanPHP\Driver\RPDO->connect()
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(1041): RedBeanPHP\Driver\RPDO->runQuery('SELECT `news`.*...', Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(4167): RedBeanPHP\Driver\RPDO->GetAll('SELECT `news`.*...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(6075): RedBeanPHP\Adapter\DBAdapter->get('SELECT `news`.*...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(7855): RedBeanPHP\QueryWriter\AQueryWriter->queryRecord('news', Array, '`id` = ? LIMIT ...', Array)
+#5 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(9019): RedBeanPHP\Repository-> in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php on line 1017
+[25-Jul-2019 12:06:39 Europe/Moscow] PHP Notice:  Undefined variable: login in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 9
+[25-Jul-2019 12:06:39 Europe/Moscow] PHP Notice:  Undefined variable: password in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 9
+[25-Jul-2019 12:06:39 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: Could not connect to database (mstore). in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php:1017
 Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 5
-[22-Jul-2019 20:28:31 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'test\app\PaymentServices\PayPal' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php:5
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(741): RedBeanPHP\Driver\RPDO->connect()
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(1041): RedBeanPHP\Driver\RPDO->runQuery('SELECT `news`.*...', Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(4167): RedBeanPHP\Driver\RPDO->GetAll('SELECT `news`.*...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(6075): RedBeanPHP\Adapter\DBAdapter->get('SELECT `news`.*...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(7855): RedBeanPHP\QueryWriter\AQueryWriter->queryRecord('news', Array, '`id` = ? LIMIT ...', Array)
+#5 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(9019): RedBeanPHP\Repository-> in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php on line 1017
+[25-Jul-2019 12:06:40 Europe/Moscow] PHP Notice:  Undefined variable: login in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 9
+[25-Jul-2019 12:06:40 Europe/Moscow] PHP Notice:  Undefined variable: password in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 9
+[25-Jul-2019 12:06:40 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: Could not connect to database (mstore). in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php:1017
 Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 5
-[22-Jul-2019 20:28:34 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'test\app\PaymentServices\PayPal' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php:5
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(741): RedBeanPHP\Driver\RPDO->connect()
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(1041): RedBeanPHP\Driver\RPDO->runQuery('SELECT `news`.*...', Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(4167): RedBeanPHP\Driver\RPDO->GetAll('SELECT `news`.*...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(6075): RedBeanPHP\Adapter\DBAdapter->get('SELECT `news`.*...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(7855): RedBeanPHP\QueryWriter\AQueryWriter->queryRecord('news', Array, '`id` = ? LIMIT ...', Array)
+#5 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(9019): RedBeanPHP\Repository-> in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php on line 1017
+[25-Jul-2019 12:06:40 Europe/Moscow] PHP Notice:  Undefined variable: login in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 9
+[25-Jul-2019 12:06:40 Europe/Moscow] PHP Notice:  Undefined variable: password in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 9
+[25-Jul-2019 12:06:40 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: Could not connect to database (mstore). in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php:1017
 Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 5
-[22-Jul-2019 20:28:35 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'test\app\PaymentServices\PayPal' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php:5
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(741): RedBeanPHP\Driver\RPDO->connect()
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(1041): RedBeanPHP\Driver\RPDO->runQuery('SELECT `news`.*...', Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(4167): RedBeanPHP\Driver\RPDO->GetAll('SELECT `news`.*...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(6075): RedBeanPHP\Adapter\DBAdapter->get('SELECT `news`.*...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(7855): RedBeanPHP\QueryWriter\AQueryWriter->queryRecord('news', Array, '`id` = ? LIMIT ...', Array)
+#5 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(9019): RedBeanPHP\Repository-> in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php on line 1017
+[25-Jul-2019 12:06:40 Europe/Moscow] PHP Notice:  Undefined variable: login in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 9
+[25-Jul-2019 12:06:40 Europe/Moscow] PHP Notice:  Undefined variable: password in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 9
+[25-Jul-2019 12:06:40 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: Could not connect to database (mstore). in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php:1017
 Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 5
-[22-Jul-2019 20:28:35 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'test\app\PaymentServices\PayPal' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php:5
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(741): RedBeanPHP\Driver\RPDO->connect()
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(1041): RedBeanPHP\Driver\RPDO->runQuery('SELECT `news`.*...', Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(4167): RedBeanPHP\Driver\RPDO->GetAll('SELECT `news`.*...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(6075): RedBeanPHP\Adapter\DBAdapter->get('SELECT `news`.*...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(7855): RedBeanPHP\QueryWriter\AQueryWriter->queryRecord('news', Array, '`id` = ? LIMIT ...', Array)
+#5 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(9019): RedBeanPHP\Repository-> in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php on line 1017
+[25-Jul-2019 12:06:40 Europe/Moscow] PHP Notice:  Undefined variable: login in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 9
+[25-Jul-2019 12:06:40 Europe/Moscow] PHP Notice:  Undefined variable: password in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 9
+[25-Jul-2019 12:06:40 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: Could not connect to database (mstore). in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php:1017
 Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 5
-[22-Jul-2019 20:29:25 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'test\app\PaymentServices\PayPal' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php:5
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(741): RedBeanPHP\Driver\RPDO->connect()
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(1041): RedBeanPHP\Driver\RPDO->runQuery('SELECT `news`.*...', Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(4167): RedBeanPHP\Driver\RPDO->GetAll('SELECT `news`.*...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(6075): RedBeanPHP\Adapter\DBAdapter->get('SELECT `news`.*...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(7855): RedBeanPHP\QueryWriter\AQueryWriter->queryRecord('news', Array, '`id` = ? LIMIT ...', Array)
+#5 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(9019): RedBeanPHP\Repository-> in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php on line 1017
+[25-Jul-2019 12:06:41 Europe/Moscow] PHP Notice:  Undefined variable: login in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 9
+[25-Jul-2019 12:06:41 Europe/Moscow] PHP Notice:  Undefined variable: password in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 9
+[25-Jul-2019 12:06:41 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: Could not connect to database (mstore). in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php:1017
 Stack trace:
-#0 {main}
-  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\index.php on line 5
-[22-Jul-2019 20:30:52 Europe/Moscow] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\web\index.php on line 3
-[22-Jul-2019 20:30:52 Europe/Moscow] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.;c:/users/admin/documents/github/phpproject/ospanel/modules/php/PHP_7.3-x64;c:/users/admin/documents/github/phpproject/ospanel/modules/php/PHP_7.3-x64/PEAR/pear') in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\test\web\index.php on line 3
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(741): RedBeanPHP\Driver\RPDO->connect()
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(1041): RedBeanPHP\Driver\RPDO->runQuery('SELECT `news`.*...', Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(4167): RedBeanPHP\Driver\RPDO->GetAll('SELECT `news`.*...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(6075): RedBeanPHP\Adapter\DBAdapter->get('SELECT `news`.*...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(7855): RedBeanPHP\QueryWriter\AQueryWriter->queryRecord('news', Array, '`id` = ? LIMIT ...', Array)
+#5 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(9019): RedBeanPHP\Repository-> in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php on line 1017
+[25-Jul-2019 12:06:41 Europe/Moscow] PHP Notice:  Undefined variable: login in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 9
+[25-Jul-2019 12:06:41 Europe/Moscow] PHP Notice:  Undefined variable: password in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 9
+[25-Jul-2019 12:06:41 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: Could not connect to database (mstore). in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php:1017
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(741): RedBeanPHP\Driver\RPDO->connect()
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(1041): RedBeanPHP\Driver\RPDO->runQuery('SELECT `news`.*...', Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(4167): RedBeanPHP\Driver\RPDO->GetAll('SELECT `news`.*...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(6075): RedBeanPHP\Adapter\DBAdapter->get('SELECT `news`.*...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(7855): RedBeanPHP\QueryWriter\AQueryWriter->queryRecord('news', Array, '`id` = ? LIMIT ...', Array)
+#5 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(9019): RedBeanPHP\Repository-> in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php on line 1017
+[25-Jul-2019 12:06:41 Europe/Moscow] PHP Notice:  Undefined variable: login in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 9
+[25-Jul-2019 12:06:41 Europe/Moscow] PHP Notice:  Undefined variable: password in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 9
+[25-Jul-2019 12:06:41 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: Could not connect to database (mstore). in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php:1017
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(741): RedBeanPHP\Driver\RPDO->connect()
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(1041): RedBeanPHP\Driver\RPDO->runQuery('SELECT `news`.*...', Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(4167): RedBeanPHP\Driver\RPDO->GetAll('SELECT `news`.*...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(6075): RedBeanPHP\Adapter\DBAdapter->get('SELECT `news`.*...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(7855): RedBeanPHP\QueryWriter\AQueryWriter->queryRecord('news', Array, '`id` = ? LIMIT ...', Array)
+#5 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(9019): RedBeanPHP\Repository-> in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php on line 1017
+[25-Jul-2019 12:06:42 Europe/Moscow] PHP Notice:  Undefined variable: login in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 9
+[25-Jul-2019 12:06:42 Europe/Moscow] PHP Notice:  Undefined variable: password in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\connect.php on line 9
+[25-Jul-2019 12:06:42 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: Could not connect to database (mstore). in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php:1017
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(741): RedBeanPHP\Driver\RPDO->connect()
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(1041): RedBeanPHP\Driver\RPDO->runQuery('SELECT `news`.*...', Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(4167): RedBeanPHP\Driver\RPDO->GetAll('SELECT `news`.*...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(6075): RedBeanPHP\Adapter\DBAdapter->get('SELECT `news`.*...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(7855): RedBeanPHP\QueryWriter\AQueryWriter->queryRecord('news', Array, '`id` = ? LIMIT ...', Array)
+#5 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(9019): RedBeanPHP\Repository-> in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php on line 1017
+[25-Jul-2019 12:07:02 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: Could not connect to database (mstore). in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php:1017
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(741): RedBeanPHP\Driver\RPDO->connect()
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(1041): RedBeanPHP\Driver\RPDO->runQuery('SELECT `news`.*...', Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(4167): RedBeanPHP\Driver\RPDO->GetAll('SELECT `news`.*...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(6075): RedBeanPHP\Adapter\DBAdapter->get('SELECT `news`.*...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(7855): RedBeanPHP\QueryWriter\AQueryWriter->queryRecord('news', Array, '`id` = ? LIMIT ...', Array)
+#5 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(9019): RedBeanPHP\Repository-> in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php on line 1017
+[25-Jul-2019 12:07:03 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: Could not connect to database (mstore). in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php:1017
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(741): RedBeanPHP\Driver\RPDO->connect()
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(1041): RedBeanPHP\Driver\RPDO->runQuery('SELECT `news`.*...', Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(4167): RedBeanPHP\Driver\RPDO->GetAll('SELECT `news`.*...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(6075): RedBeanPHP\Adapter\DBAdapter->get('SELECT `news`.*...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(7855): RedBeanPHP\QueryWriter\AQueryWriter->queryRecord('news', Array, '`id` = ? LIMIT ...', Array)
+#5 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(9019): RedBeanPHP\Repository-> in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php on line 1017
+[25-Jul-2019 12:07:03 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: Could not connect to database (mstore). in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php:1017
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(741): RedBeanPHP\Driver\RPDO->connect()
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(1041): RedBeanPHP\Driver\RPDO->runQuery('SELECT `news`.*...', Array)
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(4167): RedBeanPHP\Driver\RPDO->GetAll('SELECT `news`.*...', Array)
+#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(6075): RedBeanPHP\Adapter\DBAdapter->get('SELECT `news`.*...', Array)
+#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(7855): RedBeanPHP\QueryWriter\AQueryWriter->queryRecord('news', Array, '`id` = ? LIMIT ...', Array)
+#5 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php(9019): RedBeanPHP\Repository-> in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\libs\rb.php on line 1017
+[25-Jul-2019 12:10:24 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'Db' not found in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\models\News.php:10
+Stack trace:
+#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\controllers\NewsController.php(20): News::getNewsItemById('39')
+#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\components\Router.php(59): NewsController->actionView('39')
+#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\index.php(19): Router->run()
+#3 {main}
+  thrown in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\MStore\models\News.php on line 10
