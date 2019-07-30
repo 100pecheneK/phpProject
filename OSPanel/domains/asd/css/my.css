@@ -1,0 +1,24 @@
+html {
+    height: 100%;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+.sp {
+    position: absolute;
+    top: 75%;
+    align-self: center;
+}
+
+.myB {	
+    transition: 0.2s;
+}
+
+.myB:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.2s;
+}

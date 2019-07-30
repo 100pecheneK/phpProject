@@ -1,14 +1,15 @@
 <?php
 require "includes/db.php";
 
-for ($i = 0; $i < 20; $i++){
-    $news = R::dispense('news');
-    $news->title = 'Заголовок' . $i;
-    $news->text = 'Текст' . $i;
-    R::store($news);
-    sleep(1);
-}
+        
 
+$products =  R::getAll('SELECT id , code, price, sale, old_price, is_new FROM products WHERE status = 1 ORDER BY id DESC LIMIT 10');
+echo '<pre>';
+print_r($products);
+foreach ($products as $pro) {
+	
+	echo '<br>';
+}
 
 ?>
 
