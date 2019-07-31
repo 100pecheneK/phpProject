@@ -1,8 +1,16 @@
 <?php 
 
-require "rb.php";
+class Db
+{
+    public static function getConnection()
+    {
+        require 'rb.php';
 
-$con = include "/config.php";
+        $stngsPath = 'config.php';
+        $stngs = include($stngsPath);
 
-// R::setup( 'mysql:host=192.168.0.104;dbname=mystackoverflow','root', '' );
-R::setup('mysql:host=' . $con['host'] . ';dbname='. $con['name'] .','. $con['login'] . ','. $con['pass']);
+        $db = "mysql:host={$stngs['host']};dbname={$stngs['dbname']}";
+
+        R::setup($db, $stngs['user'], $stngs['password']);
+    }
+}

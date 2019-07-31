@@ -12,7 +12,9 @@ define('ROOT', $_SERVER['DOCUMENT_ROOT']);
 require_once(ROOT . '/components/Router.php');
 require_once(ROOT . '/components/Db.php');
 
+// 4. Подключение к БД
+Db::getConnection();
 
-// 4. Вызов Router;
+// 5. Вызов Router;
 $router = new Router;
 $router->run();

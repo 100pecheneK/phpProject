@@ -1,7 +1,10 @@
-html {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
-
+main {
+    margin-top: 5rem;
+}
 /* Ценник на картинке товара */
 .sp {
     position: absolute;
@@ -44,6 +47,15 @@ html {
     background-color: #ffc107;
 }
 
+.all-category {
+    background-color: #ffc1074f;
+}
+
+.all-category:hover,
+.all-category:focus {
+    background-color: #ffc107ca;
+}
+
 /* Для ссылок */
 
 .links a {
@@ -66,11 +78,18 @@ html {
 .links a:hover:before {
     width: 100%;
     left: 0;
-    
+
 }
 
 /* Тёмный прозрачный задний фон */
 
 .bg-dark-trans {
     background-color: #343a407a !important;
+}
+
+/* Карточки */
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }

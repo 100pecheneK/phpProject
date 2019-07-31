@@ -1,5 +1,5 @@
 <?php include ROOT . '/views/layouts/header.php' ?>
-<main role="main">
+<main role="main" class="flex-shrink-0">
     <!-- Игра -->
     <div class="container p-0 p-md-3">
         <div class="my-0 my-sm-3 bg-white shadow-sm">
@@ -51,7 +51,7 @@
         <div class="p-2 bg-white">
             <h4 class="text-center">Покупайте так же</h4>
             <?php include ROOT . '/views/layouts/productCarusel.php' ?>
-            <?php include ROOT . '/views/layouts/newProduct.php' ?>
+            <?php include ROOT . '/views/layouts/products.php' ?>
             <!-- / Популярные игры -->
         </div>
     </div>
