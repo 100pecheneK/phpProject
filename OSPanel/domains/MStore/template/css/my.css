@@ -1,10 +1,12 @@
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
+
 main {
     margin-top: 5rem;
 }
+
 /* Ценник на картинке товара */
 .sp {
     position: absolute;
@@ -89,7 +91,23 @@ main {
 
 /* Карточки */
 .card-img-top {
-    width: 100%;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+}
+
+/* Пегинация */
+
+.page-link {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+.page-link:hover {
+    color: #0056b3;
+    border-color: #0000007a;
+}
+
+.page-link:focus {
+    border-color: #ffecb2;
+    box-shadow: 0 0 0 0.2rem rgba(255, 152, 0, 0.25);
 }

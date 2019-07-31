@@ -8,25 +8,25 @@ if (isset($_GET['go'])){
 	
 
 
-		$product = R::dispense('products');
+		// $product = R::dispense('products');
         
-        $product->name = 'PUBG';
-        $product->code = 1;  
-        $product->price = 299;
-        $product->availability = 1;
-        $product->image = 'low1.png';
-        $product->brand = 'my';
-        $product->description = 'PUBG PUBG';
+  //       $product->name = 'PUBG';
+  //       $product->code = 1;  
+  //       $product->price = 299;
+  //       $product->availability = 1;
+  //       $product->image = 'low1.png';
+  //       $product->brand = 'my';
+  //       $product->description = 'PUBG PUBG';
 
-        $category = R::findOne('categories', "name = ?", array('Экшн'));
-        $category->name = 'Экшн';
+  //       $category = R::findOne('categories', "name = ?", array('Экшн'));
+  //       $category->name = 'Экшн';
         
-        $product->sharedCategoryList[] = $category;
+  //       $product->sharedCategoryList[] = $category;
         
-        R::store($product);
+  //       R::store($product);
 
 
-	
+	 echo $_SERVER['REQUEST_URI'];
 
 
 

@@ -1,25 +1,32 @@
-2019-07-31  8:54:46 0 [Note] c:\users\admin\documents\github\phpproject\ospanel\modules\database\MariaDB-10.3-x64\bin\mysqld.exe (mysqld 10.3.13-MariaDB-log) starting as process 1892 ...
-2019-07-31  8:54:46 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
-2019-07-31  8:54:46 0 [Note] InnoDB: Uses event mutexes
-2019-07-31  8:54:46 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
-2019-07-31  8:54:46 0 [Note] InnoDB: Number of pools: 1
-2019-07-31  8:54:46 0 [Note] InnoDB: Using SSE2 crc32 instructions
-2019-07-31  8:54:46 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
-2019-07-31  8:54:46 0 [Note] InnoDB: Completed initialization of buffer pool
-2019-07-31  8:54:53 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
-2019-07-31  8:54:53 0 [Note] InnoDB: Creating shared tablespace for temporary tables
-2019-07-31  8:54:53 0 [Note] InnoDB: Setting file 'c:\users\admin\documents\github\phpproject\ospanel\userdata\MariaDB-10.3-x64\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
-2019-07-31  8:54:53 0 [Note] InnoDB: File 'c:\users\admin\documents\github\phpproject\ospanel\userdata\MariaDB-10.3-x64\ibtmp1' size is now 12 MB.
-2019-07-31  8:54:53 0 [Note] InnoDB: Waiting for purge to start
-2019-07-31  8:54:53 0 [Note] InnoDB: 10.3.13 started; log sequence number 13781188; transaction id 19752
-2019-07-31  8:54:53 0 [Note] InnoDB: Loading buffer pool(s) from c:\users\admin\documents\github\phpproject\ospanel\userdata\MariaDB-10.3-x64\ib_buffer_pool
-2019-07-31  8:54:53 0 [Note] Plugin 'FEEDBACK' is disabled.
-2019-07-31  8:54:53 0 [Note] Server socket created on IP: '0.0.0.0'.
-2019-07-31  8:54:54 0 [Note] Reading of all Master_info entries succeded
-2019-07-31  8:54:54 0 [Note] Added new Master_info '' to hash table
-2019-07-31  8:54:54 0 [Note] c:\users\admin\documents\github\phpproject\ospanel\modules\database\MariaDB-10.3-x64\bin\mysqld.exe: ready for connections.
+2019-07-31 18:03:19 0 [Note] c:\users\admin\documents\github\phpproject\ospanel\modules\database\MariaDB-10.3-x64\bin\mysqld.exe (mysqld 10.3.13-MariaDB-log) starting as process 1436 ...
+2019-07-31 18:03:19 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-07-31 18:03:19 0 [Note] InnoDB: Uses event mutexes
+2019-07-31 18:03:19 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2019-07-31 18:03:19 0 [Note] InnoDB: Number of pools: 1
+2019-07-31 18:03:19 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-07-31 18:03:19 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-07-31 18:03:19 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-07-31 18:03:20 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2019-07-31 18:03:20 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-07-31 18:03:20 0 [Note] InnoDB: Setting file 'c:\users\admin\documents\github\phpproject\ospanel\userdata\MariaDB-10.3-x64\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-07-31 18:03:20 0 [Note] InnoDB: File 'c:\users\admin\documents\github\phpproject\ospanel\userdata\MariaDB-10.3-x64\ibtmp1' size is now 12 MB.
+2019-07-31 18:03:20 0 [Note] InnoDB: Waiting for purge to start
+2019-07-31 18:03:20 0 [Note] InnoDB: 10.3.13 started; log sequence number 13848390; transaction id 19906
+2019-07-31 18:03:20 0 [Note] InnoDB: Loading buffer pool(s) from c:\users\admin\documents\github\phpproject\ospanel\userdata\MariaDB-10.3-x64\ib_buffer_pool
+2019-07-31 18:03:20 0 [Note] Plugin 'FEEDBACK' is disabled.
+2019-07-31 18:03:20 0 [Note] Server socket created on IP: '0.0.0.0'.
+2019-07-31 18:03:21 0 [Note] Reading of all Master_info entries succeded
+2019-07-31 18:03:21 0 [Note] Added new Master_info '' to hash table
+2019-07-31 18:03:21 0 [Note] c:\users\admin\documents\github\phpproject\ospanel\modules\database\MariaDB-10.3-x64\bin\mysqld.exe: ready for connections.
 Version: '10.3.13-MariaDB-log'  socket: ''  port: 3306  mariadb.org binary distribution
-2019-07-31  8:54:56 0 [Note] InnoDB: Buffer pool(s) load completed at 190731  8:54:56
-2019-07-31 11:15:25 207 [Warning] Access denied for user ''@'localhost' (using password: NO)
-2019-07-31 11:16:23 208 [Warning] Access denied for user ''@'localhost' (using password: NO)
-2019-07-31 11:18:18 209 [Warning] Access denied for user ''@'localhost' (using password: NO)
+2019-07-31 18:03:21 0 [Note] InnoDB: Buffer pool(s) load completed at 190731 18:03:21
+2019-07-31 22:08:30 0 [Note] c:\users\admin\documents\github\phpproject\ospanel\modules\database\MariaDB-10.3-x64\bin\mysqld.exe (initiated by: unknown): Normal shutdown
+2019-07-31 22:08:30 0 [Note] Event Scheduler: Purging the queue. 0 events
+2019-07-31 22:08:30 0 [Note] InnoDB: FTS optimize thread exiting.
+2019-07-31 22:08:31 0 [Note] InnoDB: Starting shutdown...
+2019-07-31 22:08:31 0 [Note] InnoDB: Dumping buffer pool(s) to c:\users\admin\documents\github\phpproject\ospanel\userdata\MariaDB-10.3-x64\ib_buffer_pool
+2019-07-31 22:08:31 0 [Note] InnoDB: Buffer pool(s) dump completed at 190731 22:08:31
+2019-07-31 22:08:32 0 [Note] InnoDB: Shutdown completed; log sequence number 13848399; transaction id 19910
+2019-07-31 22:08:32 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2019-07-31 22:08:32 0 [Note] c:\users\admin\documents\github\phpproject\ospanel\modules\database\MariaDB-10.3-x64\bin\mysqld.exe: Shutdown complete
+

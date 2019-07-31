@@ -9,15 +9,11 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-12 col-lg-5">
-                                    <img class="img-fluid mx-auto d-block" src="/template/images/low1.png" alt="">
+                                    <img class="img-fluid mx-auto d-block" src="/template/images/small/<?= $product->image ?>" alt="">
                                 </div>
                                 <div class="col-sm-12 col-lg-7 pt-sm-3">
-                                    <h4 class="font-weight-bold"> PLAYERUNKNOWN`S BATTLEGROUNDS </h4>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam quas,
-                                        reprehenderit inventore, repellendus harum eius tempora dolores fugiat nihil
-                                        odit expedita cupiditate similique sunt debitis ipsum nulla in ipsam
-                                        aperiam!
-                                    </p>
+                                    <h4 class="font-weight-bold"><?= $product->name ?></h4>
+                                    <p><?= $product->description ?></p>
                                 </div>
                             </div>
                         </div>
@@ -25,14 +21,18 @@
                     <div class="col-12 col-md-3 bg-light p-2">
                         <div class="container h-100">
                             <div class="row h-100">
-                                <div class="col-12">
-                                    <h3 class="border border-warning p-1 text-center">
-                                        <span class="old-price font-weight-light m-0">499&#x20bd;</span>
-                                        <span class="font-weight-bold m-0">99&#x20bd;</span>
+                                <div class="col-12 text-center">
+                                    <h3 class="border border-warning p-1">
+                                        <?php if ($product->sale) : ?>
+                                            <span class="old-price font-weight-light m-0"><?= $product->old_price ?>&#x20bd;</span>
+                                        <?php endif ?>
+                                        <span class="font-weight-bold m-0"><?= $product->price ?>&#x20bd;</span>
                                     </h3>
-                                    <!-- если товара нет text-danger -->
-                                    <h4 class="text-success">Товар в наличии</h4>
-
+                                    <?php if ($product->availability) : ?>
+                                        <h4 class="text-success">В наличии</h4>
+                                    <?php else : ?>
+                                        <h4 class="text-danger">Нет в наличии</h4>
+                                    <?php endif ?>
                                 </div>
                                 <div class="col-12 align-self-lg-end mb-2">
                                     <a href="#" class="myB btn btn-warning btn-block rounded-0">Купить</a>

@@ -28,7 +28,7 @@
                             Категории
                         </a>
                         <div class="dropdown-menu">
-                            <a href="/category/" class="dropdown-item all-category">Все категории</a>
+                            <a href="/catalog" class="dropdown-item all-category">Все категории</a>
                             <?php foreach ($categories as $categorie) : ?>
                                 <?php
                                 $activeCategory = false;

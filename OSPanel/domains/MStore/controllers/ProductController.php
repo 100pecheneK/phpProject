@@ -6,10 +6,13 @@ include_once ROOT . '/models/Product.php';
 class ProductController
 {
 
-    public function actionView($id)
+    public function actionView($productId)
     {
         $categories = Category::getCategoryList();
-        $products = Product::getLatestProducts();
+
+        $product = Product::getProductById($productId);
+
+        $products = Product::getLatestProducts(4);
 
         require_once ROOT . '/views/product/view.php';
 

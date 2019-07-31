@@ -21,7 +21,7 @@
                 </div>
             <?php endforeach ?>
         <?php else : ?>
-            <h3 class="text-center w-100">Товаров данной категории не существует</h3>
+            <h3 class="text-center w-100">Таких товаров не существует</h3>
         <?php endif ?>
     </div>
 </div>

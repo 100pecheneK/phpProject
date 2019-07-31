@@ -4,6 +4,9 @@
 
     <!-- Популярные игры -->
     <?php include ROOT . '/views/layouts/products.php' ?>
+    
+    <!-- Пегинация -->
+    <?php $pagination->get() ?>
 
 </main>
 
