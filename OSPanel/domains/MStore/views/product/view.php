@@ -1,4 +1,5 @@
 <?php include ROOT . '/views/layouts/header.php' ?>
+
 <main role="main" class="flex-shrink-0">
     <!-- Игра -->
     <div class="container p-0 p-md-3">
@@ -43,8 +44,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    </div>
+    </div>    
     <!-- / Игра -->
     <!-- Популярные игры -->
     <div class="container-fluid p-0">

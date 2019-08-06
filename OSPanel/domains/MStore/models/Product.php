@@ -2,7 +2,7 @@
 
 class Product
 {
-    const SHOW_BY_DEFAULT = 2;
+    const SHOW_BY_DEFAULT = 12;
 
     // Вернёт ассоциативный массив с указанным столбцом ключа и значения
     public static function getLatestProducts($count = self::SHOW_BY_DEFAULT)

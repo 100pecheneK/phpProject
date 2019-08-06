@@ -25,8 +25,13 @@ if (isset($_GET['go'])){
         
   //       R::store($product);
 
+		$user = R::dispense('users');
+        $user->name = 'Misha';
+        $user->email = 'mistermihail23@gmail.com';
+        $user->password = password_hash('12345', PASSWORD_DEFAULT);
+        R::store($user);
 
-	 echo $_SERVER['REQUEST_URI'];
+
 
 
 

@@ -20,8 +20,8 @@
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto links">
+        <div class="navbar-collapse collapse links" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <div class="btn-group">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -38,7 +38,6 @@
                                     }
                                 } ?>
                                 <a href="/category/<?= $categorie->id ?>" class="dropdown-item">
-
                                     <div class="row">
                                         <div class="col-1 p-0">
                                             <?php if ($activeCategory) : ?>
@@ -49,22 +48,39 @@
                                             <?= $categorie->name ?>
                                         </div>
                                     </div>
-
-
                                 </a>
                             <?php endforeach; ?>
                         </div>
                     </div>
                 </li>
+            </ul>
+            <ul class="navbar-nav">
                 <li class="nav-item">
-                    <div class="btn-group">
-
-                        <a href="/cart/" class="nav-link"><i class="fas fa-shopping-cart"></i> Корзина</a>
-                    </div>
+                    <a href="/cart/" class="nav-link"><i class="fas fa-shopping-cart"></i> Корзина</a>
                 </li>
-                <li class="nav-item">
-                    <a href="/product/1">single</a>
-                </li>
+                <?php if (User::isGuest()) : ?>
+                    <li class="nav-item">
+                        <a href="/user/register" class="nav-link"><i class="fas fa-user-plus"></i> Регистрация</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/user/login" class="nav-link"><i class="fas fa-sign-in-alt"></i> Вход</a>
+                    </li>
+                <?php else : ?>
+                    <li class="nav-item">
+                        <div class="btn-group">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-user"></i> Аккаунт</a>
+                            <div class="dropdown-menu">
+                                <a href="/account" class="dropdown-item">Аккаунт</a>
+                                <a href="/account/settings" class="dropdown-item">Настройки</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/user/logout" class="nav-link"><i class="fas fa-sign-out-alt cl-effect-3"></i> Выход</a>
+                    </li>
+                <?php endif; ?>
             </ul>
         </div>
     </nav>
+    <main role="main" class="flex-shrink-0">
