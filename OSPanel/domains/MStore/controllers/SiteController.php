@@ -8,6 +8,7 @@ class SiteController
     {
         $categories = Category::getCategoryList();
         $products = Product::getLatestProducts();
+        $caruselProducts = Product::getRecommendedProducts();
 
         require_once ROOT . '/views/site/index.php';
 

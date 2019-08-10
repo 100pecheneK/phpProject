@@ -29,7 +29,7 @@ class UserController
             if (User::checkEmailExists($email))
                 $errors[] = 'Такой Email существует';
 
-            if (!$errors) {
+            if ($errors == false) {
                 $userId = User::register($name, $email, $password);
                 User::auth($userId);
                 header("Location: /");

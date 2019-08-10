@@ -17,3 +17,16 @@
     }, false);
 })();
 // /Валидация форм
+
+// Ajax
+$(document).ready(function() {
+    $(".add-to-cart").click(function() {
+        var id = $(this).attr("data-id");
+        $.post("/cart/addAjax/" + id, {}, function(data) {
+            $("#cart-count").html(data);
+        });
+        $(this).html('<i class="fas fa-check"></i>');
+        return false;
+    });
+});
+// /Ajax

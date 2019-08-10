@@ -2,44 +2,17 @@
 require 'db/db.php';
 
 Db::getConnection();
+
 if (isset($_GET['go'])){
 	echo "<pre>";
 	// ----------------- Скрипт ------------------
 	
+$products = R::findAll('products');
 
-
-		// $product = R::dispense('products');
-        
-  //       $product->name = 'PUBG';
-  //       $product->code = 1;  
-  //       $product->price = 299;
-  //       $product->availability = 1;
-  //       $product->image = 'low1.png';
-  //       $product->brand = 'my';
-  //       $product->description = 'PUBG PUBG';
-
-  //       $category = R::findOne('categories', "name = ?", array('Экшн'));
-  //       $category->name = 'Экшн';
-        
-  //       $product->sharedCategoryList[] = $category;
-        
-  //       R::store($product);
-
-		$user = R::dispense('users');
-        $user->name = 'Misha';
-        $user->email = 'mistermihail23@gmail.com';
-        $user->password = password_hash('12345', PASSWORD_DEFAULT);
-        R::store($user);
-
-
-
-
-
-
-
-
-
-
+foreach ($products as $product) {
+	$product->is_new = 0;
+	R::store($product);
+}
 
 	// ----------------- / Скрипт ----------------
 	?>

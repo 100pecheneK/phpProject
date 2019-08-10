@@ -15,6 +15,7 @@
 </head>
 
 <body class="bg-light d-flex flex-column h-100">
+
     <nav class="navbar navbar-expand-sm navbar-light bg-warning fixed-top">
         <a class="navbar-brand" href="/">MSTORE</a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +29,7 @@
                             Категории
                         </a>
                         <div class="dropdown-menu">
-                            <a href="/catalog" class="dropdown-item all-category">Все категории</a>
+                            <a href="/catalog" class="dropdown-item orange">Все категории</a>
                             <?php foreach ($categories as $categorie) : ?>
                                 <?php
                                 $activeCategory = false;
@@ -56,7 +57,7 @@
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="/cart/" class="nav-link"><i class="fas fa-shopping-cart"></i> Корзина</a>
+                    <a href="/cart/" class="nav-link"><i class="fas fa-shopping-cart"></i> Корзина (<span id="cart-count"><?= Cart::countPoducts() ?></span>)</a>
                 </li>
                 <?php if (User::isGuest()) : ?>
                     <li class="nav-item">
@@ -79,6 +80,11 @@
                     <li class="nav-item">
                         <a href="/user/logout" class="nav-link"><i class="fas fa-sign-out-alt cl-effect-3"></i> Выход</a>
                     </li>
+                    <?php if (AdminBase::checkHeaderAdmin()):?>
+                    <li class="nav-item">
+                        <a href="/admin" class="nav-link settings_icon"><i class="fas fa-cog"></i> Администрирование</a>
+                    </li>
+                    <?php endif ?>
                 <?php endif; ?>
             </ul>
         </div>

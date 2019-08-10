@@ -31,13 +31,14 @@ class Router
         foreach ($this->routes as $uriPattern => $path) {
             // Сравниваем Паттерн пути и путь
             if (preg_match("~$uriPattern~", $uri)) {
-
+                
+                
                 // Получаем внутренний путь из внешнего по правилу
                 $internalRoute = preg_replace("~$uriPattern~", $path, $uri);
 
                 // Определяем controller, action, parameters
                 $segments = explode('/', $internalRoute);
-
+                
                 // controller
                 $controller = ucfirst(array_shift($segments)) . 'Controller';
 

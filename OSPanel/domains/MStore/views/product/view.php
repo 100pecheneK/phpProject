@@ -1,6 +1,4 @@
 <?php include ROOT . '/views/layouts/header.php' ?>
-
-<main role="main" class="flex-shrink-0">
     <!-- Игра -->
     <div class="container p-0 p-md-3">
         <div class="my-0 my-sm-3 bg-white shadow-sm">
@@ -36,7 +34,7 @@
                                     <?php endif ?>
                                 </div>
                                 <div class="col-12 align-self-lg-end mb-2">
-                                    <a href="#" class="myB btn btn-warning btn-block rounded-0">Купить</a>
+                                <a href="/cart/add/<?= $product->id ?>" class="myB btn btn-block btn-warning rounded-0">Купить</a>
                                 </div>
                             </div>
                         </div>
@@ -55,5 +53,5 @@
             <!-- / Популярные игры -->
         </div>
     </div>
-</main>
+
 <?php include ROOT . '/views/layouts/footer.php' ?>

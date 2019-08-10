@@ -12,6 +12,7 @@ class ProductController
 
         $product = Product::getProductById($productId);
 
+        $caruselProducts = Product::getRecommendedProducts();
         $products = Product::getLatestProducts(4);
 
         require_once ROOT . '/views/product/view.php';

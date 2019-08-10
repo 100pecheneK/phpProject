@@ -40,8 +40,8 @@
 <script src="/docs/4.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 <script src="/template/js/bootstrap.js">
 </script>
+<script src="/template/js/jquery.js"></script>
 <script src="/template/js/my.js"></script>
-
 </body>
 
 </html>

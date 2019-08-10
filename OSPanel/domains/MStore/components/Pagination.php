@@ -76,7 +76,7 @@ class Pagination
         $segments = explode("/$this->index", $_SERVER['REQUEST_URI']);
         $pages = $this->getLeftRightPages($total_pages);
 
-        echo '<nav aria-label="Page navigation example">';
+        echo '<nav aria-label="Page navigation" class="my-2">';
         echo '<ul class="pagination justify-content-center ">';
 
         $this->getLi($pages['left'], $pages['right'], $segments);

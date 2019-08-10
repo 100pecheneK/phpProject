@@ -26,7 +26,7 @@
                         </div>
                         <div class="form-group">
                             <label for="name">Имя</label>
-                            <input type="text" name="name" class="form-control" aria-describedby="emailHelp" placeholder="Введите name" value="<?= $name ?>" required>
+                            <input type="text" name="name" class="form-control" aria-describedby="emailHelp" placeholder="Введите имя" value="<?= $name ?>" required>
                             <div class="valid-feedback">
                                 Выглядит отлично!
                             </div>
