@@ -34,7 +34,7 @@
                                 Пожалуйста, введите Ваш пароль.
                             </div>
                         </div>
-                        <button type="submit" name="submit" class="btn btn-warning btn-block">Войти</button>
+                        <button type="submit" name="submit" class="btn myB btn-warning btn-block">Войти</button>
                     </form>
                 </div>
             </div>

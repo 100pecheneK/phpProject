@@ -1,11 +1,13 @@
 <?php
 
-include_once ROOT . '/models/Category.php';
-include_once ROOT . '/models/Product.php';
-
+/**
+ * Управляет функциями продукта.
+ */
 class ProductController
 {
-
+    /**
+     * Отображение страницы продукта.
+     */
     public function actionView($productId)
     {
         $categories = Category::getCategoryList();

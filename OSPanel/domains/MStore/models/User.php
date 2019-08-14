@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * ! Остановился коментировать тут
+ */
 class User
 {
     public static function register($name, $email, $password)
@@ -84,13 +86,83 @@ class User
         }
     }
 
-    public static function saveSettings($user ,$email, $name, $password)
+    public static function saveSettings($user, $email, $name, $password)
     {
         $user->name = $name;
         $user->email = $email;
         $user->password = password_hash($password, PASSWORD_DEFAULT);
+
         R::store($user);
-        
+
         return true;
+    }
+    // Админка
+    public static function getUsersList($page, $count = self::SHOW_BY_DEFAULT, $order, $sort)
+    {
+        $page = intval($page);
+        $offset = ($count * $page) - $count;
+        $users = R::getAll("SELECT id, name, email, role FROM users ORDER BY " . $order . " " . $sort . " LIMIT ? OFFSET ?", array(
+            $count,
+            $offset
+        ));
+        return $users;
+    }
+    public static function deleteUserById($id)
+    {
+        R::exec('DELETE FROM `users` WHERE `id` = ?', array($id));
+        return true;
+    }
+    public static function createUser($options)
+    {
+        $user = R::dispense('users');
+        $user->name = $options['name'];
+        $user->email = $options['email'];
+        $user->password = password_hash($options['password'], PASSWORD_DEFAULT);
+        $user->role = self::getUserRoleByInt($options['role']);
+        R::store($user);
+    }
+    public static function getUserRole($role)
+    {
+        switch ($role) {
+            case 'user':
+                $role = 'Пользователь';
+                break;
+            case 'admin':
+                $role = 'Администратор';
+                break;
+            default:
+                $role = 'Пользователь';
+                break;
+        }
+        echo $role;
+    }
+    private static function getUserRoleByInt($role)
+    {
+        switch ($role) {
+            case 1:
+                $role = 'user';
+                break;
+            case 0:
+                $role = 'admin';
+                break;
+            default:
+                $role = 'user';
+                break;
+        }
+        return $role;
+    }
+    public static function getTotalUsers()
+    {
+        $total_count = R::count('users');
+        return $total_count;
+    }
+    public static function updateUser($user, $options)
+    {
+        $user->name = $options['name'];
+        $user->email = $options['email'];
+        if ($options != '')
+            $user->password = password_hash($options['password'], PASSWORD_DEFAULT);
+        $user->role = self::getUserRoleByInt($options['role']);;
+        R::store($user);
     }
 }

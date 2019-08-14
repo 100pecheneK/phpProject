@@ -1,7 +1,13 @@
 <?php
 
+/**
+ * Управляет главной страницей админ панели.
+ */
 class AdminController
 {
+    /**
+     * Главная страница.
+     */
     public function actionIndex()
     {
         AdminBase::checkAdmin();

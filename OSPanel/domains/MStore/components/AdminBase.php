@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * Содержит в себе функции проверки пользователя на администратора.
+ */
 class AdminBase
 {
     public static function checkAdmin()

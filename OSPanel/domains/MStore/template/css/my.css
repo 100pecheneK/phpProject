@@ -33,6 +33,7 @@ main {
 /* Красивые кнопочки */
 .myB {
     transition: 0.1s;
+    border-radius: 0;
 }
 
 .myB:hover {
@@ -121,18 +122,40 @@ main {
 .settings_icon i {
     transition: 1s;
 }
+
 .settings_icon:hover i {
     -webkit-transform: rotateZ(360deg);
     -ms-transform: rotateZ(360deg);
     transform: rotateZ(360deg);
     transition: 1s;
 }
-.delete_icon i{
+
+.delete_icon i {
     transition: 0.3s;
 }
+
 .delete_icon:hover i {
     -webkit-transform: rotateZ(20deg);
     -ms-transform: rotateZ(20deg);
     transform: rotateZ(20deg);
     transition: 0.3s;
+}
+
+/* Мои цвета */
+.mbg-black {
+    background-color: #212121;
+}
+
+/* Мои списки */
+.my-ul {
+    list-style-type: none;
+}
+
+/* Формы */
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #ff9800;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 152, 0, 0.25);
 }

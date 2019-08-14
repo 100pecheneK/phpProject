@@ -1,8 +1,16 @@
 <?php
-
+/**
+ * Создает строку состояния сортировки.
+ */
 class Sort
 {
-        public static function getSortStatus($order, $sort)
+    /**
+     * Создает строку состояния сортировки.
+     * @param string $order Столбец
+     * @param string $sort Параметр ASC/DESC
+     * @return string Строка состояния: Отсортировано по id сверху
+     */
+    public static function getSortStatus($order, $sort)
     {
         $string = 'Отсортировано по: ';
         switch ($order) {
@@ -29,6 +37,12 @@ class Sort
                 break;
             case 'status':
                 $order = 'отображению';
+                break;
+            case 'role':
+                $order = 'роли';
+                break;
+            case 'email':
+                $order = 'Email';
                 break;
 
             default:

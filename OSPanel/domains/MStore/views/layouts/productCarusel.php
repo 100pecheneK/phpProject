@@ -10,8 +10,8 @@
                 <div class="carousel-inner">
                     <?php foreach ($caruselProducts as $i => $cP) : ?>
                         <div class="carousel-item <?php if (($i + 1) == 1) echo 'active' ?>">
-                            <a href="#">
-                                <img src="/template/images/big/<?= $cP['big_image'] ?>" class="d-block w-100" alt="...">
+                            <a href="/product/<?= $cP['id'] ?>">
+                                <img src="<?= Product::getBigImage($cP['id']) ?>" class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-md-block justify-content-center text-warning">
                                     <span class="border border-warning p-1 text-center bg-dark-trans">
 

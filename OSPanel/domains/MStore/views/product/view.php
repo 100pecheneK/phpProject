@@ -8,7 +8,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-12 col-lg-5">
-                                    <img class="img-fluid mx-auto d-block" src="/template/images/small/<?= $product->image ?>" alt="">
+                                    <img class="img-fluid mx-auto d-block" src="<?= Product::getMainImage($product->id) ?>" alt="">
                                 </div>
                                 <div class="col-sm-12 col-lg-7 pt-sm-3">
                                     <h4 class="font-weight-bold"><?= $product->name ?></h4>

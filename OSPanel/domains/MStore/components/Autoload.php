@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * Функция занимается автозагрузкой классов.
+ */
 function  my_autoload($className)
 {
     $paths_array = array(

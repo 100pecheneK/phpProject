@@ -1,9 +1,13 @@
 <?php
-include_once ROOT . '/models/Category.php';
-include_once ROOT . '/models/Product.php';
 
+/**
+ * Управляет функциями главной страницы сайта.
+ */
 class SiteController
 {
+    /**
+     * Отображение главной страницы сайта.
+     */
     public function actionIndex()
     {
         $categories = Category::getCategoryList();
@@ -14,11 +18,14 @@ class SiteController
 
         return true;
     }
-
+    /**
+     * Отображение контактной формы поддержки.
+     */
     public function actionContact()
     {
         // 1) отправка почты
         // 2) возможен второй вариант через VK API (надо запросить права у поддержки)
+        require_once ROOT . '/views/site/contact.php';
         return true;
     }
 }

@@ -21,7 +21,7 @@
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse collapse links justify-content-end" id="navbarsExampleDefault">
+        <div class="navbar-collapse collapse links justify-content-end" id="navbarsExampleDefault">            
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <div class="btn-group">
@@ -42,7 +42,7 @@
     <main role="main" class="flex-shrink-0 m-0">
         <div class="container-fluid p-0">
             <div class="row w-100 min-vh-100">
-                <div class="col-2 p-0 bg-dark">
+                <div class="col-2 p-0 mbg-black">
                     <?php include ROOT . '/views/layouts/admin/admin_nav.php' ?>
                 </div>
                 <div class="col-10">

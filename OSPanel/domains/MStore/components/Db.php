@@ -1,7 +1,12 @@
 <?php
-
+/**
+ * Занимается созданием подключения к БД.
+ */
 class Db
 {
+    /**
+     * Создаёт подключение к БД используя библиотеку RBPHP.
+     */
     public static function getConnection()
     {
         require ROOT . '/libs/rb.php';

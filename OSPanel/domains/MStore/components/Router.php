@@ -1,11 +1,19 @@
 <?php
 
-// * ROUTER
+/**
+ * Определяет контроллер и экшн по REQUEST_URI
+ */
 
 class Router
 {
+    /**
+     * Хранит в себе ассоциативный массив с путями.
+     * @var array uriPattern => controller/action
+     */
     private $routes;
-
+    /**
+     * Объявление переменных
+     */
     public function __construct()
     {
         // Подключаем routes
@@ -13,16 +21,20 @@ class Router
         $this->routes = include($routesPath);
     }
 
-    // Вернёт URI
+    /**
+     * Определяет текущий URI.
+     * @return string Строка с текущим URI
+     */
     private function getURI()
     {
         if (!empty($_SERVER['REQUEST_URI'])) {
             return trim($_SERVER['REQUEST_URI'], '/');
         }
     }
-
-    // Аналазируем запрос и отдаём управление
-    public function run()
+    
+    /**
+    * Анализирует запрос и передаёт управление.
+    */public function run()
     {
         // Получаем URI
         $uri = $this->getURI();
@@ -31,14 +43,14 @@ class Router
         foreach ($this->routes as $uriPattern => $path) {
             // Сравниваем Паттерн пути и путь
             if (preg_match("~$uriPattern~", $uri)) {
-                
-                
+
+
                 // Получаем внутренний путь из внешнего по правилу
                 $internalRoute = preg_replace("~$uriPattern~", $path, $uri);
 
                 // Определяем controller, action, parameters
                 $segments = explode('/', $internalRoute);
-                
+
                 // controller
                 $controller = ucfirst(array_shift($segments)) . 'Controller';
 

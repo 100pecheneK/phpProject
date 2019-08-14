@@ -1,12 +1,12 @@
 <?php
-
-include_once ROOT . '/models/Category.php';
-include_once ROOT . '/models/Product.php';
-include_once ROOT . '/components/Pagination.php';
-
+/**
+ * Управляет функциями каталога
+ */
 class CatalogController
 {
-
+/**
+ * Отображает страницу с товарами из всех категорий.
+ */
     public function actionIndex($page = 1)
     {
         $categories = Category::getCategoryList();
@@ -20,7 +20,11 @@ class CatalogController
 
         return true;
     }
-
+/**
+ * Отображает страницу с товарами из выбранной категории.
+ * @param int $categoryId Идентификатор категории
+ * @param int $page Номер страницы
+ */
     public function actionCategory($categoryId, $page = 1)
     {
         $categories = Category::getCategoryList();

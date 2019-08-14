@@ -1,7 +1,7 @@
 <?php include ROOT . '/views/layouts/header.php' ?>
 
 
-    <!-- Топ 5 (акции и лучшие) -->
+    <!-- Карусель-->
     <?php include ROOT . '/views/layouts/productCarusel.php' ?>
 
     <!-- Популярные игры -->

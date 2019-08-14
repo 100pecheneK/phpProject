@@ -40,12 +40,12 @@
                                 } ?>
                                 <a href="/category/<?= $categorie->id ?>" class="dropdown-item">
                                     <div class="row">
-                                        <div class="col-1 p-0">
+                                        <div class="col p-0">
                                             <?php if ($activeCategory) : ?>
                                                 <i class="fas fa-check"></i>
                                             <?php endif ?>
                                         </div>
-                                        <div class="col-11 p-0 pl-2">
+                                        <div class="col-11 p-0 mx-2 text-break text-justify">
                                             <?= $categorie->name ?>
                                         </div>
                                     </div>

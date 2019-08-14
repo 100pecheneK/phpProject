@@ -1,7 +1,13 @@
 <?php
 
+/**
+ * Управляет функциями пользователя.
+ */
 class UserController
 {
+    /**
+     * Отображение регистрации пользователя.
+     */
     public function actionRegister()
     {
 
@@ -42,7 +48,9 @@ class UserController
 
         return true;
     }
-
+    /**
+     * Отображение входа пользователя.
+     */
     public function actionLogin()
     {
 
@@ -64,13 +72,15 @@ class UserController
                 header("Location: /account");
             }
         }
-        
+
         $categories = Category::getCategoryList();
         require_once ROOT . '/views/user/login.php';
 
         return true;
     }
-
+    /**
+     * Выход пользователя.
+     */
     public function actionLogout()
     {
         User::logout();

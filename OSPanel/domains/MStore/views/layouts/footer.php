@@ -5,13 +5,13 @@
             <div class="col-6 col-md">
                 <h5>Поддержка</h5>
                 <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="/support/">Поддержка</a></li>
+                    <li><a class="text-muted" href="/support">Поддержка</a></li>
                 </ul>
             </div>
             <div class="col-6 col-md">
                 <h5>Наши друзья</h5>
                 <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="/sponsors/">Спонсоры</a></li>
+                    <li><a class="text-muted" href="/sponsors">Спонсоры</a></li>
                 </ul>
             </div>
             <div class="col-6 col-md">
@@ -23,7 +23,7 @@
             <div class="col-6 col-md">
                 <h5>О нас</h5>
                 <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="/team/">Наша команда</a></li>
+                    <li><a class="text-muted" href="/team">Наша команда</a></li>
                 </ul>
             </div>
         </div>

@@ -1,8 +1,13 @@
 <?php
 
+/**
+ * Управляет продуктами в админ панели.
+ */
 class AdminProductController
 {
-
+    /**
+     * READ.
+     */
     public function actionIndex($order = 'id', $sort = 'ASC', $page = 1)
     {
         AdminBase::checkAdmin();
@@ -13,9 +18,12 @@ class AdminProductController
         $pagination = new Pagination($total_count, $count_products, $page);
 
         require_once ROOT . '/views/admin/product/read.php';
+        // require_once ROOT . '/views/admin/product/tmp.php';
         return true;
     }
-
+    /**
+     * DELETE.
+     */
     public function actionDelete($id)
     {
         AdminBase::checkAdmin();
@@ -28,7 +36,9 @@ class AdminProductController
         require_once ROOT . '/views/admin/product/delete.php';
         return true;
     }
-
+    /**
+     * CREATE.
+     */
     public function actionCreate()
     {
         AdminBase::checkAdmin();
@@ -43,10 +53,6 @@ class AdminProductController
             $options['brand'] = $_POST['brand'];
             $options['description'] = $_POST['description'];
             $options['categories_ids'] = $_POST['categories_ids'];
-            $options['image'] = $_POST['image'];
-            $options['big_image'] = $_POST['big_image'];
-            $options['image'] = 'img';
-            $options['big_image'] = 'img';
             $options['availability'] = $_POST['availability'];
             $options['is_new'] = $_POST['is_new'];
             $options['is_recommended'] = $_POST['is_recommended'];
@@ -58,7 +64,20 @@ class AdminProductController
 
             if ($errors == false) {
                 $id = Product::createProduct($options);
-
+                if ($id) {
+                    // Маленькое изображение
+                    if (isset($_FILES['image'])) {
+                        if (is_uploaded_file($_FILES['image']["tmp_name"])) {
+                            move_uploaded_file($_FILES['image']["tmp_name"], $_SERVER['DOCUMENT_ROOT'] . "/upload/images/product/main_images/{$id}.png");
+                        }
+                    }
+                    // Большое изображение
+                    if (isset($_FILES['big_image'])) {
+                        if (is_uploaded_file($_FILES['big_image']["tmp_name"])) {
+                            move_uploaded_file($_FILES['big_image']["tmp_name"], $_SERVER['DOCUMENT_ROOT'] . "/upload/images/product/big_images/{$id}.jpg");
+                        }
+                    }
+                }
                 header('Location: /admin/product');
             }
         }
@@ -66,6 +85,9 @@ class AdminProductController
         require_once ROOT . '/views/admin/product/create.php';
         return true;
     }
+    /**
+     * UPDATE.
+     */
     public function actionUpdate($id)
     {
         AdminBase::checkAdmin();
@@ -82,10 +104,6 @@ class AdminProductController
             $options['brand'] = $_POST['brand'];
             $options['description'] = $_POST['description'];
             $options['categories_ids'] = $_POST['categories_ids'];
-            $options['image'] = $_POST['image'];
-            $options['big_image'] = $_POST['big_image'];
-            $options['image'] = 'img';
-            $options['big_image'] = 'img';
             $options['availability'] = $_POST['availability'];
             $options['is_new'] = $_POST['is_new'];
             $options['is_recommended'] = $_POST['is_recommended'];
@@ -96,11 +114,23 @@ class AdminProductController
             // !Добавить валидацию
 
             if ($errors == false) {
-                $id = Product::updateProduct($product, $options);
-
+                Product::updateProduct($product, $options);
+                // Маленькое изображение
+                if (isset($_FILES['image'])) {
+                    if (is_uploaded_file($_FILES['image']["tmp_name"])) {
+                        move_uploaded_file($_FILES['image']["tmp_name"], $_SERVER['DOCUMENT_ROOT'] . "/upload/images/product/main_images/{$id}.png");
+                    }
+                }
+                // Большое изображение
+                if (isset($_FILES['big_image'])) {
+                    if (is_uploaded_file($_FILES['big_image']["tmp_name"])) {
+                        move_uploaded_file($_FILES['big_image']["tmp_name"], $_SERVER['DOCUMENT_ROOT'] . "/upload/images/product/big_images/{$id}.jpg");
+                    }
+                }
                 header('Location: /admin/product');
             }
         }
+
         require_once ROOT . '/views/admin/product/update.php';
         return true;
     }

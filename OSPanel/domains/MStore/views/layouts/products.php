@@ -6,7 +6,7 @@
                     <div class="card rounded-0 myB">
                         <a href="/product/<?= $p['id'] ?>">
                             <div class="img-wrap">
-                                <img src="/template/images/small/<?= $p['image'] ?>" class="card-img-top" alt="...">
+                                <img src="<?= Product::getMainImage($p['id']) ?>" class="card-img-top" alt="...">
                                 <span class="img-wrap-span border border-warning text-warning p-1 text-center bg-dark-trans">
                                     <?php if ($p['is_new']) : ?>
                                         <h4>Новинка</h4>

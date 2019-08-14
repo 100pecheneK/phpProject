@@ -1,7 +1,15 @@
 <?php
 
+/**
+ * Включает в себя ряд функций по работе с корзиной.
+ */
 class Cart
 {
+    /**
+     * Добовляет один продукт в корзину.
+     * @param int $id Идентификатор продукта.
+     * @return int Количество продуктов в корзине.
+     */
     public static function addProduct($id)
     {
         $id = intval($id);
@@ -20,12 +28,18 @@ class Cart
 
         return self::countPoducts();
     }
-
+    /**
+     * Удаляет продукт из корзины.
+     * @param int $id Идентификатор продукта .
+     */
     public static function delProduct($id)
     {
         unset($_SESSION['products'][$id]);
     }
-
+/**
+ * Подсчитывает продукты в корзине.
+ * @return int Количество продуктов.
+ */
     public static function countPoducts()
     {
         if (isset($_SESSION['products'])) {
@@ -37,14 +51,21 @@ class Cart
             return 0;
         }
     }
-
+/**
+ * Получает продукты, если такие имеются.
+ * @return array Массив с продуктами вида id => count.
+ */
     public static function getProducts()
     {
         if (isset($_SESSION['products']))
             return $_SESSION['products'];
         return false;
     }
-
+/**
+ * Получает стоимость продуктов в корзине.
+ * @param array $product Массив или Боб продукта из БД.
+ * @return int/float Стоимость продукта.
+ */
     public static function getTotalPrice($products)
     {
         $productsInCart = self::getProducts();

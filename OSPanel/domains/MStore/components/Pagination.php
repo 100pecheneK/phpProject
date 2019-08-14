@@ -1,24 +1,48 @@
 <?php
 
+/**
+ * Создаёт блок с элементами постраничной навигации.
+ */
 class Pagination
 {
-    // Количество элементов
+    /**
+     * Количество элементов.
+     * @var int $total_count Хранит в себе количество элементов
+     * на всех страницах.
+     */
     private $total_count;
-    // Количество элементов на оной странице
+    /**
+     * Количество элементов на странице.
+     * @var int $per_page Хранит в себе количество элементов на одной странице.
+     */
     private $per_page;
-    // Текущая странциа
+    /**
+     * Текущая страница.
+     * @var int $page Хранит в себе номер текущей страницы.
+     */
     private $page;
-    // Ключ, в который пишется номер страницы
+    /**
+     * Ключ.
+     * @var string $index Хранит в себе строку,
+     * идущую перед номером страницы в URL.
+     */
     private $index;
-
-    public function __construct($total_count, $per_page, $page, $index = 'page-')
+    /**
+     * Объявление переменных.
+     */
+    public function __construct($total_count, $per_page, $page, $index  = 'page-')
     {
         $this->total_count = $total_count;
         $this->per_page = $per_page;
         $this->page = $page;
         $this->index = $index;
     }
-    // Вернёт массив с количеством страниц слева и справа
+    /**
+     * Вычисляет сколько страниц должно быть слева и справа от центра.
+     * @param int $total_pages Принимает количество элементов 
+     * на всех страницах.
+     * @return array Вернёт массив со страницами слева (left) и справа (right).
+     */
     private function getLeftRightPages($total_pages)
     {
         if ($total_pages <= 4) {
@@ -53,23 +77,29 @@ class Pagination
         );
         return $pages;
     }
-    // Распечатает <li></li>
-    private function getLi($left, $right, $segments)
+    /**
+     * Выводит <li> с <a> на страницы.
+     * @param array $pages Массив со страницами слева и справа.
+     * @param array $segments Массив с сегментами REQUEST_URI.
+     */
+    private function getLi($pages, $segments)
     {
-        for ($i = $left; $i <= $right; $i++) {
+        for ($i = $pages['left']; $i <= $pages['right']; $i++) {
             if ($this->page == $i) {
-                $bg = 'bg-warning';
-                $disabled = 'disabled';
+                $bg = ' bg-warning';
+                $disabled = ' disabled';
             } else {
                 $bg = '';
                 $disabled = '';
             }
-            echo '<li class="page-item ' . $disabled . '"><a class="page-link ' . 
-            $bg . ' text-dark" href="' . $segments[0] . '/' . $this->index . 
-            $i . '">' . $i . '</a></li>';
+            echo '<li class="page-item' . $disabled . '"><a class="page-link' .
+                $bg . ' text-dark" href="' . $segments[0] . '/' . $this->index .
+                $i . '">' . $i . '</a></li>';
         }
     }
-    // Создаёт HTML код
+    /**
+     * Выводит HTML код постраничной навигации.
+     */
     public function get()
     {
         $total_pages = ceil($this->total_count / $this->per_page);
@@ -79,8 +109,8 @@ class Pagination
         echo '<nav aria-label="Page navigation" class="my-2">';
         echo '<ul class="pagination justify-content-center ">';
 
-        $this->getLi($pages['left'], $pages['right'], $segments);
-        
+        $this->getLi($pages, $segments);
+
         echo '</ul>';
         echo '</nav>';
     }

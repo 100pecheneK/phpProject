@@ -7,7 +7,6 @@
                 <div class="col-12">                    
                     <h3>Email: <?= $user->email ?></h2>
                     <h3>Имя: <?= $user->name ?></h2>
-                    <h3>Пароль: <?= $user->password ?></h3>
                 </div>
             </div>
         </div>
