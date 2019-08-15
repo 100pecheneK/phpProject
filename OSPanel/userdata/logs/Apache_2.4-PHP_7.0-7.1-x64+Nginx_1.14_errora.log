@@ -1,5 +1,5 @@
-[Thu Aug 15 15:39:57.549631 2019] [mpm_winnt:notice] [pid 2696:tid 676] AH00455: Apache/2.4.38 (Win64) configured -- resuming normal operations
-[Thu Aug 15 15:39:57.549631 2019] [mpm_winnt:notice] [pid 2696:tid 676] AH00456: Apache Lounge VC14 Server built: Feb 28 2019 15:05:01
-[Thu Aug 15 15:39:57.549631 2019] [core:notice] [pid 2696:tid 676] AH00094: Command line: 'C:\\Users\\Admin\\Documents\\github\\phpproject\\ospanel\\modules\\http\\Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14\\bin\\httpd.exe -d C:/Users/Admin/Documents/GitHub/phpProject/OSPanel/modules/http/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14 -f c:\\users\\admin\\documents\\github\\phpproject\\ospanel\\modules\\http\\Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14\\conf\\httpd.conf'
-[Thu Aug 15 15:39:57.559626 2019] [mpm_winnt:notice] [pid 2696:tid 676] AH00418: Parent: Created child process 8408
-[Thu Aug 15 15:39:58.034362 2019] [mpm_winnt:notice] [pid 8408:tid 708] AH00354: Child: Starting 32 worker threads.
+[Thu Aug 15 15:40:30.364199 2019] [mpm_winnt:notice] [pid 1252:tid 692] AH00455: Apache/2.4.38 (Win64) configured -- resuming normal operations
+[Thu Aug 15 15:40:30.364199 2019] [mpm_winnt:notice] [pid 1252:tid 692] AH00456: Apache Lounge VC14 Server built: Feb 28 2019 15:05:01
+[Thu Aug 15 15:40:30.364199 2019] [core:notice] [pid 1252:tid 692] AH00094: Command line: 'C:\\Users\\Admin\\Documents\\github\\phpproject\\ospanel\\modules\\http\\Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14\\bin\\httpd.exe -d C:/Users/Admin/Documents/GitHub/phpProject/OSPanel/modules/http/Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14 -f c:\\users\\admin\\documents\\github\\phpproject\\ospanel\\modules\\http\\Apache_2.4-PHP_7.0-7.1-x64+Nginx_1.14\\conf\\httpd.conf'
+[Thu Aug 15 15:40:30.367197 2019] [mpm_winnt:notice] [pid 1252:tid 692] AH00418: Parent: Created child process 8960
+[Thu Aug 15 15:40:31.011800 2019] [mpm_winnt:notice] [pid 8960:tid 160] AH00354: Child: Starting 32 worker threads.
