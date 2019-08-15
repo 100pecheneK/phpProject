@@ -19,6 +19,7 @@ class AccountController
 
         return true;
     }
+
     /**
      * Страница настроек.
      */

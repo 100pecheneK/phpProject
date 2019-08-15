@@ -10,7 +10,7 @@ class Category
      */
     public static function getCategoryList()
     {
-        $catList = R::findAll('categories', "WHERE status = 1 ORDER BY `sort_id` ASC");
+        $catList = R::findAll('categories', "WHERE status = 1 ORDER BY id ASC");
 
         return $catList;
     }

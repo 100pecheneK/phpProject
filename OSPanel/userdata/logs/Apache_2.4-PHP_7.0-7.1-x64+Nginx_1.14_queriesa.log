@@ -1,5 +1,0 @@
-MStore: 127.0.0.1 [14/Aug/2019:12:05:57 +0500] "GET / HTTP/1.0" 200 19369 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
-MStore: 127.0.0.1 [14/Aug/2019:12:06:03 +0500] "GET /template/css/icons/webfonts/fa-solid-900.woff2 HTTP/1.0" 200 75392 "http://mstore/template/css/icons/css/all.min.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
-MStore: 127.0.0.1 [14/Aug/2019:12:06:05 +0500] "GET /product/93 HTTP/1.0" 200 15502 "http://mstore/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
-MStore: 127.0.0.1 [14/Aug/2019:12:09:37 +0500] "GET /pay HTTP/1.0" 200 6 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
-MStore: 127.0.0.1 [14/Aug/2019:12:09:38 +0500] "GET /product/93 HTTP/1.0" 200 15127 "http://mstore/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
