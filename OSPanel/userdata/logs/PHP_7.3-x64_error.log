@@ -1,7 +1,0 @@
-[16-Aug-2019 11:19:22 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Unexpected end of template in "default/template/common/home.twig" at line 13. in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\myWork.ru\system\library\template\Twig\TokenStream.php:59
-Stack trace:
-#0 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\myWork.ru\system\library\template\Twig\TokenParser\If.php(40): Twig_TokenStream->next()
-#1 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\myWork.ru\system\library\template\Twig\Parser.php(187): Twig_TokenParser_If->parse(Object(Twig_Token))
-#2 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\myWork.ru\system\library\template\Twig\Parser.php(100): Twig_Parser->subparse(NULL, false)
-#3 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\myWork.ru\system\library\template\Twig\Environment.php(619): Twig_Parser->parse(Object(Twig_TokenStream))
-#4 C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\myWork.ru\system\library\template\Twig\Environment.php(671): Twig_Environment->parse(Ob in C:\Users\Admin\Documents\GitHub\phpProject\OSPanel\domains\myWork.ru\system\library\template\Twig\TokenStream.php on line 59
